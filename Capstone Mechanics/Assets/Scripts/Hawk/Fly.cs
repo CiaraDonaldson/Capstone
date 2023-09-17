@@ -22,7 +22,15 @@ public class Fly : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (PlayerRb.velocity.y > 0)
+        {
+            capsule.enabled = false;
+        }
+        else 
+        {
+            capsule.enabled = true;
 
+        }
         if (Input.GetKeyDown(KeyCode.W))
         {
             JumpUp();

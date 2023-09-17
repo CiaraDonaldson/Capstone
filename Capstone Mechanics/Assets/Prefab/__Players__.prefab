@@ -263,7 +263,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cbdb485090bf84a438f4aaf9e0b9142d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -378,6 +378,7 @@ MonoBehaviour:
     m_Bits: 64
   isDigging: 0
   cCollider: {fileID: 0}
+  capCollider: {fileID: 0}
 --- !u!114 &6654098819639733398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,6 +392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fManager: {fileID: 0}
+  Hawk: {fileID: 0}
 --- !u!1 &8391183920851487681
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,7 +626,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7e6cff22eb1620940b638844e6e527ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
