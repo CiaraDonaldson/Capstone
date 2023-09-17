@@ -2,14 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class hOrbCollect : MonoBehaviour
+public class fOrbCollect : MonoBehaviour
 {
-    public GameManager manager;
+    public GameManager fManager;
+    public GameObject Hawk;
     // Start is called before the first frame update
     void Start()
     {
         GameObject gManager = GameObject.Find("GameManager");
-        manager = gManager.GetComponent<GameManager>();
+        fManager = gManager.GetComponent<GameManager>();
+
+        Hawk = GameObject.Find("Hawk");
     }
 
     // Update is called once per frame
@@ -19,11 +22,11 @@ public class hOrbCollect : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Orb") && collision.gameObject.name == "hOrb")
+        if (collision.gameObject.CompareTag("Orb") && collision.gameObject.name == "fOrb")
         {
-            manager.addHOrb();
+            fManager.addFOrb();
             Destroy(collision.gameObject);
-            
+            Hawk.GetComponent<Scan>().RemoveNullTransformsFromList();
         }
     }
 }

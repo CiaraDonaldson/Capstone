@@ -75,7 +75,7 @@ public class Scan : MonoBehaviour
                     foreach (Transform orb in orbs)
                     {
                         //Vector3 newPosition = orb.position + -Vector3.forward * 5f;
-                        orb.position += -Vector3.forward * 5f;
+                        orb.position += -Vector3.forward * 6f;
                         //Color check
                         SpriteRenderer renderer = orb.GetComponent<SpriteRenderer>();
                         renderer.color = Random.ColorHSV();
@@ -109,16 +109,21 @@ public class Scan : MonoBehaviour
 
             foreach (Transform orb in orbs)
             {
-                
-                if (orb != null && orb.transform != null)
-                {
                     Vector3 newPosition = orb.position;
                     newPosition.z = originalZPosition;
                     orb.position = newPosition;
 
+                if (orb.name == "fOrb")
+                {
                     SpriteRenderer renderer = orb.GetComponent<SpriteRenderer>();
-                    renderer.color = Color.white;
+                    renderer.color = Color.blue;
                 }
+                if (orb.name == "hOrb")
+                {
+                    SpriteRenderer renderer = orb.GetComponent<SpriteRenderer>();
+                    renderer.color = Color.red;
+                }
+
             }
 
             // Revert the layer change for orbs.
@@ -127,15 +132,18 @@ public class Scan : MonoBehaviour
         }
     }
 
-     /*  private void ChangeLayerForOrbs(bool showOrbs)
+    public void RemoveNullTransformsFromList()
     {
-        GameObject[] orbs = GameObject.FindGameObjectsWithTag("Orb");
-
-        foreach (GameObject orb in orbs)
+        // Iterate through the list in reverse to safely remove elements.
+        for (int i = orbs.Count - 1; i >= 0; i--)
         {
-            orb.layer = showOrbs ? Default : LayerMask.NameToLayer("orbLayer");
-
-           
+            // Check if the transform in the list is null.
+            if (orbs[i] == null)
+            {
+                // Remove the null transform from the list.
+                orbs.RemoveAt(i);
+            }
         }
-    }*/
+    }
+  
 }
