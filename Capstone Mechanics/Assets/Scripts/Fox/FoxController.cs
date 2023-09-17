@@ -11,16 +11,28 @@ public class FoxController : MonoBehaviour
     public bool isGrounded = false;
     // public bool canJump = false;
 
+    private Transform characterTransform;
+    private bool isFacingRight = true;
     //private GameController gameControllerReference;
 
     void Start()
     {
+        characterTransform = transform;
+
         rb = GetComponent<Rigidbody2D>();
         // gameControllerReference = GameObject.FindWithTag("GameController").GetComponent<GameController>();
     }
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            FlipCharacter(false);  // Flip to face left.
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            FlipCharacter(true);   // Flip to face right.
+        }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             rb.AddForce(Vector3.left * moveForce, ForceMode2D.Impulse);
@@ -32,6 +44,15 @@ public class FoxController : MonoBehaviour
         }
         
     }
-  
+    void FlipCharacter(bool faceRight)
+    {
+        // Flip the character's scale based on the direction.
+        Vector3 newScale = characterTransform.localScale;
+        newScale.x = faceRight ? 1 : -1;
+        characterTransform.localScale = newScale;
+
+        isFacingRight = faceRight;
+    }
+
 }
 

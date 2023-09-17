@@ -10,17 +10,29 @@ public class HawkController : MonoBehaviour
     public float walkForce = 5f;
 
     private int points;
+    private Transform characterTransform;
+    private bool isFacingRight = true;
     //private GameController gameControllerReference;
 
     void Start()
     {
+        characterTransform = transform;
+
         PlayerRb = GetComponent<Rigidbody2D>();
         // gameControllerReference = GameObject.FindWithTag("GameController").GetComponent<GameController>();
     }
         // Update is called once per frame
         private void Update()
     {
-      
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            FlipCharacter(false);  // Flip to face left.
+        }
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
+            FlipCharacter(true);   // Flip to face right.
+        }
+
         if (Input.GetKeyDown(KeyCode.S))
         {
             JumpDown();
@@ -51,6 +63,14 @@ public class HawkController : MonoBehaviour
     }
 
 
+    void FlipCharacter(bool faceRight)
+    {
+        // Flip the character's scale based on the direction.
+        Vector3 newScale = characterTransform.localScale;
+        newScale.x = faceRight ? 1 : -1;
+        characterTransform.localScale = newScale;
 
-   
+        isFacingRight = faceRight;
+    }
+
 }
