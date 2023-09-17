@@ -534,7 +534,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.62379855, g: 0.8113208, b: 0.72705734, a: 0}
+  m_BackGroundColor: {r: 0.14054823, g: 0.18287443, b: 0.26415092, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2115,7 +2115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2119199033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2239,6 +2239,14 @@ PrefabInstance:
       propertyPath: virtualCamera
       value: 
       objectReference: {fileID: 723487762}
+    - target: {fileID: 8391183921164731609, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
+      propertyPath: flyForce
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8391183921164731609, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
+      propertyPath: carryForce
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8391183921164731615, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: digLayer.m_Bits
       value: 64

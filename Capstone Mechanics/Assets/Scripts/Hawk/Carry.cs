@@ -5,8 +5,8 @@ using UnityEngine;
 public class Carry : MonoBehaviour
 {
     public KeyCode carryKey = KeyCode.E;  
-    public float carryForce = 10f;           
-    public float flyForce = 15f;           
+    public float carryForce = 20f;           
+    public float flyForce = 25f;           
     public Rigidbody2D playerToCarry;
     public bool isTouching = false;
     public GameObject Fox;
