@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public int hOrbs = 0;
+    public int fOrbs = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +18,12 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void addOrb()
+    public void addHOrb()
     {
         hOrbs = hOrbs + 1;
+    }
+    public void addFOrb()
+    {
+        fOrbs = fOrbs + 1;
     }
 }

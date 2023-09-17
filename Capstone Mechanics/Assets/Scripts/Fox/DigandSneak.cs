@@ -9,11 +9,13 @@ public class DigandSneak : MonoBehaviour
     public LayerMask digLayer;
     public bool isDigging = false;
     public CircleCollider2D cCollider;
+    public CapsuleCollider2D capCollider;
 
     // Start is called before the first frame update
     void Start()
     {
         cCollider = GetComponent<CircleCollider2D>();
+        capCollider = GetComponent<CapsuleCollider2D>();
     }
 
     // Update is called once per frame
@@ -30,7 +32,7 @@ public class DigandSneak : MonoBehaviour
             if (!hit)
             {
                 cCollider.enabled = false;
-
+                capCollider.enabled = true;
             }
             if (hit.collider != null)
             {
@@ -41,6 +43,7 @@ public class DigandSneak : MonoBehaviour
         {
             isDigging = false;
             cCollider.enabled = true;
+            capCollider.enabled = false;
 
         }
     }
