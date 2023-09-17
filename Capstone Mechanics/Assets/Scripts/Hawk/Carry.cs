@@ -44,10 +44,10 @@ public class Carry : MonoBehaviour
             // Apply upward force for flying.
             if (Input.GetKeyDown(KeyCode.W))
             {
-                rb.AddForce(Vector2.up * flyForce);
+                rb.AddForce(Vector3.up * flyForce, ForceMode2D.Impulse);
             }
 
-            
+
         }
         else 
         {
@@ -78,11 +78,15 @@ public class Carry : MonoBehaviour
         {
             joint.enabled = true;
             Fox.GetComponent<Taunt>().enabled = false;
+            this.GetComponent<Scan>().enabled = false;
+            this.GetComponent<Fly>().enabled = false;
         }
         else
         {
             joint.enabled = false;
             Fox.GetComponent<Taunt>().enabled = true;
+            this.GetComponent<Scan>().enabled = true;
+            this.GetComponent<Fly>().enabled = true;
         }
     }
 }

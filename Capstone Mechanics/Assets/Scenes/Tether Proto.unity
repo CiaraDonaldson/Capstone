@@ -2241,11 +2241,15 @@ PrefabInstance:
       objectReference: {fileID: 723487762}
     - target: {fileID: 8391183921164731609, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: flyForce
-      value: 50
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8391183921164731609, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: carryForce
-      value: 50
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8391183921164731615, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
+      propertyPath: flyForce
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8391183921164731615, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: digLayer.m_Bits

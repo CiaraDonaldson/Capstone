@@ -25,6 +25,7 @@ public class FoxController : MonoBehaviour
         {
             rb.AddForce(Vector3.left * moveForce, ForceMode2D.Impulse);
         }
+
         if (Input.GetKey(KeyCode.RightArrow))
         {
             rb.AddForce(Vector3.right * moveForce, ForceMode2D.Impulse);
