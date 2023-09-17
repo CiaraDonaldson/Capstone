@@ -6,7 +6,7 @@ public class Fly : MonoBehaviour
 {
     public Rigidbody2D PlayerRb;
     public float flyForce = 15f;
-   
+
 
     public CapsuleCollider2D capsule;
     public BoxCollider2D box;
@@ -42,7 +42,8 @@ public class Fly : MonoBehaviour
         else
         {
             capsule.enabled = false;
-        }
 
+        }
     }
+   
 }
