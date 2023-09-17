@@ -109,12 +109,16 @@ public class Scan : MonoBehaviour
 
             foreach (Transform orb in orbs)
             {
-                Vector3 newPosition = orb.position;
-                newPosition.z = originalZPosition;
-                orb.position = newPosition;
+                
+                if (orb != null && orb.transform != null)
+                {
+                    Vector3 newPosition = orb.position;
+                    newPosition.z = originalZPosition;
+                    orb.position = newPosition;
 
-                SpriteRenderer renderer = orb.GetComponent<SpriteRenderer>();
-                renderer.color = Color.white;
+                    SpriteRenderer renderer = orb.GetComponent<SpriteRenderer>();
+                    renderer.color = Color.white;
+                }
             }
 
             // Revert the layer change for orbs.
