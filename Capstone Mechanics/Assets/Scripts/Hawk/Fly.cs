@@ -22,16 +22,32 @@ public class Fly : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerRb.velocity.y > 0)
+        /* if (PlayerRb.velocity.y > 0)
+         {
+             capsule.enabled = false;
+         }
+         else 
+         {
+             capsule.enabled = true;
+
+         }*/
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 1.0f))
         {
-            capsule.enabled = false;
-        }
-        else 
-        {
-            capsule.enabled = true;
+            // Check if the ground is tagged as "Ground". Adjust the tag accordingly.
+            if (hit.collider.CompareTag("Ground"))
+            {
+                // Player is on the ground, enable the collider.
+                capsule.enabled = true;
+            }
+            else
+            {
+                // Player is in the air, disable the collider.
+                capsule.enabled = false;
+            }
 
         }
-        if (Input.GetKeyDown(KeyCode.W))
+            if (Input.GetKeyDown(KeyCode.W))
         {
             JumpUp();
         }
@@ -41,7 +57,7 @@ public class Fly : MonoBehaviour
     {
         PlayerRb.AddForce(Vector3.up * flyForce, ForceMode2D.Impulse);
     }
-    private void OnTriggerEnter2D(Collider2D other)
+  /* private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Ground"))
         {
@@ -52,6 +68,6 @@ public class Fly : MonoBehaviour
             capsule.enabled = false;
 
         }
-    }
+    }*/
    
 }

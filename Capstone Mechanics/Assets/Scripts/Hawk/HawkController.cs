@@ -12,6 +12,9 @@ public class HawkController : MonoBehaviour
     private int points;
     private Transform characterTransform;
     private bool isFacingRight = true;
+
+    public Collider2D cCircle;
+    public Collider2D cCapsule;
     //private GameController gameControllerReference;
 
     void Start()
@@ -21,8 +24,8 @@ public class HawkController : MonoBehaviour
         PlayerRb = GetComponent<Rigidbody2D>();
         // gameControllerReference = GameObject.FindWithTag("GameController").GetComponent<GameController>();
     }
-        // Update is called once per frame
-        private void Update()
+    // Update is called once per frame
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
@@ -45,14 +48,11 @@ public class HawkController : MonoBehaviour
         {
             JumpRight();
         }
-       
-
     }
     void JumpDown()
-        {
-            PlayerRb.AddForce(Vector3.down * walkForce, ForceMode2D.Impulse);
-        }
-    
+    {
+        PlayerRb.AddForce(Vector3.down * walkForce, ForceMode2D.Impulse);
+    }
     void JumpLeft()
     {
         PlayerRb.AddForce(Vector3.left * walkForce, ForceMode2D.Impulse);
@@ -61,7 +61,6 @@ public class HawkController : MonoBehaviour
     {
         PlayerRb.AddForce(Vector3.right * walkForce, ForceMode2D.Impulse);
     }
-
 
     void FlipCharacter(bool faceRight)
     {
@@ -72,5 +71,15 @@ public class HawkController : MonoBehaviour
 
         isFacingRight = faceRight;
     }
-
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Ground"))
+        {
+            cCircle.enabled = false;
+        }
+        else
+        {
+            cCircle.enabled = true;
+        }
+    }
 }
