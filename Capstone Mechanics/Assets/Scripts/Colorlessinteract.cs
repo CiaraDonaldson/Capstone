@@ -5,6 +5,8 @@ using UnityEngine;
 public class Colorlessinteract : MonoBehaviour
 {
     public string popUp;
+    public int fOrbCount = 3;
+    public int hOrbCount = 2;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,13 @@ public class Colorlessinteract : MonoBehaviour
         {
             PopUpSystem pop = GameObject.FindGameObjectWithTag("GameManager").GetComponent<PopUpSystem>();
             pop.PopUp(popUp);
+        }
+        if (GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().fOrbs == fOrbCount && GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().hOrbs == hOrbCount)
+        {
+            PopUpSystem pop = GameObject.FindGameObjectWithTag("GameManager").GetComponent<PopUpSystem>();
+            pop.PopUp("You Did It! Thank you!");
+            Color lerpedColor = Color.Lerp(Color.white, Color.magenta, 20f);
+            this.GetComponent<SpriteRenderer>().color = lerpedColor;
         }
     }
     void OnTriggerExit2D(Collider2D other)
