@@ -7,6 +7,7 @@ public class Colorlessinteract : MonoBehaviour
     public string popUp;
     public int fOrbCount = 3;
     public int hOrbCount = 2;
+    public bool pass = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +37,7 @@ public class Colorlessinteract : MonoBehaviour
             pop.PopUp("You Did It! Thank you!");
             Color lerpedColor = Color.Lerp(Color.white, Color.magenta, 20f);
             this.GetComponent<SpriteRenderer>().color = lerpedColor;
+            pass = true;
         }
     }
     void OnTriggerExit2D(Collider2D other)
