@@ -10,12 +10,15 @@ public class Carry : MonoBehaviour
     public Rigidbody2D playerToCarry;
     public bool isTouching = false;
     public GameObject Fox;
+    public ParticleSystem dust;
+    public GameObject fDust;
 
     private FixedJoint2D joint;
     private bool isCarrying = false;
     private Rigidbody2D rb;
     void Start()
     {
+        fDust = GameObject.Find("FDust");
         rb = GetComponent<Rigidbody2D>();
         Fox = GameObject.Find("Fox");
         // A FixedJoint2D component to connect the two players.
@@ -44,6 +47,7 @@ public class Carry : MonoBehaviour
             // Apply upward force for flying.
             if (Input.GetKeyDown(KeyCode.W))
             {
+                CreateDust();
                 rb.AddForce(Vector3.up * flyForce, ForceMode2D.Impulse);
             }
 
@@ -72,12 +76,14 @@ public class Carry : MonoBehaviour
 
         void ToggleCarry()
     {
+        
         isCarrying = !isCarrying;
 
         if (isCarrying)
         {
             joint.enabled = true;
             Fox.GetComponent<Taunt>().enabled = false;
+            fDust.SetActive(false);
             this.GetComponent<Scan>().enabled = false;
             this.GetComponent<Fly>().enabled = false;
         }
@@ -85,8 +91,13 @@ public class Carry : MonoBehaviour
         {
             joint.enabled = false;
             Fox.GetComponent<Taunt>().enabled = true;
+            fDust.SetActive(true);
             this.GetComponent<Scan>().enabled = true;
             this.GetComponent<Fly>().enabled = true;
         }
+    }
+    void CreateDust()
+    {
+        dust.Play();
     }
 }

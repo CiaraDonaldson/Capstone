@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FoxController : MonoBehaviour
 {
+    public ParticleSystem dust;
     public Rigidbody2D rb;
     public float moveForce = 15f;
     public LayerMask groundLayer;
@@ -18,7 +19,7 @@ public class FoxController : MonoBehaviour
     void Start()
     {
         characterTransform = transform;
-
+        //dust = GetComponent<ParticleSystem>();
         rb = GetComponent<Rigidbody2D>();
         // gameControllerReference = GameObject.FindWithTag("GameController").GetComponent<GameController>();
     }
@@ -46,6 +47,7 @@ public class FoxController : MonoBehaviour
     }
     void FlipCharacter(bool faceRight)
     {
+        CreateDust();
         // Flip the character's scale based on the direction.
         Vector3 newScale = characterTransform.localScale;
         newScale.x = faceRight ? 1 : -1;
@@ -54,5 +56,9 @@ public class FoxController : MonoBehaviour
         isFacingRight = faceRight;
     }
 
+    void CreateDust()
+    {
+        dust.Play();
+    }
 }
 

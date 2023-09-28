@@ -6,7 +6,7 @@ public class Fly : MonoBehaviour
 {
     public Rigidbody2D PlayerRb;
     public float flyForce = 15f;
-
+    public ParticleSystem dust;
 
     public CapsuleCollider2D capsule;
     public BoxCollider2D box;
@@ -47,8 +47,9 @@ public class Fly : MonoBehaviour
             }
 
         }
-            if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W))
         {
+            CreateDust();
             JumpUp();
         }
 
@@ -57,17 +58,22 @@ public class Fly : MonoBehaviour
     {
         PlayerRb.AddForce(Vector3.up * flyForce, ForceMode2D.Impulse);
     }
-  /* private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Ground"))
-        {
-            capsule.enabled = true;
-        }
-        else
-        {
-            capsule.enabled = false;
 
-        }
-    }*/
-   
+    /* private void OnTriggerEnter2D(Collider2D other)
+      {
+          if (other.CompareTag("Ground"))
+          {
+              capsule.enabled = true;
+          }
+          else
+          {
+              capsule.enabled = false;
+
+          }
+      }*/
+
+    void CreateDust()
+    {
+        dust.Play();
+    }
 }
