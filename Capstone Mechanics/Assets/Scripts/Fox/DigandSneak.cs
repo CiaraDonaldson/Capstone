@@ -10,10 +10,15 @@ public class DigandSneak : MonoBehaviour
     public bool isDigging = false;
     public CircleCollider2D cCollider;
     public CapsuleCollider2D capCollider;
+    public Animator anim;
+    public Sprite thisSprite;
+
+    public SpriteRenderer rend;
 
     // Start is called before the first frame update
     void Start()
     {
+        rend = GetComponent<SpriteRenderer>();
         cCollider = GetComponent<CircleCollider2D>();
         capCollider = GetComponent<CapsuleCollider2D>();
     }
@@ -33,10 +38,14 @@ public class DigandSneak : MonoBehaviour
             {
                 cCollider.enabled = false;
                 capCollider.enabled = true;
+                rend.sprite = thisSprite;
             }
+           
             if (hit.collider != null)
             {
+                anim.Play("Dig");
                 Destroy(hit.collider.gameObject);
+
             }
         }
         else
