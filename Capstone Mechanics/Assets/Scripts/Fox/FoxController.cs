@@ -26,19 +26,20 @@ public class FoxController : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
-        GameObject particleSystemObject = GameObject.Find("FDust");
+        //GameObject particleSystemObject = GameObject.Find("FDust");
+        //ParticleSystem particleSystem = particleSystemObject.GetComponent<ParticleSystem>();
 
-        
-            // Try to get the ParticleSystem component
-      
-   
-    // gameControllerReference = GameObject.FindWithTag("GameController").GetComponent<GameController>();
-}
+
+        // Try to get the ParticleSystem component
+
+
+        // gameControllerReference = GameObject.FindWithTag("GameController").GetComponent<GameController>();
+    }
     // Update is called once per frame
     void Update()
     {
-        GameObject particleSystemObject = GameObject.Find("FDust");
-        ParticleSystem particleSystem = particleSystemObject.GetComponent<ParticleSystem>();
+       // GameObject particleSystemObject = GameObject.Find("FDust");
+       // ParticleSystem particleSystem = particleSystemObject.GetComponent<ParticleSystem>();
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
@@ -48,6 +49,7 @@ public class FoxController : MonoBehaviour
         {
             FlipCharacter(true);   // Flip to face right.
         }
+
 
         if (!Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.LeftArrow))
         {
@@ -71,7 +73,7 @@ public class FoxController : MonoBehaviour
         }
         else 
         {
-            particleSystem.Stop();
+            GetComponent<ParticleSystem>().Stop();
             anim.Play("Idle");
         }
         
