@@ -12,7 +12,7 @@ public class DigandSneak : MonoBehaviour
     public CapsuleCollider2D capCollider;
     public Animator anim;
     public Sprite thisSprite;
-
+    public Rigidbody2D rb;
     public SpriteRenderer rend;
 
     // Start is called before the first frame update
@@ -21,6 +21,8 @@ public class DigandSneak : MonoBehaviour
         rend = GetComponent<SpriteRenderer>();
         cCollider = GetComponent<CircleCollider2D>();
         capCollider = GetComponent<CapsuleCollider2D>();
+        rb = GetComponent<Rigidbody2D>();
+
     }
 
     // Update is called once per frame
@@ -34,13 +36,19 @@ public class DigandSneak : MonoBehaviour
             isDigging = true;
             RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, digDepth, digLayer);
             Debug.DrawRay(raycastOrigin, raycastDirection * 2, Color.green);
+
+            float velocityMagnitude = rb.velocity.magnitude;
             if (!hit)
             {
                 cCollider.enabled = false;
                 capCollider.enabled = true;
+            }
+            if (!hit & velocityMagnitude < .1)
+            {
                 rend.sprite = thisSprite;
             }
-           
+
+
             if (hit.collider != null)
             {
                 anim.Play("Dig");

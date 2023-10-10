@@ -77,8 +77,8 @@ public class Scan : MonoBehaviour
                         //Vector3 newPosition = orb.position + -Vector3.forward * 5f;
                         orb.position += -Vector3.forward * 6f;
                         //Color check
-                        SpriteRenderer renderer = orb.GetComponent<SpriteRenderer>();
-                        renderer.color = Random.ColorHSV();
+                        //SpriteRenderer renderer = orb.GetComponent<SpriteRenderer>();
+                        //renderer.color = Random.ColorHSV();
                     }
                 }
                 // Change the layer of orbs to make them visible.
@@ -116,12 +116,12 @@ public class Scan : MonoBehaviour
                 if (orb.name == "fOrb")
                 {
                     SpriteRenderer renderer = orb.GetComponent<SpriteRenderer>();
-                    renderer.color = Color.blue;
+                    //renderer.color = Color.blue;
                 }
                 if (orb.name == "hOrb")
                 {
                     SpriteRenderer renderer = orb.GetComponent<SpriteRenderer>();
-                    renderer.color = Color.red;
+                    //renderer.color = Color.red;
                 }
 
             }

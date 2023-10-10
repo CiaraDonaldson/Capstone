@@ -8,6 +8,7 @@ public class HawkController : MonoBehaviour
     public Rigidbody2D PlayerRb;
     public float jumpForce = 15f;
     public float walkForce = 5f;
+    public Animator anim;
 
     private int points;
     private Transform characterTransform;
@@ -20,7 +21,7 @@ public class HawkController : MonoBehaviour
     void Start()
     {
         characterTransform = transform;
-
+        anim = GetComponent<Animator>();
         PlayerRb = GetComponent<Rigidbody2D>();
         // gameControllerReference = GameObject.FindWithTag("GameController").GetComponent<GameController>();
     }
@@ -36,16 +37,18 @@ public class HawkController : MonoBehaviour
             FlipCharacter(true);   // Flip to face right.
         }
 
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            JumpDown();
-        }
+      //  if (Input.GetKeyDown(KeyCode.S))
+      //  {
+     //       JumpDown();
+      //  }
         if (Input.GetKey(KeyCode.A))
         {
+            anim.Play("Fly");
             JumpLeft();
         }
         if (Input.GetKey(KeyCode.D))
         {
+            anim.Play("Fly");
             JumpRight();
         }
     }
