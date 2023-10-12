@@ -6,7 +6,6 @@ public class TetherTracker : MonoBehaviour
 {
     public GameObject Hawk;
     public Vector2 savePos;
-    private bool keyIsPressed = false;
     private float keyPressStartTime = 0f;
 
     // Start is called before the first frame update
@@ -23,7 +22,6 @@ public class TetherTracker : MonoBehaviour
         {
             savePos = Hawk.transform.position;
 
-            keyIsPressed = true;
             keyPressStartTime += Time.deltaTime;
             if (keyPressStartTime >= 5f)
             {

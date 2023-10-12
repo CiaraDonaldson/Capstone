@@ -16,22 +16,31 @@ public class Carry : MonoBehaviour
     private FixedJoint2D joint;
     private bool isCarrying = false;
     private Rigidbody2D rb;
+    private BoxCollider2D box;
     void Start()
     {
         fDust = GameObject.Find("FDust");
         rb = GetComponent<Rigidbody2D>();
         Fox = GameObject.Find("Fox");
+        box = GetComponent<BoxCollider2D>();
         // A FixedJoint2D component to connect the two players.
         joint = playerToCarry.gameObject.AddComponent<FixedJoint2D>();
         joint.connectedBody = GetComponent<Rigidbody2D>();
         joint.enabled = false; // Initially disabled.
+        
     }
 
     void Update()
     {
+        
         if (Input.GetKeyDown(carryKey))
         {
-            ToggleCarry();
+            Transform tranFox = Fox.GetComponent<Transform>();
+            float distance = GetDistance(tranFox.position, this.transform.position);
+            if (distance < 3)
+            {
+                ToggleCarry();
+            }           
             
         }
 
@@ -61,7 +70,11 @@ public class Carry : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    float GetDistance(Vector3 fPos, Vector3 hPos)
+    {
+        return Vector3.Distance(fPos, hPos);
+    }
+   /* private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Fox"))
         {
@@ -71,10 +84,20 @@ public class Carry : MonoBehaviour
         {
             isTouching = false;
         }
+    }*/
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Fox"))
+        {
+            isTouching = true;
+        }
+        else
+        {
+            isTouching = false;
+        }
     }
-
-
-        void ToggleCarry()
+    void ToggleCarry()
     {
         
         isCarrying = !isCarrying;

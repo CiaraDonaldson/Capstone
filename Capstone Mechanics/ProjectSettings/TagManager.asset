@@ -8,6 +8,8 @@ TagManager:
   - Scalable
   - Orb
   - GameManager
+  - Fox
+  - Hawk
   layers:
   - Default
   - TransparentFX

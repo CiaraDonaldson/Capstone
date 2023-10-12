@@ -17,7 +17,6 @@ public class Scan : MonoBehaviour
     public List<Transform> orbs;
 
     private float originalZPosition;
-    private bool keyIsPressed = false;
     public float keyPressStartTime = 0f;
     private Camera mainCamera;
     private Vector3 hawkOriginalPosition;
@@ -48,7 +47,6 @@ public class Scan : MonoBehaviour
         
         if (Input.GetKey(KeyCode.W))
         {
-            keyIsPressed = true;
             keyPressStartTime += Time.deltaTime;
 
             // Zoom Camera out
@@ -93,7 +91,6 @@ public class Scan : MonoBehaviour
         {
            // rb.gravityScale = 1;
             frb.isKinematic = false;
-            keyIsPressed = false;
             keyPressStartTime = 0f;
 
             //set position

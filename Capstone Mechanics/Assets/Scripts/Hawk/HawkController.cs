@@ -6,7 +6,6 @@ public class HawkController : MonoBehaviour
 {
 
     public Rigidbody2D PlayerRb;
-    public float jumpForce = 15f;
     public float walkForce = 5f;
     public Animator anim;
 
@@ -52,10 +51,7 @@ public class HawkController : MonoBehaviour
             JumpRight();
         }
     }
-    void JumpDown()
-    {
-        PlayerRb.AddForce(Vector3.down * walkForce, ForceMode2D.Impulse);
-    }
+ 
     void JumpLeft()
     {
         PlayerRb.AddForce(Vector3.left * walkForce, ForceMode2D.Impulse);

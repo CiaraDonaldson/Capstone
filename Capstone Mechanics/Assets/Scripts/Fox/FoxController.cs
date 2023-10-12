@@ -26,9 +26,10 @@ public class FoxController : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
-        //GameObject particleSystemObject = GameObject.Find("FDust");
+        // GameObject particleSystemObject = GameObject.Find("FDust");
         //ParticleSystem particleSystem = particleSystemObject.GetComponent<ParticleSystem>();
-
+        GameObject particleSystemObject = GameObject.Find("FDust");
+        dust = particleSystemObject.GetComponent<ParticleSystem>();
 
         // Try to get the ParticleSystem component
 
@@ -38,8 +39,12 @@ public class FoxController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       // GameObject particleSystemObject = GameObject.Find("FDust");
-       // ParticleSystem particleSystem = particleSystemObject.GetComponent<ParticleSystem>();
+        GameObject particleSystemObject = GameObject.Find("FDust");
+        dust = particleSystemObject.GetComponent<ParticleSystem>();
+        if (dust == null)
+        {
+            Debug.Log("Cant Find The Dust!");
+        }
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
@@ -73,7 +78,7 @@ public class FoxController : MonoBehaviour
         }
         else 
         {
-            GetComponent<ParticleSystem>().Stop();
+            dust.Stop();
             anim.Play("Idle");
         }
         
