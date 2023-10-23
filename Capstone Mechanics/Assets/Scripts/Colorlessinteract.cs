@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Colorlessinteract : MonoBehaviour
 {
     public string popUp;
@@ -38,7 +38,13 @@ public class Colorlessinteract : MonoBehaviour
             Color lerpedColor = Color.Lerp(Color.white, Color.magenta, 20f);
             this.GetComponent<SpriteRenderer>().color = lerpedColor;
             pass = true;
+            ReloadActiveScene();
         }
+    }
+    private void ReloadActiveScene()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
     }
     void OnTriggerExit2D(Collider2D other)
     {

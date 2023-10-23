@@ -33,7 +33,7 @@ public class DigandSneak : MonoBehaviour
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            isDigging = true;
+           
             RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, digDepth, digLayer);
             Debug.DrawRay(raycastOrigin, raycastDirection * 2, Color.green);
 
@@ -43,14 +43,20 @@ public class DigandSneak : MonoBehaviour
                 cCollider.enabled = false;
                 capCollider.enabled = true;
             }
-            if (!hit & velocityMagnitude < .1)
+            if (!hit & velocityMagnitude < 1)
             {
+                anim.enabled = false;
                 rend.sprite = thisSprite;
+            }
+            else 
+            {
+                anim.enabled = true;
             }
 
 
             if (hit.collider != null)
             {
+                isDigging = true;
                 anim.Play("Dig");
                 Destroy(hit.collider.gameObject);
 
@@ -58,6 +64,7 @@ public class DigandSneak : MonoBehaviour
         }
         else
         {
+            anim.enabled = true;
             isDigging = false;
             cCollider.enabled = true;
             capCollider.enabled = false;
