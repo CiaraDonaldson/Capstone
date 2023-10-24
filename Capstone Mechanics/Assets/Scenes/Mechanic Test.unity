@@ -564,6 +564,14 @@ PrefabInstance:
       propertyPath: dust
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8391183920730606033, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
+      propertyPath: moveForce
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8391183920730606033, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
+      propertyPath: sneakForce
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8391183920851487686, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.58
@@ -583,6 +591,10 @@ PrefabInstance:
     - target: {fileID: 8391183921164731611, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: jumpForce
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8391183921164731611, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
+      propertyPath: walkForce
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8391183921164731615, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: flyForce

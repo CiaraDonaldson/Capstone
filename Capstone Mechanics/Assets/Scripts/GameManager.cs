@@ -38,6 +38,18 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("Credits");
     }
+    public void startOptions()
+    {
+        SceneManager.LoadScene("Options");
+    }
+    public void startControls()
+    {
+        SceneManager.LoadScene("Controls");
+    }
+    public void startTitle()
+    {
+        SceneManager.LoadScene("Title");
+    }
     public void addHOrb()
     {
         hOrbs = hOrbs + 1;

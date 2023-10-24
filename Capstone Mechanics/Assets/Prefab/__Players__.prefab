@@ -11432,6 +11432,7 @@ GameObject:
   - component: {fileID: 8391183920174092061}
   - component: {fileID: 8391183920174092129}
   - component: {fileID: 8391183920174092128}
+  - component: {fileID: 1830382502939857456}
   m_Layer: 0
   m_Name: HawkTether
   m_TagString: Untagged
@@ -11447,12 +11448,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8391183920174092062}
   m_LocalRotation: {x: -0, y: -0, z: 0.7085315, w: 0.7056792}
-  m_LocalPosition: {x: -5.04, y: -0.71, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.32403743, y: 0.32403743, z: 0.32403743}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8391183920538989268}
-  m_RootOrder: 0
+  m_Father: {fileID: 8391183921164731610}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.231}
 --- !u!212 &8391183920174092130
 SpriteRenderer:
@@ -11542,7 +11543,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 1}
-  m_ConnectedAnchor: {x: 0.065965176, y: -0.7113071}
+  m_ConnectedAnchor: {x: -0.3240347, y: -0.0013071139}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -11567,6 +11568,20 @@ CapsuleCollider2D:
   m_Offset: {x: -0.038905345, y: 0.065524824}
   m_Size: {x: 0.32502922, y: 0.5977076}
   m_Direction: 0
+--- !u!114 &1830382502939857456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8391183920174092062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 765e21d3516574a4e898c21d57500629, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hawk: {fileID: 8391183921164731601}
+  savePos: {x: 0, y: 0}
 --- !u!1 &8391183920538989271
 GameObject:
   m_ObjectHideFlags: 0
@@ -11595,7 +11610,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8391183920174092131}
   - {fileID: 8391183920851487686}
   m_Father: {fileID: 8391183921385032736}
   m_RootOrder: 2
@@ -11857,7 +11871,7 @@ GameObject:
   - component: {fileID: 8391183920851487688}
   - component: {fileID: 8391183920851487687}
   m_Layer: 0
-  m_Name: FowTether
+  m_Name: FoxTether
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11876,7 +11890,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8391183920538989268}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.231}
 --- !u!212 &8391183920851487690
 SpriteRenderer:
@@ -12032,6 +12046,7 @@ Transform:
   m_Children:
   - {fileID: 6568106107288803482}
   - {fileID: 1218965011411777764}
+  - {fileID: 8391183920174092131}
   m_Father: {fileID: 8391183921385032736}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

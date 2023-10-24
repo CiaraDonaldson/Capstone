@@ -33,11 +33,8 @@ public class Taunt : MonoBehaviour
             isHolding = false;
             playerToHold.position = chain.position;
 
+            StartCoroutine(PullHawkUpAndEnableCollider());
         }
-    }
-
-    void FixedUpdate()
-    {
         if (isHolding)
         {
             // Calculate the desired position above the holder.
@@ -45,7 +42,14 @@ public class Taunt : MonoBehaviour
 
             // Move the held player to the desired position.
             playerToHold.position = holdPosition;
+        }
+       
+    }
 
+    void FixedUpdate()
+    {
+        if (isHolding)
+        {
             Hawk.GetComponent<CapsuleCollider2D>().enabled = false;
             Hawk.GetComponent<Carry>().enabled = false;
             Hawk.GetComponent<Fly>().enabled = false;
@@ -54,11 +58,30 @@ public class Taunt : MonoBehaviour
         }
         else 
         {
-            Hawk.GetComponent<CapsuleCollider2D>().enabled = true;
+            //Hawk.GetComponent<CapsuleCollider2D>().enabled = true;
             Hawk.GetComponent<Carry>().enabled = true;
             Hawk.GetComponent<Fly>().enabled = true;
             Hawk.GetComponent<Scan>().enabled = true;
 
+        }
+    }
+    IEnumerator PullHawkUpAndEnableCollider()
+    {
+        // Check if the hawk is one unit below the fox.
+        if (Mathf.Abs(Hawk.transform.position.y - this.transform.position.y) <= 1.0f)
+        {
+            // Pull the hawk up by 3 units.
+            Hawk.transform.Translate(Vector3.up * 1.5f);
+
+            // Wait for one second.
+            yield return new WaitForSeconds(.1f);
+
+            // Enable the hawk's collider.
+            Hawk.GetComponent<CapsuleCollider2D>().enabled = true;
+        }
+        else
+        {
+            Hawk.GetComponent<CapsuleCollider2D>().enabled = true;
         }
     }
 }
