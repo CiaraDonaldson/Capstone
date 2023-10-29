@@ -22,11 +22,13 @@ public class Scan : MonoBehaviour
     private Vector3 hawkOriginalPosition;
     private float cameraOriginalSize = 15f;
     private bool isZoomedOut = false;
+    private Animator anim;
+
     void Start()
     {        
         mainCamera = Camera.main;
 
-       
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         Fox = GameObject.Find("Fox");
         frb = GameObject.Find("Fox").GetComponent<Rigidbody2D>();
@@ -66,6 +68,7 @@ public class Scan : MonoBehaviour
                 // Move the character up.
                 transform.position = Vector3.up * 3;
 
+                anim.Play("Scan");
                 //check if position is correct to continue
                 if (orbs[0].transform.position.z > -5f)
                 {

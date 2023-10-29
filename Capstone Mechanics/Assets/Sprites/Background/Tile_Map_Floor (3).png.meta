@@ -1,0 +1,2287 @@
+fileFormatVersion: 2
+guid: 10e2d3c7f8f286b4f9f7e8d1ebc61913
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_12
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 860
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f17511f73cd9d741a5393d11bfc3b11
+      internalID: -1000928855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_13
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 860
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5f13aba85e1a04c8a6636d0b8815b1
+      internalID: -800465484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_14
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 860
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b71d644e9f83c43875ce8e7f5a7ab1
+      internalID: -2050064420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_15
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 860
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133d191f229016245937fd9457ee302a
+      internalID: -1321392645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_16
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 860
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f2aa2a815c75a47acbeb1c14ca2231
+      internalID: 265648639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_17
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 860
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b302944f5d061488a03c26dac7dd08
+      internalID: 64769853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_18
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 860
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656478d25aaf75d4880dafc931db2ec1
+      internalID: -334946088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_19
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 860
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897f8b2cc45869140b84684039c3382b
+      internalID: -1296060073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_20
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 860
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02bddc83022dada4c9e8b95891e835e9
+      internalID: -408989835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_21
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 860
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f660299bb4e6a4089787875fc03906
+      internalID: -39612744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_23
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 860
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062c49b41a826c64a80bb07483f89891
+      internalID: 918243107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_24
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 780
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9debfb635be69da4ca47036c4ebc4910
+      internalID: 1818990792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_26
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 780
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d38b04f831864ca4cab9f1cef8d75690
+      internalID: -1363536551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_27
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 780
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645c393f3ad2b1c4bbd2a798ce6ed824
+      internalID: 305159718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_29
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 780
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330844f983fb3e44c98222dcf71bb251
+      internalID: 1278797196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_30
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 780
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1059f30aa7d53ef4d9a8b4bd8f13bfd5
+      internalID: 1456398694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_32
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 780
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2956ef187b3e14dafb3eb284415a09
+      internalID: 1428835864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_33
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 780
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db40bc6da709e04f83ee635451334e1
+      internalID: -355400630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_35
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 780
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183d4277422236640b75a2b2c7cc55fb
+      internalID: 1876316189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_36
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 700
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb30ab054268e44bb4e1f562cc6b509
+      internalID: 742747357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_37
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 700
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1d480f13d64b14ea01211e58da2a5a
+      internalID: 2053961996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_38
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 700
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a782716949d96884ca8a19cb3619e004
+      internalID: -1731143495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_39
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 700
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12553c9d57ebee94b8bbc34adf0668ab
+      internalID: 1738089770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_40
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 700
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442c946c00ae2b14e8a05b83fc02caaa
+      internalID: 366501549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_41
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 700
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2baa73688a714614b99cf3b8c8955227
+      internalID: 2079080225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_42
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 700
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e8b212d4dc7e54099543043a8e485e
+      internalID: 959127307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_43
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 700
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1944d8663ae701c4f9f5932fed8346ca
+      internalID: -61158149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_44
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 700
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b0b03ff13206141b34f2efc64ad3e5
+      internalID: -1646142479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_45
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 700
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28d1e414b6388048b8d471fa76d7bdf
+      internalID: -110221289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_46
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 700
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd7009c187c095408416825fe8c0e57
+      internalID: 1203247170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_47
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 700
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ac5b03031296e4894157fbff38d349
+      internalID: 115913844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_49
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 620
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab268d4c84135eb439949d87da7f58ec
+      internalID: 1355715776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_50
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 620
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c9d773d0dc15447897c7410f7e6c74
+      internalID: -1632005475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_51
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 620
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d612a026f7a6494581b65b72aae9d75
+      internalID: 1794382733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_52
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 620
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fbbe804604848548b6e90989c221f63
+      internalID: 1693139847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_54
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 620
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea4f26ed53d41a499482e54d4c93680
+      internalID: -1851620748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_55
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 620
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5223f796039024eab6bb80f664ed6d
+      internalID: 860553179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_57
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 620
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954550ac652411c46b064ca3e309c94c
+      internalID: 1589468595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_58
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 620
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91142ca2416a4d34886b425610c44c71
+      internalID: 1965089296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_60
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 540
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a900c7fd54dcf41a6d9dfb0aef632f
+      internalID: -709159354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_61
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 540
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31821df93c53ee14e8e9bbb6656b6110
+      internalID: 1777277684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_62
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 540
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f705cc225bc0a5e4fa519c32a7e312b5
+      internalID: -462533033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_64
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 540
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 758eb7f94c2db5c4c9c3177e336f7164
+      internalID: -678962496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_65
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 540
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e995ff5b450c9f4595cf081ad0ab4eb
+      internalID: 571354452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_67
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 540
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc65308c1cd951b428e056cd4c9835a9
+      internalID: 59949408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_68
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 540
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10cd2b086e321a449b282d16ecdda0d
+      internalID: 1249312949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_71
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 460
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3bb80f2784b1214bb1c4685cfcf608e
+      internalID: -1130837022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_72
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 460
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14c1c3e8e5e0304288bc40b57dbf550
+      internalID: -390079285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_73
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 460
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0bd801c12e6279458b795fbb106b92b
+      internalID: 1909028242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_74
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 460
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c03e699e5571243b2291eb4ba77efb
+      internalID: -1042200013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_75
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 460
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d47e4d663101943adc470e0b7d5dab
+      internalID: -1744330726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_76
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 460
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7016d7703f3cc004dabd852035469be0
+      internalID: -543915854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_77
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 460
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 100893d9764affe44b9bc241bf042470
+      internalID: -518451291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_78
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 460
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c8d7051293bc243a51fe092c95a591
+      internalID: -1565407249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_82
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 380
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496b7114cdf61da43ba99f6aa47d7499
+      internalID: 147126149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_83
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 380
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dcead763b515f843b264dd1a406d498
+      internalID: -16955157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_84
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 380
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a576c26c138b94eaf1b150fba8df60
+      internalID: -2025054257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_85
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 380
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad7858d7420bf64ca1bdd1ee4d9ac8e
+      internalID: 1287351597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_86
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 380
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64efd2a611b723543acb66b15a87d99f
+      internalID: 1236921813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_87
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 380
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58595fae1afe2fc488230eee2c455b9b
+      internalID: -459679734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_88
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 380
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb83e8bed29a1364083daeb07ab276a6
+      internalID: 2052612068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_89
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 380
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c1d487898c1fd4ea9497011ac1a8a2
+      internalID: -1316146137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_91
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 380
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e66babc22b2cf4d898ebde92d93d81
+      internalID: 1267926122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_93
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 300
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826a55a65a8ca5c4a9cb0153f1b3e8c7
+      internalID: 1526269992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_94
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 300
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137fdcc0a6a03d0479e51181e6c4862d
+      internalID: -291371038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_95
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 300
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69c5c730c5381e40b5840c29d54225b
+      internalID: -1457228843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_96
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 300
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5c73b02a5bdbb49a8c9084930a4b33
+      internalID: 1552003166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_97
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 300
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba00c7a44bd96d4496d946e27c2601a
+      internalID: -1274891367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_98
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 300
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d33cb0118a77f42be14743d693ff95
+      internalID: -1085458995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_99
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 300
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdfbca35f7bfb9a4c8c3da845dbc79ed
+      internalID: 2005374117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_100
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 300
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b8f36fdb7c59943868de830f804279
+      internalID: -1658763180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_102
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 300
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4429cbcbd386d3e45813624a980b836a
+      internalID: 1423994233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_103
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 220
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3946c19ab3f63548850731f8e3cd68e
+      internalID: -177965098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_104
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 220
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f4b1e9824ceaf49aa7381d2d1eab38
+      internalID: 1462759430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_105
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 220
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19e25ec7857fa44c9c794804780b66d
+      internalID: -160453946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_106
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 220
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d67e209e386e27341849d867a94ec675
+      internalID: 171391933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_107
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 220
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5965b80e6ef6b4596d94233907d7fc
+      internalID: 2121518355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_108
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 220
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f8435f4c6da6341840615dd1f0b538
+      internalID: 1188020037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_109
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 220
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff0f40b0cf50374091bd7eb794886e8
+      internalID: -226953987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_110
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 220
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a2f6eb664365f41aa2fca39928aaad
+      internalID: 2095454903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_111
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 220
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251ff942271458443ac18ca146678364
+      internalID: -2015798533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_112
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 220
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fa23170e88c2141bea434d0e5c1ea1
+      internalID: -136994584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_113
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 220
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4ad2fb6dd85bd4db18218200df5d45
+      internalID: -1167526655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_114
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 140
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6fc17b2a2578641a03abbc9889a6a8
+      internalID: 2030527646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_116
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 140
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4238b421247adf542bef42491903ad7e
+      internalID: 1586572205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_117
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 140
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3f9222a29dc3849a70746a0907ff02
+      internalID: -672297890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_118
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 140
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec09a5a46409c3f428404946c5bec68e
+      internalID: -419850474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_119
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 140
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f6ccbabf083c041bc2a8942d4024fb
+      internalID: -864328353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_120
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 140
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e410121a10cf6d94a8f6472691b1e326
+      internalID: 1784253460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_123
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 140
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478252851e20eac44afe097472edf0da
+      internalID: 1771806086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_125
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 60
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f052937acae7023469b14892ab7f1ae0
+      internalID: 710280843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_126
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 60
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed43fa936b93c6748924b341b2364d9e
+      internalID: -1683116893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_127
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 60
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703c8b775d23ad24c9553310356b787b
+      internalID: 304210033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_130
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 60
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486bdb2d88dac0b4489e8f7368b4ae37
+      internalID: 934282350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_131
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 60
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce88f85189ba34b40af6d6b0ed20caac
+      internalID: 34942970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Floor (3)_134
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 60
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59143dd67c3a8534d9ab595c59f8325e
+      internalID: 809290866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Tile_Map_Floor (3)_129: -612956542
+      Tile_Map_Floor (3)_35: 1876316189
+      Tile_Map_Floor (3)_75: -1744330726
+      Tile_Map_Floor (3)_99: 2005374117
+      Tile_Map_Floor (3)_51: 1794382733
+      Tile_Map_Floor (3)_5: -1721477145
+      Tile_Map_Floor (3)_97: -1274891367
+      Tile_Map_Floor (3)_3: -2113085495
+      Tile_Map_Floor (3)_37: 2053961996
+      Tile_Map_Floor (3)_115: -92441345
+      Tile_Map_Floor (3)_0: -1098788968
+      Tile_Map_Floor (3)_100: -1658763180
+      Tile_Map_Floor (3)_123: 1771806086
+      Tile_Map_Floor (3)_96: 1552003166
+      Tile_Map_Floor (3)_12: -1000928855
+      Tile_Map_Floor (3)_108: 1188020037
+      Tile_Map_Floor (3)_80: 1143126296
+      Tile_Map_Floor (3)_31: -1006849898
+      Tile_Map_Floor (3)_53: 426259579
+      Tile_Map_Floor (3)_20: -408989835
+      Tile_Map_Floor (3)_26: -1363536551
+      Tile_Map_Floor (3)_30: 1456398694
+      Tile_Map_Floor (3)_46: 1203247170
+      Tile_Map_Floor (3)_101: 2009090745
+      Tile_Map_Floor (3)_6: 1585770493
+      Tile_Map_Floor (3)_47: 115913844
+      Tile_Map_Floor (3)_107: 2121518355
+      Tile_Map_Floor (3)_105: -160453946
+      Tile_Map_Floor (3)_65: 571354452
+      Tile_Map_Floor (3)_84: -2025054257
+      Tile_Map_Floor (3)_13: -800465484
+      Tile_Map_Floor (3)_127: 304210033
+      Tile_Map_Floor (3)_14: -2050064420
+      Tile_Map_Floor (3)_90: 1309974773
+      Tile_Map_Floor (3)_109: -226953987
+      Tile_Map_Floor (3)_112: -136994584
+      Tile_Map_Floor (3)_40: 366501549
+      Tile_Map_Floor (3)_62: -462533033
+      Tile_Map_Floor (3)_60: -709159354
+      Tile_Map_Floor (3)_74: -1042200013
+      Tile_Map_Floor (3)_131: 34942970
+      Tile_Map_Floor (3)_122: 301830116
+      Tile_Map_Floor (3)_58: 1965089296
+      Tile_Map_Floor (3)_34: -33342440
+      Tile_Map_Floor (3)_66: 1333679574
+      Tile_Map_Floor (3)_69: -1852126748
+      Tile_Map_Floor (3)_82: 147126149
+      Tile_Map_Floor (3)_102: 1423994233
+      Tile_Map_Floor (3)_98: -1085458995
+      Tile_Map_Floor (3)_104: 1462759430
+      Tile_Map_Floor (3)_15: -1321392645
+      Tile_Map_Floor (3)_78: -1565407249
+      Tile_Map_Floor (3)_103: -177965098
+      Tile_Map_Floor (3)_130: 934282350
+      Tile_Map_Floor (3)_25: -163255020
+      Tile_Map_Floor (3)_67: 59949408
+      Tile_Map_Floor (3)_8: -834988513
+      Tile_Map_Floor (3)_71: -1130837022
+      Tile_Map_Floor (3)_16: 265648639
+      Tile_Map_Floor (3)_33: -355400630
+      Tile_Map_Floor (3)_29: 1278797196
+      Tile_Map_Floor (3)_39: 1738089770
+      Tile_Map_Floor (3)_132: -1555544340
+      Tile_Map_Floor (3)_11: 2002914009
+      Tile_Map_Floor (3)_1: -649151086
+      Tile_Map_Floor (3)_120: 1784253460
+      Tile_Map_Floor (3)_77: -518451291
+      Tile_Map_Floor (3)_50: -1632005475
+      Tile_Map_Floor (3)_42: 959127307
+      Tile_Map_Floor (3)_57: 1589468595
+      Tile_Map_Floor (3)_134: 809290866
+      Tile_Map_Floor (3)_113: -1167526655
+      Tile_Map_Floor (3)_95: -1457228843
+      Tile_Map_Floor (3)_28: 1610828297
+      Tile_Map_Floor (3)_124: 1153489500
+      Tile_Map_Floor (3)_118: -419850474
+      Tile_Map_Floor (3)_93: 1526269992
+      Tile_Map_Floor (3)_7: -1432344722
+      Tile_Map_Floor (3)_18: -334946088
+      Tile_Map_Floor (3)_135: -1383066541
+      Tile_Map_Floor (3)_70: 101446390
+      Tile_Map_Floor (3)_88: 2052612068
+      Tile_Map_Floor (3)_68: 1249312949
+      Tile_Map_Floor (3)_24: 1818990792
+      Tile_Map_Floor (3)_2: 1612443601
+      Tile_Map_Floor (3)_41: 2079080225
+      Tile_Map_Floor (3)_73: 1909028242
+      Tile_Map_Floor (3)_128: -1638134075
+      Tile_Map_Floor (3)_64: -678962496
+      Tile_Map_Floor (3)_110: 2095454903
+      Tile_Map_Floor (3)_117: -672297890
+      Tile_Map_Floor (3)_17: 64769853
+      Tile_Map_Floor (3)_23: 918243107
+      Tile_Map_Floor (3)_106: 171391933
+      Tile_Map_Floor (3)_59: 1461446991
+      Tile_Map_Floor (3)_133: -33059048
+      Tile_Map_Floor (3)_63: -568340949
+      Tile_Map_Floor (3)_81: -817842795
+      Tile_Map_Floor (3)_114: 2030527646
+      Tile_Map_Floor (3)_126: -1683116893
+      Tile_Map_Floor (3)_56: 2117308257
+      Tile_Map_Floor (3)_116: 1586572205
+      Tile_Map_Floor (3)_55: 860553179
+      Tile_Map_Floor (3)_27: 305159718
+      Tile_Map_Floor (3)_48: 1538269633
+      Tile_Map_Floor (3)_32: 1428835864
+      Tile_Map_Floor (3)_87: -459679734
+      Tile_Map_Floor (3)_94: -291371038
+      Tile_Map_Floor (3)_91: 1267926122
+      Tile_Map_Floor (3)_9: 1933406211
+      Tile_Map_Floor (3)_36: 742747357
+      Tile_Map_Floor (3)_43: -61158149
+      Tile_Map_Floor (3)_19: -1296060073
+      Tile_Map_Floor (3)_79: 965721385
+      Tile_Map_Floor (3)_52: 1693139847
+      Tile_Map_Floor (3)_86: 1236921813
+      Tile_Map_Floor (3)_92: -1770574629
+      Tile_Map_Floor (3)_38: -1731143495
+      Tile_Map_Floor (3)_111: -2015798533
+      Tile_Map_Floor (3)_121: -601861196
+      Tile_Map_Floor (3)_21: -39612744
+      Tile_Map_Floor (3)_22: -223453111
+      Tile_Map_Floor (3)_44: -1646142479
+      Tile_Map_Floor (3)_89: -1316146137
+      Tile_Map_Floor (3)_83: -16955157
+      Tile_Map_Floor (3)_4: 185819672
+      Tile_Map_Floor (3)_10: -893162747
+      Tile_Map_Floor (3)_125: 710280843
+      Tile_Map_Floor (3)_85: 1287351597
+      Tile_Map_Floor (3)_76: -543915854
+      Tile_Map_Floor (3)_61: 1777277684
+      Tile_Map_Floor (3)_72: -390079285
+      Tile_Map_Floor (3)_119: -864328353
+      Tile_Map_Floor (3)_54: -1851620748
+      Tile_Map_Floor (3)_45: -110221289
+      Tile_Map_Floor (3)_49: 1355715776
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

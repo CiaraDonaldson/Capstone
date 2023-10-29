@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Carry : MonoBehaviour
 {
-    public KeyCode carryKey = KeyCode.E;  
+    public KeyCode carryKey = KeyCode.S;  
     public float carryForce = 20f;           
     public float flyForce = 25f;           
     public Rigidbody2D playerToCarry;
@@ -14,15 +14,19 @@ public class Carry : MonoBehaviour
     public GameObject fDust;
 
     private FixedJoint2D joint;
-    private bool isCarrying = false;
+    public bool isCarrying = false;
     private Rigidbody2D rb;
     private BoxCollider2D box;
+    private Animator anim;
+    private bool isFacingRight = true;
     void Start()
     {
         fDust = GameObject.Find("FDust");
         rb = GetComponent<Rigidbody2D>();
         Fox = GameObject.Find("Fox");
         box = GetComponent<BoxCollider2D>();
+        anim = GetComponent<Animator>();
+
         // A FixedJoint2D component to connect the two players.
         joint = playerToCarry.gameObject.AddComponent<FixedJoint2D>();
         joint.connectedBody = GetComponent<Rigidbody2D>();
@@ -37,13 +41,13 @@ public class Carry : MonoBehaviour
         {
             Transform tranFox = Fox.GetComponent<Transform>();
             float distance = GetDistance(tranFox.position, this.transform.position);
-            if (distance < 3)
-            {
+            if (distance < 2)
+            {               
                 ToggleCarry();
             }           
             
         }
-
+        
         if (isCarrying)
         {
             //rb.gravityScale = 0;
@@ -53,6 +57,15 @@ public class Carry : MonoBehaviour
             Vector2 carryDirection = (playerToCarry.transform.position - transform.position).normalized;
             rb.AddForce(carryDirection * carryForce);
 
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                FlipCharacter(false);  // Flip to face left.
+            }
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                FlipCharacter(true);   // Flip to face right.
+            }
+
             // Apply upward force for flying.
             if (Input.GetKeyDown(KeyCode.W))
             {
@@ -60,13 +73,17 @@ public class Carry : MonoBehaviour
                 rb.AddForce(Vector3.up * flyForce, ForceMode2D.Impulse);
             }
 
+            Transform tranFox = Fox.GetComponent<Transform>();
+            float distance = GetDistance(tranFox.position, this.transform.position);
+            if (distance > 2)
+            {
+                ToggleCarry();
+            }
 
         }
         else 
         {
             playerToCarry.gravityScale = 2;
-           
-
         }
     }
 
@@ -74,51 +91,48 @@ public class Carry : MonoBehaviour
     {
         return Vector3.Distance(fPos, hPos);
     }
-   /* private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Fox"))
-        {
-            isTouching = true;
-        }
-        else 
-        {
-            isTouching = false;
-        }
-    }*/
+   
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Fox"))
-        {
-            isTouching = true;
-        }
-        else
-        {
-            isTouching = false;
-        }
-    }
     void ToggleCarry()
-    {
-        
+    {        
         isCarrying = !isCarrying;
 
         if (isCarrying)
         {
+            this.transform.Translate(Vector3.up * 1f);
+
             joint.enabled = true;
             Fox.GetComponent<Taunt>().enabled = false;
+            Fox.GetComponent<DigandSneak>().enabled = false;
             fDust.SetActive(false);
             this.GetComponent<Scan>().enabled = false;
             this.GetComponent<Fly>().enabled = false;
+
+            anim.Play("Carry");
+            Fox.GetComponent<Animator>().Play("Carried");
         }
         else
         {
             joint.enabled = false;
             Fox.GetComponent<Taunt>().enabled = true;
+            Fox.GetComponent<DigandSneak>().enabled = true;
             fDust.SetActive(true);
             this.GetComponent<Scan>().enabled = true;
             this.GetComponent<Fly>().enabled = true;
+           
         }
     }
+
+    void FlipCharacter(bool faceRight)
+    {
+        // Flip the character's scale based on the direction.
+        Vector3 newScale = Fox.transform.localScale;
+        newScale.x = faceRight ? 1 : -1;
+        Fox.transform.localScale = newScale;
+
+        isFacingRight = faceRight;
+    }
+
     void CreateDust()
     {
         dust.Play();

@@ -36,19 +36,34 @@ public class HawkController : MonoBehaviour
             FlipCharacter(true);   // Flip to face right.
         }
 
-      //  if (Input.GetKeyDown(KeyCode.S))
-      //  {
-     //       JumpDown();
-      //  }
+        //  if (Input.GetKeyDown(KeyCode.S))
+        //  {
+        //       JumpDown();
+        //  }
         if (Input.GetKey(KeyCode.A))
         {
-            anim.Play("Fly");
+            
             JumpLeft();
-        }
+            if (!this.GetComponent<Carry>().isCarrying)
+            {
+                anim.Play("Fly");
+            }
+         }
         if (Input.GetKey(KeyCode.D))
         {
-            anim.Play("Fly");
             JumpRight();
+            if (!this.GetComponent<Carry>().isCarrying)
+            {
+                anim.Play("Fly");
+            }
+        }
+
+        if(this.GetComponent<Rigidbody2D>().velocity.y == 0 && this.GetComponent<Rigidbody2D>().velocity.x == 0)
+        {
+            if (!this.GetComponent<Carry>().isCarrying)
+            {
+                anim.Play("Idle");
+            }
         }
     }
  

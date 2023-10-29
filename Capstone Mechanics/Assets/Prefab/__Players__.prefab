@@ -11647,7 +11647,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8391183920730606028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.52, y: -1.83, z: 0}
+  m_LocalPosition: {x: 2.52, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11721,9 +11721,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12562674, y: -0.7141176}
+  m_Offset: {x: 0.12562674, y: -0.8011348}
   serializedVersion: 2
-  m_Radius: 0.6811258
+  m_Radius: 0.76814306
 --- !u!70 &8391183920730606036
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -11980,7 +11980,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.028989185, y: -0.96336424}
-  m_ConnectedAnchor: {x: 0.2529993, y: -0.43999994}
+  m_ConnectedAnchor: {x: 0.2529993, y: -2.27}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -12243,13 +12243,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carryKey: 115
-  carryForce: 20
-  flyForce: 25
+  carryForce: 35
+  flyForce: 35
   playerToCarry: {fileID: 8391183920730606029}
   isTouching: 0
   Fox: {fileID: 8391183920730606028}
   dust: {fileID: 6764734075545439192}
   fDust: {fileID: 3001040409989993968}
+  isCarrying: 0
 --- !u!114 &4307509696873051539
 MonoBehaviour:
   m_ObjectHideFlags: 0
