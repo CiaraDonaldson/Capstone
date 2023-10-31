@@ -60,7 +60,7 @@ public class Scan : MonoBehaviour
 
 
             }
-            else if (keyPressStartTime >= 5f)
+            else if (keyPressStartTime >= 5f && Fox.GetComponent<Rigidbody2D>().velocity.x !> 0 | Fox.GetComponent<Rigidbody2D>().velocity.y !> 0 | Fox.GetComponent<Rigidbody2D>().velocity.x !< 0 | Fox.GetComponent<Rigidbody2D>().velocity.y !< 0)
             {
                 //rb.gravityScale = 0;
                 frb.isKinematic = true;
@@ -99,6 +99,7 @@ public class Scan : MonoBehaviour
             //set position
             Hawk.transform.position = chain.position;
 
+            anim.Play("Idle");
             //Reset Camera
             if (isZoomedOut)
             {
