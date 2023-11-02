@@ -23,6 +23,16 @@ public class Scan : MonoBehaviour
     private float cameraOriginalSize = 15f;
     private bool isZoomedOut = false;
     private Animator anim;
+    public float lerpSpeed = 10.0f;
+    private Renderer rend;
+
+
+    private float colorLerpDuration = 2.0f; // Duration for color interpolation.
+    private float colorLerpTimer = 0.0f;     // Timer for color interpolation.
+
+    private Color startColor = Color.white;  // Initial color.
+    private Color targetColor = Color.red;   // Target color.
+    private bool isLerpingColor = false;     // Flag to control color lerp.
 
     void Start()
     {        
@@ -32,7 +42,7 @@ public class Scan : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         Fox = GameObject.Find("Fox");
         frb = GameObject.Find("Fox").GetComponent<Rigidbody2D>();
-
+        rend = GetComponent<Renderer>();
 
         GameObject[] orbGameObjects = GameObject.FindGameObjectsWithTag("Orb");
 
@@ -46,11 +56,13 @@ public class Scan : MonoBehaviour
 
     void Update()
     {
-        
+        RemoveNullTransformsFromList();
+
+
         if (Input.GetKey(KeyCode.W))
         {
             keyPressStartTime += Time.deltaTime;
-
+            
             // Zoom Camera out
             if (keyPressStartTime == 5f && !isZoomedOut)
             {
@@ -60,8 +72,11 @@ public class Scan : MonoBehaviour
 
 
             }
-            else if (keyPressStartTime >= 5f && Fox.GetComponent<Rigidbody2D>().velocity.x !> 0 | Fox.GetComponent<Rigidbody2D>().velocity.y !> 0 | Fox.GetComponent<Rigidbody2D>().velocity.x !< 0 | Fox.GetComponent<Rigidbody2D>().velocity.y !< 0)
+            else if (keyPressStartTime >= 5f && Fox.GetComponent<Rigidbody2D>().velocity.x == 0 && Fox.GetComponent<Rigidbody2D>().velocity.y == 0)
             {
+                isLerpingColor = true;
+                colorLerpTimer = 0.0f;
+
                 //rb.gravityScale = 0;
                 frb.isKinematic = true;
 
@@ -89,10 +104,35 @@ public class Scan : MonoBehaviour
             {
                 hawkOriginalPosition = Hawk.transform.position;
             }
+
+
+
+            if (isLerpingColor)
+            {
+                // Increment the color lerp timer.
+                colorLerpTimer += Time.deltaTime;
+
+                // Calculate the lerp progress.
+                float lerpProgress = colorLerpTimer / colorLerpDuration;
+
+                // Perform color lerp between startColor and targetColor.
+                Color lerpedColor = Color.Lerp(startColor, targetColor, lerpProgress);
+
+                // Apply the lerped color to the object's renderer.
+                rend.material.color = lerpedColor;
+
+                // Check if color lerp is complete.
+                if (lerpProgress >= 1.0f)
+                {
+                    isLerpingColor = false;
+                    colorLerpTimer = 0.0f;
+                }
+            }
         }
        else if (Input.GetKeyUp(KeyCode.W))
         {
-           // rb.gravityScale = 1;
+            this.GetComponent<Renderer>().material.color = Color.white;
+            // rb.gravityScale = 1;
             frb.isKinematic = false;
             keyPressStartTime = 0f;
 
