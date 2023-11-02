@@ -590,11 +590,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8391183920730606033, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: moveForce
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8391183920730606033, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: sneakForce
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8391183920730606037, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: m_Enabled
@@ -678,7 +678,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8391183921164731611, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: walkForce
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8391183921164731615, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: dust
@@ -22367,7 +22367,7 @@ RectTransform:
   m_GameObject: {fileID: 2033131471}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.413286, y: 0.3087842, z: 0.97348}
+  m_LocalScale: {x: -6.413286, y: 0.3087842, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 895368760}
