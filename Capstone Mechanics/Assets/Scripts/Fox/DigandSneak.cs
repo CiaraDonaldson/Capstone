@@ -30,6 +30,7 @@ public class DigandSneak : MonoBehaviour
     {
         Vector3 raycastOrigin = transform.position;
         Vector3 raycastDirection = transform.forward;
+        
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
@@ -60,6 +61,11 @@ public class DigandSneak : MonoBehaviour
                 anim.Play("Dig");
                 Destroy(hit.collider.gameObject);
 
+            }
+
+            if (rb.velocity.x != 0)
+            {
+                anim.Play("Sneak");
             }
         }
         else

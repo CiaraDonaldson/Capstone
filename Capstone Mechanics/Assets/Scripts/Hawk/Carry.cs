@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Carry : MonoBehaviour
 {
-    public KeyCode carryKey = KeyCode.S;  
     public float carryForce = 20f;           
     public float flyForce = 25f;           
     public Rigidbody2D playerToCarry;
@@ -16,7 +15,6 @@ public class Carry : MonoBehaviour
     private FixedJoint2D joint;
     public bool isCarrying = false;
     private Rigidbody2D rb;
-    private BoxCollider2D box;
     private Animator anim;
     private bool isFacingRight = true;
     void Start()
@@ -24,7 +22,6 @@ public class Carry : MonoBehaviour
         fDust = GameObject.Find("FDust");
         rb = GetComponent<Rigidbody2D>();
         Fox = GameObject.Find("Fox");
-        box = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
 
         // A FixedJoint2D component to connect the two players.
@@ -37,7 +34,7 @@ public class Carry : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKeyDown(carryKey))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             Transform tranFox = Fox.GetComponent<Transform>();
             float distance = GetDistance(tranFox.position, this.transform.position);
@@ -54,8 +51,8 @@ public class Carry : MonoBehaviour
             playerToCarry.gravityScale = 0;
 
             // Apply carry force to move the carried player.
-            Vector2 carryDirection = (playerToCarry.transform.position - transform.position).normalized;
-            rb.AddForce(carryDirection * carryForce);
+            //Vector2 carryDirection = (playerToCarry.transform.position - transform.position).normalized;
+            //rb.AddForce(carryDirection * carryForce);
 
             if (Input.GetKeyDown(KeyCode.A))
             {

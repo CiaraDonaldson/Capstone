@@ -76,7 +76,7 @@ public class FoxController : MonoBehaviour
             rb.AddForce(Vector3.right * sneakForce, ForceMode2D.Impulse);
             anim.Play("Sneak");
         }
-        else 
+        else if(!Input.anyKey)
         {
             dust.Stop();
             anim.Play("Idle");

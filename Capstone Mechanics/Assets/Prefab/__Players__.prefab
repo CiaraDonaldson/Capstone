@@ -12187,10 +12187,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerRb: {fileID: 0}
-  walkForce: 5
+  walkForce: 3
   anim: {fileID: 0}
-  cCircle: {fileID: 8391183921164731604}
-  cCapsule: {fileID: 8391183921164731614}
+  cCircle: {fileID: 0}
+  cCapsule: {fileID: 0}
 --- !u!114 &8391183921164731615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12204,8 +12204,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerRb: {fileID: 0}
-  flyForce: 20
-  dust: {fileID: 6764734075545439192}
+  flyForce: 15
+  dust: {fileID: 0}
   capsule: {fileID: 0}
   box: {fileID: 0}
 --- !u!114 &8391183921164731608
@@ -12220,16 +12220,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff026c2df6c0bc4687cfa616f77723c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hawk: {fileID: 8391183921164731601}
-  Fox: {fileID: 8391183920730606028}
-  zoomOutSize: 30
-  rb: {fileID: 8391183921164731607}
-  frb: {fileID: 8391183920730606029}
-  requiredDuration: 3
-  chain: {fileID: 8391183920174092131}
+  Hawk: {fileID: 0}
+  Fox: {fileID: 0}
+  zoomOutSize: 5
+  rb: {fileID: 0}
+  frb: {fileID: 0}
+  requiredDuration: 5
+  chain: {fileID: 0}
   virtualCamera: {fileID: 0}
   orbs: []
   keyPressStartTime: 0
+  lerpSpeed: 10
 --- !u!114 &8391183921164731609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12243,11 +12244,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carryKey: 115
-  carryForce: 35
-  flyForce: 35
-  playerToCarry: {fileID: 8391183920730606029}
+  carryForce: 25
+  flyForce: 30
+  playerToCarry: {fileID: 0}
   isTouching: 0
-  Fox: {fileID: 8391183920730606028}
+  Fox: {fileID: 0}
   dust: {fileID: 6764734075545439192}
   fDust: {fileID: 3001040409989993968}
   isCarrying: 0

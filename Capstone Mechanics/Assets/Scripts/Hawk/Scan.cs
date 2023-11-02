@@ -55,18 +55,18 @@ public class Scan : MonoBehaviour
     }
 
     void Update()
-    {
-        RemoveNullTransformsFromList();
-
+    {      
 
         if (Input.GetKey(KeyCode.W))
         {
             keyPressStartTime += Time.deltaTime;
-            
+            RemoveNullTransformsFromList();
+
             // Zoom Camera out
             if (keyPressStartTime == 5f && !isZoomedOut)
             {
                 isZoomedOut = true;
+
                 // Set the new orthographic size (or FOV)
                 virtualCamera.m_Lens.OrthographicSize = zoomOutSize;
 
@@ -90,15 +90,12 @@ public class Scan : MonoBehaviour
                     //Change position of orbs
                     foreach (Transform orb in orbs)
                     {
-                        //Vector3 newPosition = orb.position + -Vector3.forward * 5f;
+                        
                         orb.position += -Vector3.forward * 6f;
-                        //Color check
-                        //SpriteRenderer renderer = orb.GetComponent<SpriteRenderer>();
-                        //renderer.color = Random.ColorHSV();
+                      
                     }
                 }
-                // Change the layer of orbs to make them visible.
-                // ChangeLayerForOrbs(true);
+               
             }
             else 
             {

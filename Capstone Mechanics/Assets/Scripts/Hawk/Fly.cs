@@ -9,14 +9,12 @@ public class Fly : MonoBehaviour
     public ParticleSystem dust;
 
     public CapsuleCollider2D capsule;
-    public BoxCollider2D box;
 
     // Start is called before the first frame update
     void Start()
     {
         PlayerRb = GetComponent<Rigidbody2D>();
         capsule = GetComponent<CapsuleCollider2D>();
-        box = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
