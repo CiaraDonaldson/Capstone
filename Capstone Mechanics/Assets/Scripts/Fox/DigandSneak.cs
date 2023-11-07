@@ -39,6 +39,7 @@ public class DigandSneak : MonoBehaviour
             Debug.DrawRay(raycastOrigin, raycastDirection * 2, Color.green);
 
             float velocityMagnitude = rb.velocity.magnitude;
+
             if (!hit)
             {
                 cCollider.enabled = false;
@@ -63,7 +64,7 @@ public class DigandSneak : MonoBehaviour
 
             }
 
-            if (rb.velocity.x != 0)
+            if (rb.velocity.x != 0  && hit.collider == null)
             {
                 anim.Play("Sneak");
             }
