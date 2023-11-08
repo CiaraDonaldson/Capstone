@@ -5,7 +5,7 @@ using UnityEngine;
 public class Taunt : MonoBehaviour
 { 
     public Transform playerToHold;          
-    public float holdingHeight = 1.5f;    
+    public float holdingHeight = .5f;    
     public Transform chain;
     public  GameObject Hawk;
 
@@ -35,12 +35,13 @@ public class Taunt : MonoBehaviour
 
             StartCoroutine(PullHawkUpAndEnableCollider());
         }
+
         if (isHolding)
         {
             // Calculate the desired position above the holder.
             Vector3 holdPosition = transform.position + Vector3.up * holdingHeight;
-
-            // Move the held player to the desired position.
+            Hawk.GetComponent<Animator>().Play("Dive");
+                // Move the held player to the desired position.
             playerToHold.position = holdPosition;
         }
        

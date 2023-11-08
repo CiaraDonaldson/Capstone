@@ -59,12 +59,13 @@ public class DigandSneak : MonoBehaviour
             if (hit.collider != null)
             {
                 isDigging = true;
-                anim.Play("Dig");
+
+                StartCoroutine(WaitandPlay());
                 Destroy(hit.collider.gameObject);
 
             }
 
-            if (rb.velocity.x != 0  && hit.collider == null)
+            if (rb.velocity.x != 0  && isDigging == false)
             {
                 anim.Play("Sneak");
             }
@@ -76,6 +77,15 @@ public class DigandSneak : MonoBehaviour
             cCollider.enabled = true;
             capCollider.enabled = false;
 
+        }
+
+       
+
+        IEnumerator WaitandPlay()
+        {
+            anim.Play("Dig");
+            yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length + anim.GetCurrentAnimatorStateInfo(0).normalizedTime);
+            isDigging = false;
         }
     }
 }
