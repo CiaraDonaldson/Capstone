@@ -8,12 +8,12 @@ public class FlyingEnemy : MonoBehaviour
     public bool go = false;
     public Transform startingPoint;
     public Transform endingPoint;
-
+    public GameObject GameManager;
     private bool isFacingRight = true;
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameManager = GameObject.Find("GameManager");
     }
 
     // Update is called once per frame
@@ -59,6 +59,14 @@ public class FlyingEnemy : MonoBehaviour
         this.transform.localScale = newScale;
 
         isFacingRight = faceRight;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "Hawk" || collision.gameObject.name == "Fox")
+         {
+            GameManager.GetComponent<PlayerHealth>().SetHealth(-10);
+        }
     }
 
 }
