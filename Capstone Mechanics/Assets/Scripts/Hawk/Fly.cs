@@ -57,19 +57,6 @@ public class Fly : MonoBehaviour
         PlayerRb.AddForce(Vector3.up * flyForce, ForceMode2D.Impulse);
     }
 
-    /* private void OnTriggerEnter2D(Collider2D other)
-      {
-          if (other.CompareTag("Ground"))
-          {
-              capsule.enabled = true;
-          }
-          else
-          {
-              capsule.enabled = false;
-
-          }
-      }*/
-
     void CreateDust()
     {
         dust.Play();

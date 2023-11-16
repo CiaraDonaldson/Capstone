@@ -8,7 +8,7 @@ public class Taunt : MonoBehaviour
     public float holdingHeight = .5f;    
     public Transform chain;
     public  GameObject Hawk;
-
+    public GameObject Tether;
 
     private bool isHolding = false;
     private Vector3 originalPosition;
@@ -18,6 +18,7 @@ public class Taunt : MonoBehaviour
         originalPosition = playerToHold.position;
         //Hawk.GetComponent<Carry>();
         Hawk = GameObject.Find("Hawk");
+        Tether = GameObject.Find("Tether");
     }
 
     void Update()
@@ -41,9 +42,10 @@ public class Taunt : MonoBehaviour
             // Calculate the desired position above the holder.
             Vector3 holdPosition = transform.position + Vector3.up * holdingHeight;
             Hawk.GetComponent<Animator>().Play("Dive");
-                // Move the held player to the desired position.
+            // Move the held player to the desired position.
             playerToHold.position = holdPosition;
         }
+      
        
     }
 
@@ -55,6 +57,7 @@ public class Taunt : MonoBehaviour
             Hawk.GetComponent<Carry>().enabled = false;
             Hawk.GetComponent<Fly>().enabled = false;
             Hawk.GetComponent<Scan>().enabled = false;
+            Tether.SetActive(false);
 
         }
         else 
@@ -63,6 +66,7 @@ public class Taunt : MonoBehaviour
             Hawk.GetComponent<Carry>().enabled = true;
             Hawk.GetComponent<Fly>().enabled = true;
             Hawk.GetComponent<Scan>().enabled = true;
+            Tether.SetActive(true);
 
         }
     }

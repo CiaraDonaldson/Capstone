@@ -135,8 +135,10 @@ public class Scan : MonoBehaviour
 
             //set position
             Hawk.transform.position = chain.position;
-
-            anim.Play("Idle");
+            if (keyPressStartTime > 5)
+            {
+                anim.Play("Idle");
+            }
             //Reset Camera
             if (isZoomedOut)
             {
