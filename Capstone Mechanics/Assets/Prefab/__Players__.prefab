@@ -226,7 +226,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2463888333296147230}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -298,17 +298,17 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0, b: 0, a: 1}
-      key1: {r: 1, g: 0.2304776, b: 0, a: 1}
-      key2: {r: 0, g: 0, b: 0, a: 1}
+      key0: {r: 0, g: 0.8684211, b: 1, a: 1}
+      key1: {r: 1, g: 0.030927833, b: 0, a: 1}
+      key2: {r: 0.8313726, g: 0.46274513, b: 0.45098042, a: 1}
       key3: {r: 0, g: 0, b: 0, a: 1}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
-      ctime1: 65535
-      ctime2: 0
+      ctime1: 64957
+      ctime2: 65535
       ctime3: 0
       ctime4: 0
       ctime5: 0
@@ -345,11 +345,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69e6fb4b41bfd3647bda41bb7ce86270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startObject: {fileID: 8391183920851487686}
-  endObject: {fileID: 8391183920174092131}
+  startObject: {fileID: 8391183920730606032}
+  endObject: {fileID: 8391183921164731610}
   lineRenderer: {fileID: 0}
   numberOfPoints: 5
   gravity: 9.8
+  maxDistanceForCurve: 10.5
+  maxAlpha: 1
+  minAlpha: 0.3
 --- !u!50 &521244934804590369
 Rigidbody2D:
   serializedVersion: 4
@@ -11961,7 +11964,7 @@ Rigidbody2D:
   m_Mass: 5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -11979,10 +11982,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc21e9c5289475d44b26faddc79f8e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dust: {fileID: 2268428069679919365}
+  dust: {fileID: 0}
   rb: {fileID: 0}
-  moveForce: 5
-  sneakForce: 2
+  moveForce: 1
+  sneakForce: 0.5
   groundLayer:
     serializedVersion: 2
     m_Bits: 65
@@ -12002,7 +12005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerToHold: {fileID: 8391183921164731610}
-  holdingHeight: 1
+  holdingHeight: 0.5
   chain: {fileID: 8391183920174092131}
   Hawk: {fileID: 8391183921164731601}
   Tether: {fileID: 0}
@@ -12379,7 +12382,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.16192198, y: -0.34697652}
   m_AutoConfigureDistance: 0
-  m_Distance: 10
+  m_Distance: 11
   m_MaxDistanceOnly: 1
 --- !u!114 &8391183921164731611
 MonoBehaviour:
@@ -12393,11 +12396,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b8b57e4000f89f48be7f6b573ac8393, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerRb: {fileID: 0}
-  walkForce: 3
-  anim: {fileID: 0}
-  cCircle: {fileID: 0}
-  cCapsule: {fileID: 0}
+  PlayerRb: {fileID: 8391183921164731607}
+  walkForce: 1
+  anim: {fileID: 5395613376024856800}
+  cCircle: {fileID: 8391183921164731604}
+  cCapsule: {fileID: 8391183921164731604}
 --- !u!114 &8391183921164731615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12410,10 +12413,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7fde729889630b4cae75097ef10807d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerRb: {fileID: 0}
-  flyForce: 15
-  dust: {fileID: 0}
-  capsule: {fileID: 0}
+  PlayerRb: {fileID: 8391183921164731607}
+  flyForce: 30
+  dust: {fileID: 6764734075545439192}
+  capsule: {fileID: 8391183921164731614}
 --- !u!114 &8391183921164731608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12426,13 +12429,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff026c2df6c0bc4687cfa616f77723c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hawk: {fileID: 0}
-  Fox: {fileID: 0}
-  zoomOutSize: 5
+  Hawk: {fileID: 8391183921164731601}
+  Fox: {fileID: 8391183920730606028}
+  zoomOutSize: 35
   rb: {fileID: 0}
   frb: {fileID: 0}
   requiredDuration: 5
-  chain: {fileID: 0}
+  chain: {fileID: 8391183920174092131}
   virtualCamera: {fileID: 0}
   orbs: []
   keyPressStartTime: 0
@@ -12449,11 +12452,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 131f4d2eeccabda47b5fdd91961c3455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carryForce: 25
+  carryForce: 30
   flyForce: 30
-  playerToCarry: {fileID: 0}
+  playerToCarry: {fileID: 8391183920730606029}
   isTouching: 0
-  Fox: {fileID: 0}
+  Fox: {fileID: 8391183920730606028}
   dust: {fileID: 6764734075545439192}
   fDust: {fileID: 3001040409989993968}
   isCarrying: 0

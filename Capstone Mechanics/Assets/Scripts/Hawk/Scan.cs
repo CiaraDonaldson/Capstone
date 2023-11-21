@@ -55,12 +55,12 @@ public class Scan : MonoBehaviour
     }
 
     void Update()
-    {      
+    {
+        RemoveNullTransformsFromList();
 
         if (Input.GetKey(KeyCode.W))
         {
             keyPressStartTime += Time.deltaTime;
-            RemoveNullTransformsFromList();
 
             // Zoom Camera out
             if (keyPressStartTime == 5f && !isZoomedOut)
