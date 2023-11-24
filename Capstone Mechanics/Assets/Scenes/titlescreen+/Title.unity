@@ -1176,9 +1176,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3130635588401428609, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: startGame
+      - m_Target: {fileID: 3532447289540305711, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
+        m_TargetAssemblyTypeName: SceneSwitch, Assembly-CSharp
+        m_MethodName: Lvl1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

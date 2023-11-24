@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/titlescreen+/Options.unity
     guid: ec4c9a3911905324e8551b7ad6041aee
+  - enabled: 1
+    path: Assets/Scenes/lvls+/Map.unity
+    guid: fe0627a77c02cfa4f9e8b2d62d1786dc
+  - enabled: 1
+    path: Assets/Scenes/CutsceneTest.unity
+    guid: fd6e6722f0adce74e99ae2fbf15dc020
   m_configObjects: {}
