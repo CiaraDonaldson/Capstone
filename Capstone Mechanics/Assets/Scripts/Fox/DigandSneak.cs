@@ -7,6 +7,7 @@ public class DigandSneak : MonoBehaviour
     public float radius = 2f;
     public float digDepth = 1f;
     public LayerMask digLayer;
+    public LayerMask groundLayer;
     public bool isDigging = false;
     public CircleCollider2D cCollider;
     public CapsuleCollider2D capCollider;
@@ -14,6 +15,7 @@ public class DigandSneak : MonoBehaviour
     public Sprite thisSprite;
     public Rigidbody2D rb;
     public SpriteRenderer rend;
+    public bool inAir = false;
 
     // Start is called before the first frame update
     void Start()
@@ -36,10 +38,18 @@ public class DigandSneak : MonoBehaviour
         {
            
             RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, digDepth, digLayer);
+            RaycastHit2D hit2 = Physics2D.Raycast(transform.position, Vector2.down, digDepth, groundLayer);
             Debug.DrawRay(raycastOrigin, raycastDirection * 2, Color.green);
 
             float velocityMagnitude = rb.velocity.magnitude;
-
+            if (!hit && !hit2)
+            {
+                inAir = true;
+            }
+            else
+            {
+                inAir = false;
+            }
             if (!hit)
             {
                 cCollider.enabled = false;
@@ -55,7 +65,7 @@ public class DigandSneak : MonoBehaviour
                 anim.enabled = true;
             }
 
-
+        
             if (hit.collider != null)
             {
                 isDigging = true;
