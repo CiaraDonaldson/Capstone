@@ -12,12 +12,13 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI hText2;
     public int hOrbs = 0;
     public int fOrbs = 0;
+    public Canvas pauseMenuUI;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+     
     }
 
     // Update is called once per frame
@@ -28,27 +29,41 @@ public class GameManager : MonoBehaviour
         fText2.text = "Fox: " + fOrbs;
         hText2.text = "Hawk: " + hOrbs;
 
+        string sceneName = SceneManager.GetActiveScene().ToString();
+
+       /* if (sceneName != "Title" | !pauseMenuUI.enabled)
+        {
+            Cursor.visible = false;
+        }
+        else
+        {
+            Cursor.visible = true;
+        }*/
     }
 
     public void startGame()
     {
+       // Cursor.visible = true;
+
         SceneManager.LoadScene("Mechanic Test");
     }
     public void startCredit()
     {
+       // Cursor.visible = true;
+
         SceneManager.LoadScene("Credits");
     }
     public void startOptions()
     {
+       // Cursor.visible = true;
+
         SceneManager.LoadScene("Options");
     }
     public void startControls()
     {
+      //  Cursor.visible = true;
+
         SceneManager.LoadScene("Controls");
-    }
-    public void startTitle()
-    {
-        SceneManager.LoadScene("Title");
     }
     public void addHOrb()
     {

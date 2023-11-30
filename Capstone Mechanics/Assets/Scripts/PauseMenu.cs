@@ -47,6 +47,8 @@ public class PauseMenu : MonoBehaviour
     }
     void Pause()
     {
+        Cursor.visible = true;
+
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
@@ -61,6 +63,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void LoadMenu()
     {
+       // Cursor.visible = true;
         Time.timeScale = 1f;
         SceneManager.LoadScene("Title");
               
@@ -68,6 +71,7 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMap()
     {
+        //Cursor.visible = true;
         Time.timeScale = 1f;
         SceneManager.LoadScene("Map");
     }

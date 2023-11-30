@@ -154,11 +154,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 814570017}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -69, y: 490}
+  m_AnchoredPosition: {x: -200, y: 490}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &611872564
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -227.22748, y: 0, z: -432.24878, w: -136.93}
+  m_margin: {x: -64.82056, y: 0, z: -432.24878, w: -136.93}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -296,7 +296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -492, y: 200}
+  m_AnchoredPosition: {x: -550, y: 200}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &644919129
@@ -447,12 +447,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -491,10 +491,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1194475453}
-  - {fileID: 644919128}
   - {fileID: 2130678803}
+  - {fileID: 644919128}
   - {fileID: 611872563}
+  - {fileID: 1194475453}
   - {fileID: 1016833811}
   - {fileID: 965487482}
   m_Father: {fileID: 0}
@@ -588,9 +588,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3130635588401428609, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: startTitle
+      - m_Target: {fileID: 3089826482837696849, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: LoadMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -673,7 +673,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -610, y: 146}
+  m_AnchoredPosition: {x: -660, y: 146}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1016833812
@@ -696,7 +696,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\nWAD to move\r\nS to carry the fox\r\nHold W to scan\r\n\r"
+  m_text: "\n\u2190w \u2191a\u2191 d\u2192 \n To Move\r\n\nToggle S\n To Carry the
+    Fox\r\n\nHold w {5 Secs}\nTo Scan\r\n\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 991505cb5c5fb1e45a14a51ec826578a, type: 2}
   m_sharedMaterial: {fileID: 1869894409925117031, guid: 991505cb5c5fb1e45a14a51ec826578a, type: 2}
@@ -723,8 +724,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -759,7 +760,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -227.22748, y: 0, z: -335.5923, w: -362.4614}
+  m_margin: {x: -227.22748, y: 0, z: -310.55383, w: -362.4614}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -872,11 +873,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 814570017}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 513, y: 146}
+  m_AnchoredPosition: {x: 500, y: 146}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1194475454
@@ -899,14 +900,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
-
-    Right and Left Arrow to move
-
-    Up Arrow to taunt
-
-    Down
-    Arrow to Crouch and Dig'
+  m_text: "\n\u2190 Right and Left Arrow\u2192 \nTo Move\n\n \u2191Up Arrow\u2191
+    \nTo Taunt\n\n\u2193Down Arrow\u2193 \nTo Crouch and Dig"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 991505cb5c5fb1e45a14a51ec826578a, type: 2}
   m_sharedMaterial: {fileID: 1869894409925117031, guid: 991505cb5c5fb1e45a14a51ec826578a, type: 2}
@@ -933,8 +928,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -969,7 +964,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -227.22748, y: 0, z: -335.5923, w: -362.4614}
+  m_margin: {x: -163.24896, y: 0, z: -286.37793, w: -362.4614}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1132,11 +1127,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 814570017}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 636, y: 200}
+  m_AnchoredPosition: {x: 630, y: 200}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2130678804
@@ -1159,7 +1154,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Fox
+  m_text: FOX
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 991505cb5c5fb1e45a14a51ec826578a, type: 2}
   m_sharedMaterial: {fileID: 1869894409925117031, guid: 991505cb5c5fb1e45a14a51ec826578a, type: 2}
