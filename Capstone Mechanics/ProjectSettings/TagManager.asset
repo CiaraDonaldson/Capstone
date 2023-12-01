@@ -10,6 +10,7 @@ TagManager:
   - GameManager
   - Fox
   - Hawk
+  - Colorless
   layers:
   - Default
   - TransparentFX
