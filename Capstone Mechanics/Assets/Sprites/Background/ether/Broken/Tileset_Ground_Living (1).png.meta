@@ -1,0 +1,3840 @@
+fileFormatVersion: 2
+guid: a2ac25f929fed1b4cab57f9d99e3ed73
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 471
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1615908c1ed345c4dace934a85feaebb
+      internalID: -53971419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 471
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967ff01b05636ce4daa4d1494d1a8fb9
+      internalID: 2055309608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 471
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d1a2d5aaefac444b33776a775be80a
+      internalID: 1702570696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_4
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 472
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba43cc7a9ae24094590a6fe0ecb97c8c
+      internalID: -731615023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 472
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174d2b81fe1e8d947893a19f3f9d10ac
+      internalID: 1496398394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_7
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 472
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7609fafa85914741878e75ebaa6614e
+      internalID: 631229973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_9
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 471
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4842aee64872d7944b6f357c2c1b75d1
+      internalID: 218934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_10
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 471
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713d47aed448b9540b58c03b6e0aa8d1
+      internalID: -1279217312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_12
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 472
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074b8d7b4f922254bb837f3e18b485f9
+      internalID: -1540690558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_13
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 472
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4984abc0b35bc948b882fb75f7a243e
+      internalID: 154886550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_14
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 440
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9893e4e4539f2c34c81a2ba941c76ab7
+      internalID: 999402056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_15
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 440
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a541b04d5675dde4cb19e0b7013a2cc7
+      internalID: 104360667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_16
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 440
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5dbb44fb66db4540ba7832e98a656a1
+      internalID: 1548299725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_18
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 441
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2ad7a4b071bbf4ca795ea932e99e97
+      internalID: -2109257144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_19
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 441
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a0296933e7cce42b9c4d573c697a1b
+      internalID: -1056371371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_21
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 441
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61ee4fbe6881544082fd6fa4695aaf1
+      internalID: -1964306895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_25
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 441
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8253545183bb391499b9d8d052a54835
+      internalID: 1360535664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_26
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 441
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876395a734adf364781ab5188c5adb61
+      internalID: 1473559664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_27
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 409
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b72164c4c162a4c9647b7b5daf4026
+      internalID: 1473937765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_28
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 409
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c31891905cf1cc42b9b2cea7a01e510
+      internalID: 1955463491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_29
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 409
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4b403b3c817224ca6e448ec2c3cd65
+      internalID: -208020050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_42
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 378
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2accfcaf5bbbee940a42745089e89c88
+      internalID: 1206287391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_44
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 382
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3a2a1ccc31ac140b67f429ec3bdf18
+      internalID: -1238074090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_45
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 382
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 600ac2f516bb89e429a3ab15f3384f51
+      internalID: -2058152958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_46
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 382
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651800aa98a199e48af775cdb327749a
+      internalID: 2523740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_47
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 382
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51c17445d1aa7a45a189b1f9121f6dd
+      internalID: -884838887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_48
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 382
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbdba032d36aace4689dbe436359b476
+      internalID: 1562913350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_49
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 382
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aab8a5f2abe3cc49a70f7acf8054270
+      internalID: 127061625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_50
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 382
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f75512c4fca83e4abecccf945e407c3
+      internalID: 44133601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_51
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 382
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3f9707bb0cec345b088a5813705612
+      internalID: -2046551942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_52
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 382
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99fa9fd31d35084c8f675ebf42ab5d7
+      internalID: -1259412734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_53
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 382
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11806c935ab6f2c438994832d5947c6e
+      internalID: 843992194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_54
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 347
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3ddd7159aae4846a569d950e9ea940
+      internalID: 638019868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_55
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 347
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664d5f7e339fa3f47bdda2cb69c96086
+      internalID: 1972456032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_56
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 347
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19bf27d38e6b2745b40ecfbc23d2641
+      internalID: 175674568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_62
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 351
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca40d7aeecf0b34aa9abeec2da6fe5b
+      internalID: -1665964444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_64
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 351
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a0bd41ad80a8e4b8190979ffe7c140
+      internalID: 1009797029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_65
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 351
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8b1e37dd21d7c498186fe4e651184d
+      internalID: 867387344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_66
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 351
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39beacc84aedb6048a49e1934fbcf3ae
+      internalID: 947672039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_67
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 351
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34023c0f86cf5604ba21df55e9242072
+      internalID: 159061462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_69
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 351
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4c783ba9d1a4649a76ac463687e870
+      internalID: -1364839347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_70
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 316
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659ee2cb0c9d48240bb2d0fababc69a2
+      internalID: 419901077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_72
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 316
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263554336b7d640498f76a4c426e9bcc
+      internalID: 703914741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_74
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 320
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201799cd99b46144da9e8e0d10c1f27d
+      internalID: 1677324547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_76
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 320
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b3fe06f0aa7f840826299c76fbe613
+      internalID: -496517180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_77
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba924539437f1d84ea3b4f15ed70a51e
+      internalID: -2138497053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_78
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 320
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d125c1eccea07d74187771aa52f68ca5
+      internalID: -771524363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_79
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 320
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0190501391ebcf745b50a842b6949d78
+      internalID: -51607957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_80
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 320
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1c8631d8f668144adf637e5974a1d5
+      internalID: 1606284471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_81
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 320
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfe9a637e97d8a48820f3fd6bdfb159
+      internalID: 2136375615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_82
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 320
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03130778ff403fe449b17a7bbbebb736
+      internalID: -1634867376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_83
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 320
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1affa0a95900e4c961967057f3a693
+      internalID: 470022037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_84
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 320
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ca7b27a70e3c34cbaecfe5c4c026c1
+      internalID: -2067342679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_85
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 320
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a057cfef14d59d47841efb1291731e3
+      internalID: 946662716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_86
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 285
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a39e49366ce7a0498c41a03d34bcf81
+      internalID: -1183923223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_87
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 285
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ab82f1d7bb10046984dde150e7b0e6
+      internalID: -1195075973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_88
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 285
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb92c6d27a21b74a9ab4a559cab388b
+      internalID: -1729470977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_90
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 289
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15568f11a9b53234490dbde915d82cf7
+      internalID: 1052546258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_92
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 289
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d4c3bfba3f19343b9893ca6b1cbe4e
+      internalID: -2137130589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_93
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 289
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0238cc017335df4999be6a1e8882dba
+      internalID: 1908313950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_94
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 289
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a464fd91b9a83354fbf5832a0f1bd624
+      internalID: 515171970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_96
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 289
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1e8a0d93a22f04db66737d0bda118d
+      internalID: -94175387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_97
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 289
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c22a2146527e034dba89d3808287b32
+      internalID: -254067681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_98
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 289
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b102c6a8fbbfea74294243a6fe57cf88
+      internalID: 1398527781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_99
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 289
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390f71b37dc72344e8d4ba0026b8233b
+      internalID: 435324724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_100
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 289
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71550a5cbfef5de48a78abdcd089dee1
+      internalID: 23747157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_101
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 289
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3bc28447056a24db98b9575f8334cc
+      internalID: 488704825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_106
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 258
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089c5b56da2736440aae0e9a053ac5bc
+      internalID: -852520571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_107
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 258
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef2ae567b70a74419387325e0c44262
+      internalID: 1760754343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_108
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 258
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3246a4d2273313a439d253d416149e1c
+      internalID: -1299952549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_109
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 258
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03317ebe10bf2424a86948e35715075f
+      internalID: -1305593922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_110
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 258
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7631a8e66720da04a970d51a2794931c
+      internalID: 1908934949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_111
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 258
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0497f44ed9299b64e8a07cf6cc554c9c
+      internalID: -736208249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_112
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 258
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ff8439bb1b8724fa3113ddf9d7ec90
+      internalID: 995013918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_113
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 258
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b992dbd73820b947b37fd05438aaaba
+      internalID: 187397808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_114
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 258
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f170eb02b433d254fbadd6ae826ee035
+      internalID: 1283014835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_115
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 258
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3ae22d40d77854ca502d44cc6ac49a
+      internalID: 272401328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_116
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 258
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a2581c59db69b42af39ab613f8bba6
+      internalID: 997137027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_117
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 258
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 071e0759432cabe4ab891d0a7dc7c1bd
+      internalID: -1031127711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_118
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 226
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26870651fe86f404eb5236a150f61172
+      internalID: -877518362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_120
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 226
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c5101a0a07bd747903a00161e58439
+      internalID: 917898418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_122
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 227
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b838ca280fec3644a8c4f88a33dafb5
+      internalID: -1986486671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_124
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 227
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 506d3c4fdf5d0bc4ab9d802314754f09
+      internalID: -1419228801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_126
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 227
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65c6b54847073744bf22c8f778b4fe4
+      internalID: 90030836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_127
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 227
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba9054bcc2f9e441b9a4ec41085f3c7
+      internalID: 2055504087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_128
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 227
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b943fe3ec34a2641b5efe836c5d64c2
+      internalID: -1283052388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_129
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 227
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9751723eb49ced045869a84fdc66f820
+      internalID: -1401892550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_130
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 227
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f621728dd2e8904496cae539f75737d
+      internalID: -729019708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_131
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 227
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeddaf59f567f2f47aabe2a164940ccd
+      internalID: 1401310176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_133
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 227
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28b73503ca7f044887f5b7b8a18f700
+      internalID: -1982420694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_134
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 195
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f380eab33ddf0e24992bc3c98e70f6a1
+      internalID: -1297171891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_138
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 196
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7889dfc545762604b899d2f41c0d80e0
+      internalID: 393054953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_139
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 196
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d694edb6989ae8b4e9d9407e1ca578d9
+      internalID: -1911959481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_140
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 196
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a959a24d58c374479efb7c29a4917cd
+      internalID: 875921503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_141
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 196
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c80a58f1b4d598448c99e794bdee6e3
+      internalID: -701061285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_142
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 196
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd243792f246ad4dad2b50f72479299
+      internalID: -213312226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_143
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 196
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17fdf0ce50f355e4183c7dd6169d75bf
+      internalID: -1198874780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_144
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 196
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4bf367d4807de4ea4a74d93f618eb5
+      internalID: -913571957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_145
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 196
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607cd8b2ec4dcde4dac9df19df911bfb
+      internalID: 1355300404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_146
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 196
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9470b95252e825d4fa5c35227050ee71
+      internalID: 581896948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_147
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 196
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18222583231f62d41802ace4c54c3905
+      internalID: 1693893078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_148
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 196
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18be974a01d83c245af0a69f6e1ad8de
+      internalID: -1522415030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_149
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 196
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c0c3c3ec8e2694e99ef2da757fddb9
+      internalID: -948701333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_150
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 164
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a43322522e06a754f90322dee24209f1
+      internalID: 621067165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_152
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 165
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f85bee7ad37a9142943335a68441ed9
+      internalID: 944213896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_153
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 165
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e95ecd46f21c04ca9bf5aafb93a044
+      internalID: -1529018698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_154
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 165
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa7fca3e6db9364f88623f9f178b1ec
+      internalID: -1121200515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_155
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 165
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187b9d675542b0043a98d170dca1b165
+      internalID: -1946058926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_156
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 165
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e726ddb31b1ad45b9f01cdfe6cd563
+      internalID: 778481995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_159
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 165
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62a4409683396146a63e8eb5a0415a2
+      internalID: 525975201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_161
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 165
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed47984f0cc29274ab5226316a986cc5
+      internalID: -39998398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_163
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 165
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ab1b998bf09cb4eb1a869fb2119a7e
+      internalID: 95353067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_166
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 134
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93afeab4b9e4a884dbc8eb42069f9e69
+      internalID: 1221211007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_167
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 134
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aeddcd4431f1244e80a0199647cca7f
+      internalID: -672585149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_168
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 134
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bfdc8541bbfb7e4a8407a8b39fa9a69
+      internalID: -50066880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_169
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 134
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b09283283b8d66479f56fb40a71aaa5
+      internalID: -70690570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_170
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 134
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2706ade3484809148aee65c824e83d73
+      internalID: 742225284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_172
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 134
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7094c8f45406e5740ae4eae65703576f
+      internalID: -1294041317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_173
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 134
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ee64fd5aa2df94486bcf1e7e2e3f6b
+      internalID: -1532242019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_175
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 134
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc78a8fc383014242bcc6bd44ba10f89
+      internalID: 516319010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_177
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 134
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766c43b89eb612149b040bc700741dd2
+      internalID: -1072002057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_178
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 103
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df17429c370166f4bb6c68cedd7445c8
+      internalID: 1535735448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_179
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 103
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07dadc6d96a7f534ea99fa4fbd6974d5
+      internalID: -151739020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_180
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 103
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e0b987d90b81540a626d7c2afc1804
+      internalID: 44811206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_182
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 103
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b0fce836722a74b933b15afc12acc1
+      internalID: -640489118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_183
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 103
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eec5db68c8f38549982d63ebd704fc2
+      internalID: 1503405470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_184
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 103
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba02a8178ffdec842a19f32d5752612e
+      internalID: 540175552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_185
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 103
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48adbe26bbed5ca4da5aab148d20374b
+      internalID: -1489471026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_186
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 103
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9b964bb194d0d4d8c48a232323dd3d
+      internalID: -287812415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_188
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 103
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23fcc53ad93db549951e775d4af3190
+      internalID: -393519739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_191
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 103
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24dcc2310eb9a3c47bdf29bc3245f595
+      internalID: 609854114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_197
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 72
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f900016936001488b6a8f2892fbd5a
+      internalID: 1025206978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_198
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 72
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0879067796baafe45b4cf67665de759c
+      internalID: -166862026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_199
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 72
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952e4ff08c9bb66459bc4450d2463d0e
+      internalID: -1023058591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_200
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 72
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f26337218ccc846851523833b607cf
+      internalID: -40186444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_201
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 72
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f513268741d25c244b0eb29fadda6e79
+      internalID: -725784647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_202
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 72
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545a52453efc0b64188e40992c8a4a70
+      internalID: -1231608067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_203
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 72
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4c9e87a529cd742bc788f3d0a9346a
+      internalID: 1868903201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_204
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 72
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beff0cb1d742490419ea6512412a2212
+      internalID: 2047377579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_205
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 72
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4387fb802cb4ae541a2cc8295fa5cdcd
+      internalID: -1251343818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_206
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 72
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17db8d655a0eb644ea875155a53d0ddd
+      internalID: 1102864964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_207
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 72
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 186f381b40f2e3346bc577ee36302faf
+      internalID: -875098492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_208
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 72
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8504038cd875cbd47b7e94032f4847dc
+      internalID: 1575437692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_209
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 41
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a287739f74231204486718bf1f551c9c
+      internalID: -1425619056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_210
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 41
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eae9c9b9001c0c45a20ff5fc93b6a62
+      internalID: 1941538517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_211
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 41
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff27caed033ec04cb9c2ccc1f35c040
+      internalID: -1784622877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_213
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 41
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec66fa1097f6424fb2d0ec18ac5263e
+      internalID: 1651029867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_215
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 41
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b78213ca9243b246ba143618d23afce
+      internalID: 780268407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_216
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 41
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f855358a22e7884ab8353cfa29c92af
+      internalID: -1565332691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_217
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 41
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f0352c313326946969039a0f72445f
+      internalID: 750255896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_219
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 41
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5aabdcf9444034ebfceb5b31456a8e
+      internalID: 777334315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_222
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 41
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81cc059ba6e06394b9b21dd05dbdf4b7
+      internalID: 1891581096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_223
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 41
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9af1c4d88128e4386f1f8b598f9e71
+      internalID: -1712904370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_224
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 41
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2ac6a8420fab247944bc233d7ac7ec
+      internalID: -2123114636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_228
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 10
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7752bb0248ddb8e4e9f85d3c00842997
+      internalID: -991739207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_229
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 10
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e68820988595ce4fa6d27cff5dee6e5
+      internalID: -1395806468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_230
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 10
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a06933924275c4c9c9833631e8f95f
+      internalID: -745749024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_231
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 10
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aff8a1e61240fc438e987ea88c12dd6
+      internalID: -1774960623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_232
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 10
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fca73f6505511d4d93602dbb7170065
+      internalID: -1704842297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_233
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 10
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 907269ca9e4da7a4694ae28416059775
+      internalID: 38439635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_234
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 10
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d67e218e18863ea49a63a3561fb7b681
+      internalID: -126212292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_235
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 11
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a13e055429a0c4bb8e2464331a80d3
+      internalID: -441970416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_237
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 10
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec39ec036189434891886be5dbfe90f
+      internalID: -45711857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_238
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 10
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d9e732e67ce6040b7d82d4b2301214
+      internalID: -1327980545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Ground_Living (1)_239
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 10
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd4667e8d250bb4399546a3aab7ff57
+      internalID: 589080296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Tileset_Ground_Living (1)_94: 515171970
+      Tileset_Ground_Living (1)_83: 470022037
+      Tileset_Ground_Living (1)_199: -1023058591
+      Tileset_Ground_Living (1)_232: -1704842297
+      Tileset_Ground_Living (1)_210: 1941538517
+      Tileset_Ground_Living (1)_37: 1497834254
+      Tileset_Ground_Living (1)_52: -1259412734
+      Tileset_Ground_Living (1)_177: -1072002057
+      Tileset_Ground_Living (1)_69: -1364839347
+      Tileset_Ground_Living (1)_86: -1183923223
+      Tileset_Ground_Living (1)_113: 187397808
+      Tileset_Ground_Living (1)_17: 607164162
+      Tileset_Ground_Living (1)_81: 2136375615
+      Tileset_Ground_Living (1)_63: -1326724169
+      Tileset_Ground_Living (1)_213: 1651029867
+      Tileset_Ground_Living (1)_180: 44811206
+      Tileset_Ground_Living (1)_54: 638019868
+      Tileset_Ground_Living (1)_82: -1634867376
+      Tileset_Ground_Living (1)_18: -2109257144
+      Tileset_Ground_Living (1)_127: 2055504087
+      Tileset_Ground_Living (1)_116: 997137027
+      Tileset_Ground_Living (1)_15: 104360667
+      Tileset_Ground_Living (1)_200: -40186444
+      Tileset_Ground_Living (1)_95: 1199205871
+      Tileset_Ground_Living (1)_92: -2137130589
+      Tileset_Ground_Living (1)_5: 1496398394
+      Tileset_Ground_Living (1)_48: 1562913350
+      Tileset_Ground_Living (1)_222: 1891581096
+      Tileset_Ground_Living (1)_143: -1198874780
+      Tileset_Ground_Living (1)_152: 944213896
+      Tileset_Ground_Living (1)_174: -1256537232
+      Tileset_Ground_Living (1)_144: -913571957
+      Tileset_Ground_Living (1)_188: -393519739
+      Tileset_Ground_Living (1)_215: 780268407
+      Tileset_Ground_Living (1)_7: 631229973
+      Tileset_Ground_Living (1)_11: 174506350
+      Tileset_Ground_Living (1)_2: 1702570696
+      Tileset_Ground_Living (1)_175: 516319010
+      Tileset_Ground_Living (1)_102: 1834577665
+      Tileset_Ground_Living (1)_158: 209978458
+      Tileset_Ground_Living (1)_179: -151739020
+      Tileset_Ground_Living (1)_217: 750255896
+      Tileset_Ground_Living (1)_197: 1025206978
+      Tileset_Ground_Living (1)_235: -441970416
+      Tileset_Ground_Living (1)_203: 1868903201
+      Tileset_Ground_Living (1)_107: 1760754343
+      Tileset_Ground_Living (1)_173: -1532242019
+      Tileset_Ground_Living (1)_164: -902120177
+      Tileset_Ground_Living (1)_77: -2138497053
+      Tileset_Ground_Living (1)_41: 1214822337
+      Tileset_Ground_Living (1)_123: 911877501
+      Tileset_Ground_Living (1)_96: -94175387
+      Tileset_Ground_Living (1)_151: 1935526450
+      Tileset_Ground_Living (1)_40: 914926409
+      Tileset_Ground_Living (1)_131: 1401310176
+      Tileset_Ground_Living (1)_103: -2016171934
+      Tileset_Ground_Living (1)_12: -1540690558
+      Tileset_Ground_Living (1)_67: 159061462
+      Tileset_Ground_Living (1)_106: -852520571
+      Tileset_Ground_Living (1)_112: 995013918
+      Tileset_Ground_Living (1)_219: 777334315
+      Tileset_Ground_Living (1)_154: -1121200515
+      Tileset_Ground_Living (1)_118: -877518362
+      Tileset_Ground_Living (1)_161: -39998398
+      Tileset_Ground_Living (1)_64: 1009797029
+      Tileset_Ground_Living (1)_214: -612010642
+      Tileset_Ground_Living (1)_167: -672585149
+      Tileset_Ground_Living (1)_186: -287812415
+      Tileset_Ground_Living (1)_50: 44133601
+      Tileset_Ground_Living (1)_47: -884838887
+      Tileset_Ground_Living (1)_202: -1231608067
+      Tileset_Ground_Living (1)_204: 2047377579
+      Tileset_Ground_Living (1)_3: 67157172
+      Tileset_Ground_Living (1)_145: 1355300404
+      Tileset_Ground_Living (1)_128: -1283052388
+      Tileset_Ground_Living (1)_238: -1327980545
+      Tileset_Ground_Living (1)_183: 1503405470
+      Tileset_Ground_Living (1)_22: 584109640
+      Tileset_Ground_Living (1)_68: 1542896206
+      Tileset_Ground_Living (1)_89: -1545988327
+      Tileset_Ground_Living (1)_84: -2067342679
+      Tileset_Ground_Living (1)_79: -51607957
+      Tileset_Ground_Living (1)_111: -736208249
+      Tileset_Ground_Living (1)_129: -1401892550
+      Tileset_Ground_Living (1)_85: 946662716
+      Tileset_Ground_Living (1)_38: 1230909680
+      Tileset_Ground_Living (1)_53: 843992194
+      Tileset_Ground_Living (1)_171: -1329158010
+      Tileset_Ground_Living (1)_109: -1305593922
+      Tileset_Ground_Living (1)_1: 2055309608
+      Tileset_Ground_Living (1)_51: -2046551942
+      Tileset_Ground_Living (1)_122: -1986486671
+      Tileset_Ground_Living (1)_138: 393054953
+      Tileset_Ground_Living (1)_44: -1238074090
+      Tileset_Ground_Living (1)_97: -254067681
+      Tileset_Ground_Living (1)_100: 23747157
+      Tileset_Ground_Living (1)_70: 419901077
+      Tileset_Ground_Living (1)_178: 1535735448
+      Tileset_Ground_Living (1)_184: 540175552
+      Tileset_Ground_Living (1)_105: 428661829
+      Tileset_Ground_Living (1)_8: 925523880
+      Tileset_Ground_Living (1)_10: -1279217312
+      Tileset_Ground_Living (1)_4: -731615023
+      Tileset_Ground_Living (1)_172: -1294041317
+      Tileset_Ground_Living (1)_20: 1452450803
+      Tileset_Ground_Living (1)_190: 1057117593
+      Tileset_Ground_Living (1)_46: 2523740
+      Tileset_Ground_Living (1)_236: 2047436848
+      Tileset_Ground_Living (1)_104: -1727541418
+      Tileset_Ground_Living (1)_39: 1530252104
+      Tileset_Ground_Living (1)_27: 1473937765
+      Tileset_Ground_Living (1)_65: 867387344
+      Tileset_Ground_Living (1)_66: 947672039
+      Tileset_Ground_Living (1)_30: -1850886355
+      Tileset_Ground_Living (1)_16: 1548299725
+      Tileset_Ground_Living (1)_168: -50066880
+      Tileset_Ground_Living (1)_73: 1494747589
+      Tileset_Ground_Living (1)_32: -2086344183
+      Tileset_Ground_Living (1)_134: -1297171891
+      Tileset_Ground_Living (1)_207: -875098492
+      Tileset_Ground_Living (1)_33: 49272455
+      Tileset_Ground_Living (1)_119: -1897000124
+      Tileset_Ground_Living (1)_13: 154886550
+      Tileset_Ground_Living (1)_224: -2123114636
+      Tileset_Ground_Living (1)_114: 1283014835
+      Tileset_Ground_Living (1)_76: -496517180
+      Tileset_Ground_Living (1)_141: -701061285
+      Tileset_Ground_Living (1)_192: -673262853
+      Tileset_Ground_Living (1)_56: 175674568
+      Tileset_Ground_Living (1)_182: -640489118
+      Tileset_Ground_Living (1)_195: 1836899727
+      Tileset_Ground_Living (1)_61: -255253812
+      Tileset_Ground_Living (1)_62: -1665964444
+      Tileset_Ground_Living (1)_181: 1389930325
+      Tileset_Ground_Living (1)_0: -53971419
+      Tileset_Ground_Living (1)_26: 1473559664
+      Tileset_Ground_Living (1)_132: 2051498366
+      Tileset_Ground_Living (1)_28: 1955463491
+      Tileset_Ground_Living (1)_223: -1712904370
+      Tileset_Ground_Living (1)_136: -1024549259
+      Tileset_Ground_Living (1)_159: 525975201
+      Tileset_Ground_Living (1)_227: 1694139824
+      Tileset_Ground_Living (1)_205: -1251343818
+      Tileset_Ground_Living (1)_225: -355285006
+      Tileset_Ground_Living (1)_185: -1489471026
+      Tileset_Ground_Living (1)_23: -2041037861
+      Tileset_Ground_Living (1)_60: -1359651579
+      Tileset_Ground_Living (1)_58: -198326047
+      Tileset_Ground_Living (1)_212: -1400018865
+      Tileset_Ground_Living (1)_194: -312081755
+      Tileset_Ground_Living (1)_176: -718688954
+      Tileset_Ground_Living (1)_14: 999402056
+      Tileset_Ground_Living (1)_234: -126212292
+      Tileset_Ground_Living (1)_115: 272401328
+      Tileset_Ground_Living (1)_117: -1031127711
+      Tileset_Ground_Living (1)_201: -725784647
+      Tileset_Ground_Living (1)_137: 1883925431
+      Tileset_Ground_Living (1)_121: -1816233709
+      Tileset_Ground_Living (1)_57: 1999234193
+      Tileset_Ground_Living (1)_49: 127061625
+      Tileset_Ground_Living (1)_120: 917898418
+      Tileset_Ground_Living (1)_126: 90030836
+      Tileset_Ground_Living (1)_189: 474357747
+      Tileset_Ground_Living (1)_142: -213312226
+      Tileset_Ground_Living (1)_139: -1911959481
+      Tileset_Ground_Living (1)_211: -1784622877
+      Tileset_Ground_Living (1)_124: -1419228801
+      Tileset_Ground_Living (1)_59: -1263151981
+      Tileset_Ground_Living (1)_149: -948701333
+      Tileset_Ground_Living (1)_187: -2011055195
+      Tileset_Ground_Living (1)_218: -1125831571
+      Tileset_Ground_Living (1)_156: 778481995
+      Tileset_Ground_Living (1)_21: -1964306895
+      Tileset_Ground_Living (1)_9: 218934
+      Tileset_Ground_Living (1)_35: 295964261
+      Tileset_Ground_Living (1)_230: -745749024
+      Tileset_Ground_Living (1)_74: 1677324547
+      Tileset_Ground_Living (1)_72: 703914741
+      Tileset_Ground_Living (1)_36: -475856558
+      Tileset_Ground_Living (1)_108: -1299952549
+      Tileset_Ground_Living (1)_153: -1529018698
+      Tileset_Ground_Living (1)_228: -991739207
+      Tileset_Ground_Living (1)_19: -1056371371
+      Tileset_Ground_Living (1)_239: 589080296
+      Tileset_Ground_Living (1)_191: 609854114
+      Tileset_Ground_Living (1)_110: 1908934949
+      Tileset_Ground_Living (1)_198: -166862026
+      Tileset_Ground_Living (1)_42: 1206287391
+      Tileset_Ground_Living (1)_206: 1102864964
+      Tileset_Ground_Living (1)_163: 95353067
+      Tileset_Ground_Living (1)_24: 870674628
+      Tileset_Ground_Living (1)_87: -1195075973
+      Tileset_Ground_Living (1)_208: 1575437692
+      Tileset_Ground_Living (1)_165: -2088264809
+      Tileset_Ground_Living (1)_91: 782882759
+      Tileset_Ground_Living (1)_71: -99791683
+      Tileset_Ground_Living (1)_209: -1425619056
+      Tileset_Ground_Living (1)_133: -1982420694
+      Tileset_Ground_Living (1)_162: -1410890638
+      Tileset_Ground_Living (1)_229: -1395806468
+      Tileset_Ground_Living (1)_88: -1729470977
+      Tileset_Ground_Living (1)_166: 1221211007
+      Tileset_Ground_Living (1)_150: 621067165
+      Tileset_Ground_Living (1)_80: 1606284471
+      Tileset_Ground_Living (1)_140: 875921503
+      Tileset_Ground_Living (1)_237: -45711857
+      Tileset_Ground_Living (1)_196: -991262895
+      Tileset_Ground_Living (1)_220: 213142192
+      Tileset_Ground_Living (1)_31: 818512955
+      Tileset_Ground_Living (1)_34: -767907006
+      Tileset_Ground_Living (1)_170: 742225284
+      Tileset_Ground_Living (1)_125: 1142483512
+      Tileset_Ground_Living (1)_99: 435324724
+      Tileset_Ground_Living (1)_93: 1908313950
+      Tileset_Ground_Living (1)_146: 581896948
+      Tileset_Ground_Living (1)_25: 1360535664
+      Tileset_Ground_Living (1)_90: 1052546258
+      Tileset_Ground_Living (1)_231: -1774960623
+      Tileset_Ground_Living (1)_29: -208020050
+      Tileset_Ground_Living (1)_148: -1522415030
+      Tileset_Ground_Living (1)_147: 1693893078
+      Tileset_Ground_Living (1)_98: 1398527781
+      Tileset_Ground_Living (1)_169: -70690570
+      Tileset_Ground_Living (1)_216: -1565332691
+      Tileset_Ground_Living (1)_193: 1180509729
+      Tileset_Ground_Living (1)_130: -729019708
+      Tileset_Ground_Living (1)_221: 55525566
+      Tileset_Ground_Living (1)_6: 711830745
+      Tileset_Ground_Living (1)_55: 1972456032
+      Tileset_Ground_Living (1)_78: -771524363
+      Tileset_Ground_Living (1)_160: -3268415
+      Tileset_Ground_Living (1)_101: 488704825
+      Tileset_Ground_Living (1)_45: -2058152958
+      Tileset_Ground_Living (1)_226: -263398829
+      Tileset_Ground_Living (1)_75: -2121886634
+      Tileset_Ground_Living (1)_233: 38439635
+      Tileset_Ground_Living (1)_157: -523055021
+      Tileset_Ground_Living (1)_135: 1393746898
+      Tileset_Ground_Living (1)_155: -1946058926
+      Tileset_Ground_Living (1)_43: -399134536
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -32,24 +32,26 @@ public class DigandSneak : MonoBehaviour
     {
         Vector3 raycastOrigin = transform.position;
         Vector3 raycastDirection = transform.forward;
-        
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, digDepth, digLayer);
+        RaycastHit2D hit2 = Physics2D.Raycast(transform.position, Vector2.down, digDepth, groundLayer);
+        Debug.DrawRay(raycastOrigin, raycastDirection * 2, Color.green);
+
+        if (!hit && !hit2 && !Input.anyKey)
+        {
+            inAir = true;
+           // anim.Play("Fall");
+        }
+        else if(hit | hit2)
+        {
+            inAir = false;
+            
+
+        }
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
-           
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, digDepth, digLayer);
-            RaycastHit2D hit2 = Physics2D.Raycast(transform.position, Vector2.down, digDepth, groundLayer);
-            Debug.DrawRay(raycastOrigin, raycastDirection * 2, Color.green);
-
             float velocityMagnitude = rb.velocity.magnitude;
-            if (!hit && !hit2)
-            {
-                inAir = true;
-            }
-            else
-            {
-                inAir = false;
-            }
+          
             if (!hit)
             {
                 cCollider.enabled = false;

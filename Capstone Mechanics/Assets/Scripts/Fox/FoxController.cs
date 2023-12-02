@@ -12,7 +12,9 @@ public class FoxController : MonoBehaviour
     public bool isGrounded = false;
     public Animator anim;
     public SpriteRenderer rend;
-    
+    public float digDepth = 1f;
+    public LayerMask digLayer;
+
 
     private Transform characterTransform;
     private bool isFacingRight = true;
@@ -55,6 +57,8 @@ public class FoxController : MonoBehaviour
             FlipCharacter(true);   // Flip to face right.
         }
 
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, digDepth, digLayer);
+        RaycastHit2D hit2 = Physics2D.Raycast(transform.position, Vector2.down, digDepth, groundLayer);
 
         if (!Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.LeftArrow))
         {
@@ -76,12 +80,12 @@ public class FoxController : MonoBehaviour
             rb.AddForce(Vector3.right * sneakForce, ForceMode2D.Impulse);
             anim.Play("Sneak");
         }
-        else if(!Input.anyKey)
+        else if (!Input.anyKey & hit | hit2)
         {
             dust.Stop();
-            anim.Play("Idle");
+            // anim.Play("Idle");
         }
-        
+
     }
     void FlipCharacter(bool faceRight)
     {
@@ -98,6 +102,20 @@ public class FoxController : MonoBehaviour
     void CreateDust()
     {
         dust.Play();
+    }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "Tilemap" | collision.gameObject.name == "Top Dig" | collision.gameObject.name == "Bottom Dig" && !Input.anyKey)
+        {
+            anim.Play("Idle");
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (!Input.anyKey && collision.gameObject.name == "Tilemap" | collision.gameObject.name == "Top Dig" | collision.gameObject.name == "Bottom Dig")
+        {
+            anim.Play("Fall");
+        }
     }
 }
 

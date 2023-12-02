@@ -24,10 +24,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        fText.text = "Fox: " + fOrbs;
-        hText.text = "Hawk: " + hOrbs;
-        fText2.text = "Fox: " + fOrbs;
-        hText2.text = "Hawk: " + hOrbs;
+        fText.text = fOrbs.ToString();
+        hText.text =  hOrbs.ToString();
+        fText2.text = fOrbs.ToString();
+        hText2.text =  hOrbs.ToString();
 
         string sceneName = SceneManager.GetActiveScene().ToString();
 
