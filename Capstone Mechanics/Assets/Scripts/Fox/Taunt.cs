@@ -53,7 +53,9 @@ public class Taunt : MonoBehaviour
     {
         if (isHolding)
         {
+
             Hawk.GetComponent<CapsuleCollider2D>().enabled = false;
+            Hawk.GetComponent<HawkController>().enabled = false;
             Hawk.GetComponent<Carry>().enabled = false;
             Hawk.GetComponent<Fly>().enabled = false;
             Hawk.GetComponent<Scan>().enabled = false;
@@ -63,6 +65,7 @@ public class Taunt : MonoBehaviour
         else 
         {
             //Hawk.GetComponent<CapsuleCollider2D>().enabled = true;
+            Hawk.GetComponent<HawkController>().enabled = true;
             Hawk.GetComponent<Carry>().enabled = true;
             Hawk.GetComponent<Fly>().enabled = true;
             Hawk.GetComponent<Scan>().enabled = true;

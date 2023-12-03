@@ -12026,9 +12026,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12562674, y: -0.8011348}
+  m_Offset: {x: 0.12562674, y: -0.67927676}
   serializedVersion: 2
-  m_Radius: 0.76814306
+  m_Radius: 0.646285
 --- !u!70 &8391183920730606036
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -12084,10 +12084,14 @@ MonoBehaviour:
   sneakForce: 0.5
   groundLayer:
     serializedVersion: 2
-    m_Bits: 65
+    m_Bits: 128
   isGrounded: 0
   anim: {fileID: 4103722379551422420}
   rend: {fileID: 8391183920730606035}
+  digDepth: 1
+  digLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!114 &8391183920730606038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12124,7 +12128,7 @@ MonoBehaviour:
     m_Bits: 64
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   isDigging: 0
   cCollider: {fileID: 0}
   capCollider: {fileID: 0}

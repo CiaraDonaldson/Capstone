@@ -23,20 +23,12 @@ public class FoxController : MonoBehaviour
     void Start()
     {
         characterTransform = transform;
-        //dust = GetComponent<ParticleSystem>();
         rend = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-
-        // GameObject particleSystemObject = GameObject.Find("FDust");
-        //ParticleSystem particleSystem = particleSystemObject.GetComponent<ParticleSystem>();
         GameObject particleSystemObject = GameObject.Find("FDust");
         dust = particleSystemObject.GetComponent<ParticleSystem>();
 
-        // Try to get the ParticleSystem component
-
-
-        // gameControllerReference = GameObject.FindWithTag("GameController").GetComponent<GameController>();
     }
     // Update is called once per frame
     void Update()
