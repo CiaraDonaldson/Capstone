@@ -22,30 +22,30 @@ public class SceneSwitch : MonoBehaviour
     }
     public void Lvl4()
     {
-        SceneManager.LoadScene("Lvl14");
+        SceneManager.LoadScene("Lvl4");
     }
     public void Lvl5()
     {
-        SceneManager.LoadScene("Lvl15");
+        SceneManager.LoadScene("Lvl5");
     }
     public void Lvl6()
     {
-        SceneManager.LoadScene("Lvl16");
+        SceneManager.LoadScene("Lvl6");
     }
     public void Lvl7()
     {
-        SceneManager.LoadScene("Lvl17");
+        SceneManager.LoadScene("Lvl7");
     }
     public void Lvl8()
     {
-        SceneManager.LoadScene("Lvl18");
+        SceneManager.LoadScene("Lvl8");
     }
     public void Lvl9()
     {
-        SceneManager.LoadScene("Lvl19");
+        SceneManager.LoadScene("Lvl9");
     }
     public void Lvl110()
     {
-        SceneManager.LoadScene("Lvl110");
+        SceneManager.LoadScene("Lvl10");
     }
 }

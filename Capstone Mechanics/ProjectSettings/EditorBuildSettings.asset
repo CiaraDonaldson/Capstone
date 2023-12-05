@@ -26,4 +26,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CutsceneTest.unity
     guid: fd6e6722f0adce74e99ae2fbf15dc020
+  - enabled: 1
+    path: Assets/Scenes/lvls+/Lvl2.unity
+    guid: 8476ad9a0e1005a45a9f4582f56f06be
+  - enabled: 1
+    path: Assets/Scenes/lvls+/Lvl3.unity
+    guid: 58a6f8795661bea43af66ebd6eff1b16
+  - enabled: 1
+    path: Assets/Scenes/lvls+/Lvl4.unity
+    guid: 99fafb8cbfc48d84b9675d69256e1005
+  - enabled: 1
+    path: Assets/Scenes/lvls+/Lvl5.unity
+    guid: 6d1f3341da1dc414783698b564187864
+  - enabled: 1
+    path: Assets/Scenes/lvls+/Lvl6.unity
+    guid: 16b7b4059bc680148881722169c5c9d1
+  - enabled: 1
+    path: Assets/Scenes/lvls+/Lvl7.unity
+    guid: 3acb12a5775cb044294396c994086087
+  - enabled: 1
+    path: Assets/Scenes/lvls+/Lvl8.unity
+    guid: 146af605fa3a96540a556bb992ecc07d
+  - enabled: 1
+    path: Assets/Scenes/lvls+/Lvl9.unity
+    guid: e834d6a0bfb187740b72889bbd812635
+  - enabled: 1
+    path: Assets/Scenes/lvls+/Lvl10.unity
+    guid: 71ccab58f393b3249ae8747dfd86ce42
   m_configObjects: {}
