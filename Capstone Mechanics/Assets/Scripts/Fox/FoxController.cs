@@ -14,6 +14,7 @@ public class FoxController : MonoBehaviour
     public SpriteRenderer rend;
     public float digDepth = 1f;
     public LayerMask digLayer;
+    public GameObject Hawk;
 
 
     private Transform characterTransform;
@@ -28,6 +29,7 @@ public class FoxController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         GameObject particleSystemObject = GameObject.Find("FDust");
         dust = particleSystemObject.GetComponent<ParticleSystem>();
+        Hawk = GameObject.Find("Hawk");
 
     }
     // Update is called once per frame
@@ -72,10 +74,10 @@ public class FoxController : MonoBehaviour
             rb.AddForce(Vector3.right * sneakForce, ForceMode2D.Impulse);
             anim.Play("Sneak");
         }
-        else if (!Input.anyKey & hit | hit2)
+        else if (!Input.anyKey & !hit | !hit2)
         {
             dust.Stop();
-            // anim.Play("Idle");
+            anim.Play("Fall");
         }
 
     }
@@ -99,14 +101,21 @@ public class FoxController : MonoBehaviour
     {
         if (collision.gameObject.name == "Tilemap" | collision.gameObject.name == "Top Dig" | collision.gameObject.name == "Bottom Dig" && !Input.anyKey)
         {
-            anim.Play("Idle");
+            if (!Hawk.GetComponent<Carry>().isCarrying)
+            {
+                anim.Play("Idle");
+            }
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (!Input.anyKey && collision.gameObject.name == "Tilemap" | collision.gameObject.name == "Top Dig" | collision.gameObject.name == "Bottom Dig")
         {
-            anim.Play("Fall");
+            if (!Hawk.GetComponent<Carry>().isCarrying) 
+            {
+                anim.Play("Fall");
+            }
+           
         }
     }
 }
