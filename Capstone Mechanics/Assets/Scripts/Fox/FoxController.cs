@@ -74,10 +74,10 @@ public class FoxController : MonoBehaviour
             rb.AddForce(Vector3.right * sneakForce, ForceMode2D.Impulse);
             anim.Play("Sneak");
         }
-        else if (!Input.anyKey & !hit | !hit2)
+        else if (!Input.anyKey & hit | hit2)
         {
             dust.Stop();
-            anim.Play("Fall");
+            //anim.Play("Fall");
         }
 
     }
