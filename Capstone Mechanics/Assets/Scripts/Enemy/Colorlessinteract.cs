@@ -22,7 +22,7 @@ public class Colorlessinteract : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+
     }
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -30,20 +30,16 @@ public class Colorlessinteract : MonoBehaviour
         {
             PopUp(popUp);
         }
-     
+
         if (GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().fOrbs == fOrbCount && GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().hOrbs == hOrbCount)
         {
-            PopUp("You Did It! Thank you!");
-            Color lerpedColor = Color.Lerp(Color.white, Color.magenta, 20f);
-            this.GetComponent<SpriteRenderer>().color = lerpedColor;
-            pass = true;
-            ReloadActiveScene();
+            StartCoroutine(PopUpAndSwitch());
         }
     }
-    private void ReloadActiveScene()
+    private void loadNextScene()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex);
+        // int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     void OnTriggerExit2D(Collider2D other)
     {
@@ -63,5 +59,21 @@ public class Colorlessinteract : MonoBehaviour
     {
         animator.Play("close");
         //popUpBox.SetActive(false);
+    }
+    IEnumerator PopUpAndSwitch()
+    {
+        PopUp("You Did It! Thank you!");
+
+        // Wait for a certain duration before changing the color
+        yield return new WaitForSeconds(2f); // Adjust the duration as needed
+
+        Color lerpedColor = Color.Lerp(Color.white, Color.magenta, 20f);
+        this.GetComponent<SpriteRenderer>().color = lerpedColor;
+        pass = true;
+
+        // Wait for another duration before switching scenes
+        yield return new WaitForSeconds(2f); // Adjust the duration as needed
+
+        loadNextScene();
     }
 }

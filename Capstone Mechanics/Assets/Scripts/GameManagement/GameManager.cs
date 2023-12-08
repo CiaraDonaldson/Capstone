@@ -13,12 +13,28 @@ public class GameManager : MonoBehaviour
     public int hOrbs = 0;
     public int fOrbs = 0;
     public Canvas pauseMenuUI;
-
+    public GameObject Story;
 
     // Start is called before the first frame update
     void Start()
     {
-     
+        Story = GameObject.Find("StoryMode");
+        if (fText == null)
+        {
+            Debug.Log("no count"); 
+        }
+        else if (hText == null)
+        {
+            Debug.Log("no count");
+        }
+        else if (fText2 == null)
+        {
+            Debug.Log("no count");
+        }
+        else if (hText2 == null)
+        {
+            Debug.Log("no count");
+        }
     }
 
     // Update is called once per frame
@@ -40,12 +56,22 @@ public class GameManager : MonoBehaviour
             Cursor.visible = true;
         }*/
     }
-
-    public void startGame()
+    public void startGamemode()
     {
-       // Cursor.visible = true;
-
-        SceneManager.LoadScene("Mechanic Test");
+        // Cursor.visible = true;
+            SceneManager.LoadScene("GameMode");
+    }
+    public void startArcade()
+    {
+        // Cursor.visible = true;
+        GameObject.Find("StoryMode").GetComponent<DoNotDestroy>().enabled = false;
+        SceneManager.LoadScene("Lvl1");
+    }
+    public void startStory()
+    {
+        // Cursor.visible = true;
+        GameObject.Find("StoryMode").GetComponent<DoNotDestroy>().enabled = true;
+        SceneManager.LoadScene("CutsceneTest");
     }
     public void startCredit()
     {
