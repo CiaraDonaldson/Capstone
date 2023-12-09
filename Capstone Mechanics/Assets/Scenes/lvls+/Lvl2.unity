@@ -525,6 +525,10 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 831184736}
+    - target: {fileID: 8391183920174092129, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -0.93980026
+      objectReference: {fileID: 0}
     - target: {fileID: 8391183920730606034, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: m_Radius
       value: 0.74492747
@@ -532,6 +536,14 @@ PrefabInstance:
     - target: {fileID: 8391183920730606034, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: m_Offset.y
       value: -0.77791923
+      objectReference: {fileID: 0}
+    - target: {fileID: 8391183920851487688, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0.35299873
+      objectReference: {fileID: 0}
+    - target: {fileID: 8391183920851487688, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -0.4499998
       objectReference: {fileID: 0}
     - target: {fileID: 8391183921164731608, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: virtualCamera
@@ -995,7 +1007,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.895703
+  orthographic size: 11.894232
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1180,6 +1192,10 @@ PrefabInstance:
     - target: {fileID: 8788973897798013766, guid: 74138f045f495494fb4c696941adc6a4, type: 3}
       propertyPath: m_Name
       value: oLeaf
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788973897798013766, guid: 74138f045f495494fb4c696941adc6a4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8788973897798013767, guid: 74138f045f495494fb4c696941adc6a4, type: 3}
       propertyPath: m_Materials.Array.data[0]
