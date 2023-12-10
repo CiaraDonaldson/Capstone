@@ -19,33 +19,46 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Story = GameObject.Find("StoryMode");
-        if (fText == null)
-        {
-            Debug.Log("no count"); 
-        }
-        else if (hText == null)
-        {
-            Debug.Log("no count");
-        }
-        else if (fText2 == null)
-        {
-            Debug.Log("no count");
-        }
-        else if (hText2 == null)
-        {
-            Debug.Log("no count");
-        }
+      
     }
 
     // Update is called once per frame
     void Update()
     {
-        fText.text = fOrbs.ToString();
-        hText.text =  hOrbs.ToString();
-        fText2.text = fOrbs.ToString();
-        hText2.text =  hOrbs.ToString();
-
-        string sceneName = SceneManager.GetActiveScene().ToString();
+        if (fText == null)
+        {
+            Debug.Log("no count");
+        }
+        else
+        {
+            fText.text = fOrbs.ToString();
+        }
+        if (hText == null)
+        {
+            Debug.Log("no count");
+        }
+        else
+        {
+            hText.text = hOrbs.ToString();
+        }
+        if (fText2 == null)
+        {
+            Debug.Log("no count");
+        }
+        else
+        {
+            fText2.text = fOrbs.ToString();
+        }
+        if (hText2 == null)
+        {
+            Debug.Log("no count");
+        }
+        else
+        {
+            hText2.text = hOrbs.ToString();
+        }          
+      
+       // string sceneName = SceneManager.GetActiveScene().ToString();
 
        /* if (sceneName != "Title" | !pauseMenuUI.enabled)
         {
