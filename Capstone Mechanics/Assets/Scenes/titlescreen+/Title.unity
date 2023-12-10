@@ -441,7 +441,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &410296761
 GameObject:
@@ -948,10 +948,8 @@ RectTransform:
   - {fileID: 1052980492}
   - {fileID: 492887680}
   - {fileID: 2079372437}
-  - {fileID: 1501154403}
-  - {fileID: 1245163919}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1513,7 +1511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1245163919
 Transform:
   m_ObjectHideFlags: 0
@@ -1522,12 +1520,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245163918}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -960.1, y: -542.44556, z: 7.366423}
-  m_LocalScale: {x: 0.5819039, y: 0.5819039, z: 0.5819039}
+  m_LocalPosition: {x: -0.099975586, y: -2.4455566, z: 7.366423}
+  m_LocalScale: {x: 0.5819039, y: 0.581904, z: 0.581904}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 990709069}
-  m_RootOrder: 7
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!199 &1245163920
 ParticleSystemRenderer:
@@ -6479,7 +6477,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1501154402
 GameObject:
@@ -6507,12 +6505,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501154402}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -960.1, y: -542.44556, z: 7.366423}
-  m_LocalScale: {x: 0.5819039, y: 0.5819039, z: 0.5819039}
+  m_LocalPosition: {x: -0.099975586, y: -2.4455566, z: 7.366423}
+  m_LocalScale: {x: 0.5819039, y: 0.581904, z: 0.581904}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 990709069}
-  m_RootOrder: 6
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!199 &1501154404
 ParticleSystemRenderer:

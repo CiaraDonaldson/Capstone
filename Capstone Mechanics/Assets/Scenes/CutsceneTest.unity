@@ -916,6 +916,7 @@ GameObject:
   m_Component:
   - component: {fileID: 327424165}
   - component: {fileID: 327424164}
+  - component: {fileID: 327424166}
   m_Layer: 0
   m_Name: CutsceneAudio
   m_TagString: Untagged
@@ -1034,6 +1035,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &327424166
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327424163}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: c2e22232efb19504ba970d30583c0333, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &357336724
 GameObject:
   m_ObjectHideFlags: 0
