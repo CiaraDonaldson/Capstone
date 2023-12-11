@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DigandSneak : MonoBehaviour
+public class Sneak : MonoBehaviour
 {
     public float radius = 2f;
     public float digDepth = 1f;
     public LayerMask digLayer;
     public LayerMask groundLayer;
-    public bool isDigging = false;
     public CircleCollider2D cCollider;
     public CapsuleCollider2D capCollider;
     public Animator anim;
@@ -16,7 +15,7 @@ public class DigandSneak : MonoBehaviour
     public Rigidbody2D rb;
     public SpriteRenderer rend;
     public bool inAir = false;
-
+    public float sneakForce = 5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +23,6 @@ public class DigandSneak : MonoBehaviour
         cCollider = GetComponent<CircleCollider2D>();
         capCollider = GetComponent<CapsuleCollider2D>();
         rb = GetComponent<Rigidbody2D>();
-
     }
 
     // Update is called once per frame
@@ -36,22 +34,33 @@ public class DigandSneak : MonoBehaviour
         RaycastHit2D hit2 = Physics2D.Raycast(transform.position, Vector2.down, digDepth, groundLayer);
         Debug.DrawRay(raycastOrigin, raycastDirection * 2, Color.green);
 
+        if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.LeftArrow))
+            {
+            rb.AddForce(Vector3.left * sneakForce, ForceMode2D.Impulse);
+            anim.Play("Sneak");
+        }
+        else if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.RightArrow))
+            {
+            rb.AddForce(Vector3.right * sneakForce, ForceMode2D.Impulse);
+            anim.Play("Sneak");
+        }
+
         if (!hit && !hit2 && !Input.anyKey)
         {
             inAir = true;
-           // anim.Play("Fall");
+            // anim.Play("Fall");
         }
-        else if(hit | hit2)
+        else if (hit | hit2)
         {
             inAir = false;
-            
+
 
         }
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
             float velocityMagnitude = rb.velocity.magnitude;
-          
+
             if (!hit)
             {
                 cCollider.enabled = false;
@@ -62,42 +71,23 @@ public class DigandSneak : MonoBehaviour
                 anim.enabled = false;
                 rend.sprite = thisSprite;
             }
-            else 
+            else
             {
                 anim.enabled = true;
             }
 
-        
-            if (hit.collider != null)
+            if (rb.velocity.x != 0)
             {
-                isDigging = true;
 
-                StartCoroutine(WaitandPlay());
-                Destroy(hit.collider.gameObject);
-
-            }
-
-            if (rb.velocity.x != 0  && isDigging == false)
-            {
                 anim.Play("Sneak");
             }
+          
         }
         else
         {
             anim.enabled = true;
-            isDigging = false;
             cCollider.enabled = true;
             capCollider.enabled = false;
-
-        }
-
-       
-
-        IEnumerator WaitandPlay()
-        {
-            anim.Play("Dig");
-            yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length + anim.GetCurrentAnimatorStateInfo(0).normalizedTime);
-            isDigging = false;
         }
     }
 }

@@ -78,6 +78,7 @@ public class GameManager : MonoBehaviour
     {
         // Cursor.visible = true;
         GameObject.Find("StoryMode").GetComponent<DoNotDestroy>().enabled = false;
+        Destroy(GameObject.Find("StoryMode"));
         SceneManager.LoadScene("Lvl1");
     }
     public void startStory()

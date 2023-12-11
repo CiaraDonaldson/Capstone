@@ -11837,9 +11837,11 @@ GameObject:
   - component: {fileID: 8391183920730606029}
   - component: {fileID: 8391183920730606033}
   - component: {fileID: 8391183920730606038}
-  - component: {fileID: 8391183920730606037}
   - component: {fileID: 6654098819639733398}
   - component: {fileID: 4103722379551422420}
+  - component: {fileID: 3512563472291296771}
+  - component: {fileID: 4929190396440106213}
+  - component: {fileID: 550391368929835394}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Fox
@@ -12110,34 +12112,6 @@ MonoBehaviour:
   chain: {fileID: 8391183920174092131}
   Hawk: {fileID: 8391183921164731601}
   Tether: {fileID: 0}
---- !u!114 &8391183920730606037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8391183920730606028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819e192ccb1ea3e439648253997213f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 2
-  digDepth: 1
-  digLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  isDigging: 0
-  cCollider: {fileID: 0}
-  capCollider: {fileID: 0}
-  anim: {fileID: 4103722379551422420}
-  thisSprite: {fileID: 21300000, guid: cf08955c8f7f95546b3fc5cb9491c73d, type: 3}
-  rb: {fileID: 0}
-  rend: {fileID: 8391183920730606035}
-  inAir: 0
 --- !u!114 &6654098819639733398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12172,6 +12146,64 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &3512563472291296771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8391183920730606028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eb67aaaae5079642be49ed480da98e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Story: {fileID: 0}
+--- !u!114 &4929190396440106213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8391183920730606028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30cbc60c48d7a314fa044c5a4919c1f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  digDepth: 4
+  digLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  anim: {fileID: 4103722379551422420}
+  rb: {fileID: 8391183920730606029}
+--- !u!114 &550391368929835394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8391183920730606028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ea87cbd66b5fa74f95fa3503a0b0c9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 2
+  digDepth: 1
+  digLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  cCollider: {fileID: 8391183920730606034}
+  capCollider: {fileID: 8391183920730606036}
+  anim: {fileID: 4103722379551422420}
+  thisSprite: {fileID: 21300000, guid: cf08955c8f7f95546b3fc5cb9491c73d, type: 3}
+  rb: {fileID: 8391183920730606029}
+  rend: {fileID: 8391183920730606035}
+  inAir: 0
 --- !u!1 &8391183920851487681
 GameObject:
   m_ObjectHideFlags: 0
@@ -12342,6 +12374,7 @@ GameObject:
   - component: {fileID: 4307509696873051539}
   - component: {fileID: 5395613376024856800}
   - component: {fileID: 1348344597}
+  - component: {fileID: 510581862924153899}
   m_Layer: 0
   m_Name: Hawk
   m_TagString: Hawk
@@ -12644,6 +12677,7 @@ MonoBehaviour:
   wKeyPressStartTime: 0
   orbs: []
   canScan: 0
+  Smoke: {fileID: 8781469635242267163}
 --- !u!114 &8391183921164731609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12713,6 +12747,19 @@ MonoBehaviour:
   animator: {fileID: 2471045986578540483}
   popUpText: {fileID: 123434416882090921}
   popUptext: 
+--- !u!114 &510581862924153899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8391183921164731601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5180ddea3b0bd32488905e76f512b563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Story: {fileID: 0}
 --- !u!1 &8391183921385032739
 GameObject:
   m_ObjectHideFlags: 0
@@ -12917,7 +12964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4140406644459286, guid: a9726ee302999a84ea27e4657abb703f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.45
+      value: -1.36
       objectReference: {fileID: 0}
     - target: {fileID: 4140406644459286, guid: a9726ee302999a84ea27e4657abb703f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12972,5 +13019,10 @@ PrefabInstance:
 --- !u!4 &8779684218671187285 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4140406644459286, guid: a9726ee302999a84ea27e4657abb703f, type: 3}
+  m_PrefabInstance: {fileID: 8780051054121910851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8781469635242267163 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1985655064596568, guid: a9726ee302999a84ea27e4657abb703f, type: 3}
   m_PrefabInstance: {fileID: 8780051054121910851}
   m_PrefabAsset: {fileID: 0}

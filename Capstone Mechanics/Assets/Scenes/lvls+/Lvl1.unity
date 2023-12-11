@@ -7132,7 +7132,7 @@ GameObject:
   - component: {fileID: 778443934}
   m_Layer: 7
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21158,6 +21158,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &972957064 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8391183920730606028, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
+  m_PrefabInstance: {fileID: 1859868613}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &980738761
 GameObject:
   m_ObjectHideFlags: 0
@@ -21676,7 +21681,7 @@ GameObject:
   - component: {fileID: 1266460322}
   m_Layer: 6
   m_Name: BottomDig
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22307,7 +22312,7 @@ GameObject:
   - component: {fileID: 1394593059}
   m_Layer: 6
   m_Name: Top Dig
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23815,16 +23820,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8391183920174092129, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.5627513
+      value: 0.56275177
       objectReference: {fileID: 0}
     - target: {fileID: 8391183920174092129, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.9398017
+      value: -0.93980193
       objectReference: {fileID: 0}
     - target: {fileID: 8391183920851487688, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.4500003
+      value: -0.45000005
       objectReference: {fileID: 0}
+    - target: {fileID: 8391183921164731608, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
+      propertyPath: virtualCamera
+      value: 
+      objectReference: {fileID: 723487762}
     - target: {fileID: 8391183921385032736, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -24629,7 +24638,7 @@ PrefabInstance:
     - target: {fileID: 8152445746744044638, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
       propertyPath: Fox
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 972957064}
     - target: {fileID: 8152445746744044638, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
       propertyPath: healthBar
       value: 

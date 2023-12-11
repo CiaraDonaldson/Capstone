@@ -27,11 +27,11 @@ public class HTalk : MonoBehaviour
     void Update()
     {
 
-        if (!Hawk.GetComponent<DigandSneak>().inAir)
+        if (!Fox.GetComponent<Sneak>().inAir)
         {
             StartCoroutine(canScanNeg());
         }
-        if (Hawk.GetComponent<DigandSneak>().inAir)
+        if (Fox.GetComponent<Sneak>().inAir)
         {
             PopDown();
         }

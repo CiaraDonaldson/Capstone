@@ -7,7 +7,6 @@ public class FoxController : MonoBehaviour
     public ParticleSystem dust;
     public Rigidbody2D rb;
     public float moveForce = 15f;
-    public float sneakForce = 5f;
     public LayerMask groundLayer;
     public bool isGrounded = false;
     public Animator anim;
@@ -64,20 +63,10 @@ public class FoxController : MonoBehaviour
             rb.AddForce(Vector3.right * moveForce, ForceMode2D.Impulse);
             anim.Play("Run");
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            rb.AddForce(Vector3.left * sneakForce, ForceMode2D.Impulse);
-            anim.Play("Sneak");
-        }
-        else if (Input.GetKey(KeyCode.RightArrow))
-        {
-            rb.AddForce(Vector3.right * sneakForce, ForceMode2D.Impulse);
-            anim.Play("Sneak");
-        }
-        else if (!Input.anyKey & hit | hit2)
+        else if (!Input.anyKey)
         {
             dust.Stop();
-            //anim.Play("Fall");
+            //anim.Play("Idle");
         }
 
     }
@@ -97,9 +86,10 @@ public class FoxController : MonoBehaviour
     {
         dust.Play();
     }
+
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "Tilemap" | collision.gameObject.name == "Top Dig" | collision.gameObject.name == "Bottom Dig" && !Input.anyKey)
+        if (collision.gameObject.CompareTag("Ground") && !Input.anyKey)
         {
             if (!Hawk.GetComponent<Carry>().isCarrying)
             {
@@ -109,7 +99,7 @@ public class FoxController : MonoBehaviour
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (!Input.anyKey && collision.gameObject.name == "Tilemap" | collision.gameObject.name == "Top Dig" | collision.gameObject.name == "Bottom Dig")
+        if (!Input.anyKey && collision.gameObject.CompareTag("Ground"))
         {
             if (!Hawk.GetComponent<Carry>().isCarrying) 
             {

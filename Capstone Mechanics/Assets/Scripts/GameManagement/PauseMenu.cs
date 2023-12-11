@@ -38,7 +38,8 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         GameIsPaused = false;
         Fox.GetComponent<Taunt>().enabled = true;
-        Fox.GetComponent<DigandSneak>().enabled = true;
+        Fox.GetComponent<Dig>().enabled = true;
+        Fox.GetComponent<Sneak>().enabled = true;
         Fox.GetComponent<FoxController>().enabled = true;
         Hawk.GetComponent<HawkController>().enabled = true;
         Hawk.GetComponent<Fly>().enabled = true;
@@ -53,7 +54,8 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
         Fox.GetComponent<Taunt>().enabled = false;
-        Fox.GetComponent<DigandSneak>().enabled = false;
+        Fox.GetComponent<Dig>().enabled = false;
+        Fox.GetComponent<Sneak>().enabled = false;
         Fox.GetComponent<FoxController>().enabled = false;
         Hawk.GetComponent<HawkController>().enabled = false;
         Hawk.GetComponent<Fly>().enabled = false;

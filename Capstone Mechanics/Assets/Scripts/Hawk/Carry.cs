@@ -38,7 +38,7 @@ public class Carry : MonoBehaviour
         {
             Transform tranFox = Fox.GetComponent<Transform>();
             float distance = GetDistance(tranFox.position, this.transform.position);
-            if (distance < 2)
+            if (distance < 2.3)
             {               
                 ToggleCarry();
             }           
@@ -72,7 +72,7 @@ public class Carry : MonoBehaviour
 
             Transform tranFox = Fox.GetComponent<Transform>();
             float distance = GetDistance(tranFox.position, this.transform.position);
-            if (distance > 2)
+            if (distance > 2.3)
             {
                 ToggleCarry();
             }
@@ -96,11 +96,12 @@ public class Carry : MonoBehaviour
 
         if (isCarrying)
         {
-            this.transform.Translate(Vector3.up * 1f);
+            this.transform.Translate(Vector3.up * 2f);
 
             joint.enabled = true;
             Fox.GetComponent<Taunt>().enabled = false;
-            Fox.GetComponent<DigandSneak>().enabled = false;
+            Fox.GetComponent<Dig>().enabled = false;
+            Fox.GetComponent<Sneak>().enabled = false;
             fDust.SetActive(false);
             this.GetComponent<Scan>().enabled = false;
             this.GetComponent<Fly>().enabled = false;
@@ -113,7 +114,8 @@ public class Carry : MonoBehaviour
             Fox.transform.Translate(Vector3.up * 1f);
             joint.enabled = false;
             Fox.GetComponent<Taunt>().enabled = true;
-            Fox.GetComponent<DigandSneak>().enabled = true;
+            Fox.GetComponent<Dig>().enabled = true;
+            Fox.GetComponent<Sneak>().enabled = true;
             fDust.SetActive(true);
             this.GetComponent<Scan>().enabled = true;
             this.GetComponent<Fly>().enabled = true;

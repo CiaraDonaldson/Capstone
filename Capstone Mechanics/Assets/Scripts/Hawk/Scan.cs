@@ -1,8 +1,6 @@
-using System.Collections;
+using Cinemachine;
 using System.Collections.Generic;
 using UnityEngine;
-using Cinemachine;
-
 
 public class Scan : MonoBehaviour
 {
@@ -16,6 +14,7 @@ public class Scan : MonoBehaviour
     public float wKeyPressStartTime = 0f;
     public List<Transform> orbs = new List<Transform>();
     public bool canScan = true;
+    public GameObject Smoke;
 
     private bool isElevating = false;
     private bool isWKeyPressed = false;
@@ -26,9 +25,10 @@ public class Scan : MonoBehaviour
     private Animator anim;
     private bool orbsMoved = false;
 
-    void Start()
+    private void Start()
     {
         Fox = GameObject.Find("Fox");
+        //Smoke = GameObject.Find("HawkSmoke");
         anim = GetComponent<Animator>();
         // Assuming orbs have the "Orb" tag. Adjust accordingly.
         GameObject[] orbGameObjects = GameObject.FindGameObjectsWithTag("Orb");
@@ -41,7 +41,7 @@ public class Scan : MonoBehaviour
         originalCameraSize = Camera.main.orthographicSize;
     }
 
-    void Update()
+    private void Update()
     {
         RemoveNullTransformsFromList();
         if (Input.GetKey(KeyCode.W))
@@ -55,9 +55,18 @@ public class Scan : MonoBehaviour
             {
                 canScan = true;
             }
+            if (wKeyPressStartTime > 1 && wKeyPressStartTime < 5)
+            {
+                Smoke.SetActive(true);
+            }
+            else 
+            {
+                Smoke.SetActive(false);
+            }
+
             if (wKeyPressStartTime >= keyHoldDuration && !isElevating && !isZoomedOut && Fox.GetComponent<Rigidbody2D>().velocity.x == 0 && Fox.GetComponent<Rigidbody2D>().velocity.y == 0)
             {
-
+              
                 StartElevate();
             }
         }
@@ -101,18 +110,18 @@ public class Scan : MonoBehaviour
         }
     }
 
-    void StartElevate()
+    private void StartElevate()
     {
         isElevating = true;
         isWKeyPressed = true;
         originalPlayerPosition = transform.position;
     }
 
-    void EndElevate()
+    private void EndElevate()
     {
         isElevating = false;
         orbsMoved = false;
-            // Reset player position
+        // Reset player position
         transform.position = originalPlayerPosition;
 
         if (isZoomedOut)
