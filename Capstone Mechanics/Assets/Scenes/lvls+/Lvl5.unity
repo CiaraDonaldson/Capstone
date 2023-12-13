@@ -20081,6 +20081,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 964050853}
     m_Modifications:
+    - target: {fileID: 118218826731709321, guid: 6acec6ff5177bff4898a5d86eceacda4, type: 3}
+      propertyPath: popUp
+      value: I need you to bring me 3 fox and 2 hawk soul pieces
+      objectReference: {fileID: 0}
+    - target: {fileID: 118218826731709321, guid: 6acec6ff5177bff4898a5d86eceacda4, type: 3}
+      propertyPath: fOrbCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 118218826731709321, guid: 6acec6ff5177bff4898a5d86eceacda4, type: 3}
+      propertyPath: hOrbCount
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5685789291837631792, guid: 6acec6ff5177bff4898a5d86eceacda4, type: 3}
       propertyPath: m_Name
       value: ColourlessGrp
