@@ -25,6 +25,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
+           
+       
         if (fText == null)
         {
             Debug.Log("no count");
@@ -68,6 +71,10 @@ public class GameManager : MonoBehaviour
         {
             Cursor.visible = true;
         }*/
+    }
+    public void restartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
     }
     public void startGamemode()
     {

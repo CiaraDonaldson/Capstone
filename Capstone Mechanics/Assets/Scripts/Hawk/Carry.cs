@@ -38,7 +38,7 @@ public class Carry : MonoBehaviour
         {
             Transform tranFox = Fox.GetComponent<Transform>();
             float distance = GetDistance(tranFox.position, this.transform.position);
-            if (distance < 2.3)
+            if (distance < 2.5)
             {               
                 ToggleCarry();
             }           
@@ -72,7 +72,7 @@ public class Carry : MonoBehaviour
 
             Transform tranFox = Fox.GetComponent<Transform>();
             float distance = GetDistance(tranFox.position, this.transform.position);
-            if (distance > 2.3)
+            if (distance > 2.5)
             {
                 ToggleCarry();
             }
