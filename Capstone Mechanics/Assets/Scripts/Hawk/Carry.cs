@@ -38,7 +38,7 @@ public class Carry : MonoBehaviour
         {
             Transform tranFox = Fox.GetComponent<Transform>();
             float distance = GetDistance(tranFox.position, this.transform.position);
-            if (distance < 2.5)
+            if (distance < 2.3)
             {               
                 ToggleCarry();
             }           
@@ -72,7 +72,7 @@ public class Carry : MonoBehaviour
 
             Transform tranFox = Fox.GetComponent<Transform>();
             float distance = GetDistance(tranFox.position, this.transform.position);
-            if (distance > 2.5)
+            if (distance > 2.3)
             {
                 ToggleCarry();
             }
@@ -96,7 +96,7 @@ public class Carry : MonoBehaviour
 
         if (isCarrying)
         {
-            this.transform.Translate(Vector3.up * 2f);
+            this.transform.Translate(Vector3.up * 1f);
 
             joint.enabled = true;
             Fox.GetComponent<Taunt>().enabled = false;

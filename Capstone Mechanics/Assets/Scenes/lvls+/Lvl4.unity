@@ -6904,7 +6904,7 @@ GameObject:
   - component: {fileID: 778443934}
   m_Layer: 7
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24793,7 +24793,7 @@ GameObject:
   - component: {fileID: 1266460322}
   m_Layer: 6
   m_Name: HighDig
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25288,7 +25288,7 @@ GameObject:
   - component: {fileID: 1394593059}
   m_Layer: 6
   m_Name: Top Dig
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25719,7 +25719,7 @@ GameObject:
   - component: {fileID: 1612568871}
   m_Layer: 6
   m_Name: BottomDig
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27002,7 +27002,7 @@ GameObject:
   - component: {fileID: 2027031766}
   m_Layer: 6
   m_Name: BottomLeftDig
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
