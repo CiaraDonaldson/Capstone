@@ -7,7 +7,7 @@ public class Carry : MonoBehaviour
     public float carryForce = 20f;           
     public float flyForce = 25f;           
     public Rigidbody2D playerToCarry;
-    public bool isTouching = false;
+    //public bool isTouching = false;
     public GameObject Fox;
     public ParticleSystem dust;
     public GameObject fDust;
