@@ -45,16 +45,14 @@ public class Sneak : MonoBehaviour
             anim.Play("Sneak");
         }
 
-        if (!hit && !hit2 && !Input.anyKey)
+        if (hit.collider != null & hit2.collider != null)
         {
             inAir = true;
-            // anim.Play("Fall");
+         
         }
-        else if (hit | hit2)
+        else
         {
             inAir = false;
-
-
         }
 
         if (Input.GetKey(KeyCode.DownArrow))

@@ -35,6 +35,11 @@ public class Colorlessinteract : MonoBehaviour
         {
             StartCoroutine(PopUpAndSwitch());
         }
+
+        if (GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().fOrbs > fOrbCount | GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().hOrbs > hOrbCount)
+        {
+            StartCoroutine(TooMany());
+        }
     }
     private void loadNextScene()
     {
@@ -59,6 +64,12 @@ public class Colorlessinteract : MonoBehaviour
     {
         animator.Play("close");
         //popUpBox.SetActive(false);
+    }
+    IEnumerator TooMany()
+    {
+        PopUp("This is way too many!");
+        yield return new WaitForSeconds(2f);
+        PopUp("You need to bring me the exact amount, or I cant restore :[");
     }
     IEnumerator PopUpAndSwitch()
     {

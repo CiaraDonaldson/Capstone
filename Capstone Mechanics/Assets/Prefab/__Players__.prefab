@@ -11876,7 +11876,7 @@ AudioSource:
   m_GameObject: {fileID: 8391183920730606028}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: d6c310fd6af26bc4c9de314c3c2b60be, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -12083,7 +12083,6 @@ MonoBehaviour:
   dust: {fileID: 0}
   rb: {fileID: 0}
   moveForce: 1
-  sneakForce: 0.5
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -12204,6 +12203,7 @@ MonoBehaviour:
   rb: {fileID: 8391183920730606029}
   rend: {fileID: 8391183920730606035}
   inAir: 0
+  sneakForce: 5
 --- !u!1 &8391183920851487681
 GameObject:
   m_ObjectHideFlags: 0
@@ -12411,7 +12411,7 @@ AudioSource:
   m_GameObject: {fileID: 8391183921164731601}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: d6c310fd6af26bc4c9de314c3c2b60be, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -12693,7 +12693,6 @@ MonoBehaviour:
   carryForce: 30
   flyForce: 30
   playerToCarry: {fileID: 8391183920730606029}
-  isTouching: 0
   Fox: {fileID: 8391183920730606028}
   dust: {fileID: 6764734075545439192}
   fDust: {fileID: 3001040409989993968}
