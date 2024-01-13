@@ -12189,7 +12189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 2
-  digDepth: 1
+  digDepth: 2
   digLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -12737,7 +12737,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8391183921164731601}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37d9645e6b194c54f9cf04de9f1b1a48, type: 3}
   m_Name: 
@@ -12746,6 +12746,7 @@ MonoBehaviour:
   animator: {fileID: 2471045986578540483}
   popUpText: {fileID: 123434416882090921}
   popUptext: 
+  scanreact: 0
 --- !u!114 &510581862924153899
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Sneak : MonoBehaviour
 {
     public float radius = 2f;
-    public float digDepth = 1f;
+    public float digDepth = 2f;
     public LayerMask digLayer;
     public LayerMask groundLayer;
     public CircleCollider2D cCollider;
@@ -32,7 +32,8 @@ public class Sneak : MonoBehaviour
         Vector3 raycastDirection = transform.forward;
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, digDepth, digLayer);
         RaycastHit2D hit2 = Physics2D.Raycast(transform.position, Vector2.down, digDepth, groundLayer);
-        Debug.DrawRay(raycastOrigin, raycastDirection * 2, Color.green);
+        Vector3 down = transform.TransformDirection(Vector3.down) * digDepth;
+        Debug.DrawRay(transform.position, down, Color.red);
 
         if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.LeftArrow))
             {
@@ -45,14 +46,14 @@ public class Sneak : MonoBehaviour
             anim.Play("Sneak");
         }
 
-        if (hit.collider != null & hit2.collider != null)
+        if (hit.collider != null || hit2.collider != null)
         {
-            inAir = true;
+            inAir = false;
          
         }
         else
         {
-            inAir = false;
+            inAir = true;
         }
 
         if (Input.GetKey(KeyCode.DownArrow))

@@ -47,7 +47,7 @@ public class Scan : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             wKeyPressStartTime += Time.deltaTime;
-            if (Fox.GetComponent<Rigidbody2D>().velocity.x != 0 && Fox.GetComponent<Rigidbody2D>().velocity.y != 0)
+            if (Fox.GetComponent<Sneak>().inAir)
             {
                 canScan = false;
             }
@@ -64,7 +64,7 @@ public class Scan : MonoBehaviour
                 Smoke.SetActive(false);
             }
 
-            if (wKeyPressStartTime >= keyHoldDuration && !isElevating && !isZoomedOut && Fox.GetComponent<Rigidbody2D>().velocity.x == 0 && Fox.GetComponent<Rigidbody2D>().velocity.y == 0)
+            if (wKeyPressStartTime >= keyHoldDuration && !isElevating && !isZoomedOut && canScan)
             {
               
                 StartElevate();
