@@ -6,7 +6,7 @@ public class Dig : MonoBehaviour
 {
     public float digDepth = 3f;  // Depth to dig
     public LayerMask digLayer;   // Layer to check for digging
-    private bool isDigging = false;
+    public bool isDigging = false;
     public Animator anim;
     public Rigidbody2D rb;
 

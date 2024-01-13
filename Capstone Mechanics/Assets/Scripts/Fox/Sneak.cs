@@ -60,12 +60,12 @@ public class Sneak : MonoBehaviour
         {
             float velocityMagnitude = rb.velocity.magnitude;
 
-            if (!hit)
+            if (hit.collider != null)
             {
                 cCollider.enabled = false;
                 capCollider.enabled = true;
             }
-            if (!hit & velocityMagnitude < 1)
+            if (hit.collider != null & velocityMagnitude < 1)
             {
                 anim.enabled = false;
                 rend.sprite = thisSprite;
