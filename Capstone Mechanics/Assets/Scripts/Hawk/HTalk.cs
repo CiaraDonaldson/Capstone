@@ -30,10 +30,14 @@ public class HTalk : MonoBehaviour
     private bool hasCounted = false;
     private int keyHoldCounter = 0;
 
-    [SerializeField]private int digCount = 0;
+    [SerializeField] private int digCount = 0;
     private bool isCoroutineRunning = false;
     private bool hasLvl2AirRun = false;
-    private int Count = 0;
+    [SerializeField] private int Count = 0;
+
+    private bool isFacingRight = true;
+    private bool Lvl8Play = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -121,7 +125,58 @@ public class HTalk : MonoBehaviour
             }
             
         }
+
+        //LEVEL 6
+        if (sceneName == "Lvl6")
+        {
+            if (Input.GetKeyDown(KeyCode.S) && !this.GetComponent<Carry>().isCarrying)
+            {
+                Count++;
+            }
+            if (Count == 3)
+            {
+                Count++;
+                StartCoroutine("Lvl6Carry");
+            }
+            if (Input.GetKeyDown(KeyCode.S) && this.GetComponent<Carry>().isCarrying)
+            {
+                digCount++;
+            }
+            if (digCount == 1)
+            {
+                digCount++;
+                StartCoroutine("Lvl6Drop");
+            }
+        }
+
+        //LEVEL 8
+        if (sceneName == "Lvl8")
+        {
+            if (!isCoroutineRunning && !Lvl8Play)
+            {
+                StartCoroutine("Lvl8Pass");
+            }
+        }
+
         //ALL LEVELS
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            FlipHBox(false);
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            FlipHBox(true);
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            FlipFBox(false);
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            FlipFBox(true);
+        }
+        
         if (Input.GetKey(KeyCode.W))
         {
             wKeyHoldTime += Time.deltaTime;
@@ -199,7 +254,6 @@ public class HTalk : MonoBehaviour
         isCoroutineRunning = false;
         hasLvl2AirRun = true;
     }
-
     IEnumerator Lvl2Dig()
     {
         isCoroutineRunning = true;
@@ -255,6 +309,74 @@ public class HTalk : MonoBehaviour
 
         isCoroutineRunning = false;
     }
+    IEnumerator Lvl6Carry()
+    {
+        isCoroutineRunning = true;
+
+        PopUp("If it’s any consolation, I hate this too..");
+
+        yield return new WaitForSeconds(5f);
+
+        fPopUp("I hate you.");
+        yield return new WaitForSeconds(5f);
+
+        
+
+        // Play the close animation
+        StartCoroutine(PlayCloseAnimation());
+
+        isCoroutineRunning = false;
+    }
+    IEnumerator Lvl6Drop()
+    {
+        isCoroutineRunning = true;
+
+        fPopUp("OW!?!");
+        yield return new WaitForSeconds(3f);
+
+        PopUp("Oops..");
+        yield return new WaitForSeconds(3f);
+
+        fPopUp("Yknow this hurts you too right??");
+        yield return new WaitForSeconds(5f);
+
+        PopUp("Eh, Worth it..");
+        yield return new WaitForSeconds(5f);
+
+        //digCount++;
+
+        // Play the close animation
+        StartCoroutine(PlayCloseAnimation());
+
+        isCoroutineRunning = false;
+    }
+    IEnumerator Lvl8Pass()
+    {
+        isCoroutineRunning = true;
+        yield return new WaitForSeconds(10f);
+
+        fPopUp("Are you allergic to the ground?");
+        yield return new WaitForSeconds(3f);
+
+        PopUp("What are you on about?");
+        yield return new WaitForSeconds(3f);
+
+        fPopUp("You're just always flying, not once have you landed");
+        yield return new WaitForSeconds(5f);
+
+        fPopUp("Do your wings not hurt??");
+        yield return new WaitForSeconds(4f);
+
+        PopUp("no...?");
+        yield return new WaitForSeconds(3f);
+
+        //digCount++;
+        Lvl8Play = true;
+        // Play the close animation
+        StartCoroutine(PlayCloseAnimation());
+
+        isCoroutineRunning = false;
+    }
     IEnumerator PlayCloseAnimation()
     {
         yield return new WaitForSeconds(2f); // Adjust the delay if needed
@@ -303,6 +425,25 @@ public class HTalk : MonoBehaviour
     {
         animator.Play("close");
         //popUpBox.SetActive(false);
+    }
+
+    void FlipHBox(bool faceRight)
+    {      
+        // Flip the character's scale based on the direction.
+        Vector3 newScale = popUpBox.transform.localScale;
+        newScale.x = faceRight ? .2f : -.2f;
+        popUpBox.transform.localScale = newScale;
+
+        isFacingRight = faceRight;
+    }
+    void FlipFBox(bool faceRight)
+    {
+        // Flip the character's scale based on the direction.
+        Vector3 newScale = fpopUpBox.transform.localScale;
+        newScale.x = faceRight ? .2f : -.2f;
+        fpopUpBox.transform.localScale = newScale;
+
+        isFacingRight = faceRight;
     }
 }
 
