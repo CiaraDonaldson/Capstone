@@ -12082,7 +12082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dust: {fileID: 0}
   rb: {fileID: 0}
-  moveForce: 1
+  moveForce: 5
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -12204,7 +12204,7 @@ MonoBehaviour:
   rb: {fileID: 8391183920730606029}
   rend: {fileID: 8391183920730606035}
   inAir: 0
-  sneakForce: 5
+  sneakForce: 4
 --- !u!1 &8391183920851487681
 GameObject:
   m_ObjectHideFlags: 0
@@ -12759,6 +12759,7 @@ MonoBehaviour:
   fpopUptext: 
   scanreact: 0
   digCount: 0
+  Count: 0
 --- !u!114 &510581862924153899
 MonoBehaviour:
   m_ObjectHideFlags: 0
