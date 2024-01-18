@@ -58,9 +58,11 @@ public class HTalk : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //LEVEL 2
+        
        Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
+
+        //LEVEL 2
         if (sceneName == "Lvl2")
         {
             RaycastHit2D hit = Physics2D.Raycast(Fox.transform.position, Vector2.down, 15, digLayer);
@@ -237,7 +239,255 @@ public class HTalk : MonoBehaviour
         }
 
     }
+    //Cutscene Dialog
+    IEnumerator Lvl1Cut()
+    {
+        isCoroutineRunning = true;
+        fPopUp("Can you STOP already?!? I’m sure you noticed that if you hurt me any further, you’ll feel it just as much.");
+        yield return new WaitForSeconds(5f);
 
+        PopUp("What did you do to me?");
+        yield return new WaitForSeconds(5f);
+
+        fPopUp("Well Bird brain, obviously I wanted to make us suffer.");
+        yield return new WaitForSeconds(5f);
+        fPopUp("Alright, alright look I don’t know what’s going on. All I know is that we’re connected somehow.");
+        yield return new WaitForSeconds(5f);
+
+        PopUp("No we aren’t");
+        yield return new WaitForSeconds(5f);
+
+        fPopUp("Don’t say I didn’t warn you.");
+        yield return new WaitForSeconds(5f);
+
+        PopUp("Then undo this mutt, You’re the one who led me here. Fix. It.");
+        yield return new WaitForSeconds(5f);
+
+        fPopUp("If you weren’t so hellbent on trying to eat me, we wouldn’t even be in this mess.");
+        yield return new WaitForSeconds(5f);
+
+        PopUp("No if you didn’t resort to such cowardly tactics, you’d be a distant memory.");
+        yield return new WaitForSeconds(5f);
+
+        //Chimera appers
+        //What an amusing display…Two opposing souls are somehow linked together.
+
+        PopUp("Who or what are you?");
+        yield return new WaitForSeconds(5f);
+
+        //You may simply call me Chimera, but a better question is who are you? A fox or a Hawk?
+        fPopUp("A fox");
+        PopUp("A hawk");
+
+        //Normally I would agree if it weren’t for the chain that keeps you linked
+        //Chain Appears
+        //As long as your souls are linked, your fates are entwined, not even death can do you part.
+        fPopUp("Then what can?");
+        yield return new WaitForSeconds(5f);
+
+        //ANIMATION FRAME EDIT: the souls that need to be collected appear over their rightful characters
+        //You need to find yourselves before you can rebuild. Give before you take.
+        //There will be souls out there, scattered souls that you will need to collect and give to lost beings that are called The Colorless. 
+
+        PopUp("How can we find these pieces if we’re bound together?");
+        yield return new WaitForSeconds(5f);
+
+        //Simple, work together.
+        //ANIMATION FRAME EDIT: The hawk and the fox look at each other and laugh, they look back to the chimera 
+
+        fPopUp("I don’t need some birdbrain following me around.");
+        yield return new WaitForSeconds(5f);
+
+        PopUp("And I don’t need a mangy mutt slowing me down.");
+        yield return new WaitForSeconds(5f);
+
+        //Very well, good luck then
+        //ANIMATION FRAME EDIT: The chimera disappears and leaves the hawk and fox to complete their first-level
+
+        // PopDown();
+
+        // fPopDown();
+        StartCoroutine(PlayCloseAnimation());
+
+        //isCoroutineRunning = false;
+        //hasLvl2AirRun = true;
+    } 
+    IEnumerator Lvl3Cut()
+    {
+        //The fox and hawk are casually walking/flying, the hawk begins to say
+        PopUp("Just as I thought, I don’t need you.");
+        yield return new WaitForSeconds(5f);
+
+        fPopUp("Well I didn’t need you either. I collected all my souls without a hitch.");
+        yield return new WaitForSeconds(5f);
+
+        PopUp("Yes I saw, dirtying yourself to unearth your soul fits you, mutt.");
+        yield return new WaitForSeconds(5f);
+
+        fPopUp("whatever...");
+        yield return new WaitForSeconds(5f);
+
+        //They approach a new colorless, but this time it has two sockets.
+        fPopUp("That’s odd, it’s asking for two souls?");
+        yield return new WaitForSeconds(5f);
+
+        PopUp("How is it odd, just give it two of your souls so we can move on.");
+        yield return new WaitForSeconds(5f);
+
+        fPopUp("You’re stupid and colorblind? Pick a struggle. It looks like this colorless is asking for both of our souls.");
+        yield return new WaitForSeconds(5f);
+
+        PopUp("What an annoyance, let’s go");
+        yield return new WaitForSeconds(5f);
+
+        //After a while of not finding any more souls, the ability to scan is unlocked
+
+        PopUp("Enough of this! *Scans for the first time* Damn it part of my soul is under that log.");
+        yield return new WaitForSeconds(5f);
+
+        fPopUp("Hah, look who's useless now. Observe. *Sneaks for the first time* Here’s your soul.");
+        yield return new WaitForSeconds(5f);
+
+        PopUp("…Thank you, Mutt");
+        yield return new WaitForSeconds(5f);
+
+        fPopUp("What was that birdbrain? Did you just thank me?");
+        yield return new WaitForSeconds(5f);
+
+        PopUp(" I suppose those long ears are just for show isn’t it?");
+        yield return new WaitForSeconds(5f);
+
+        fPopUp("Mhm");
+        yield return new WaitForSeconds(5f);
+
+        StartCoroutine(PlayCloseAnimation());
+
+        //isCoroutineRunning = false;
+        //hasLvl2AirRun = true;
+    }
+    IEnumerator Lvl5Cut()
+    {
+        //As they move forward, they come across a soul that’s in a high place.
+        fPopUp("You have to be kidding me");
+        yield return new WaitForSeconds(5f);
+
+        PopUp("Hahaha, I see you’re still useless after all Mutt");
+        yield return new WaitForSeconds(5f);
+
+        fPopUp("Shut it. There are bound to be other souls I don’t need that one per se");
+        yield return new WaitForSeconds(5f);
+
+        //After running into more souls that are on higher ground
+        fPopUp("That’s IT! Carry me");
+        yield return new WaitForSeconds(5f);
+
+        PopUp(" …What.");
+        yield return new WaitForSeconds(5f);
+
+        fPopUp("Carry. Me. If we want to move forward, I need to collect my souls and all my souls are not ground level so therefore Pick.Me.Up.");
+        yield return new WaitForSeconds(5f);
+
+        PopUp("No.");
+        yield return new WaitForSeconds(5f);
+
+        //Hawk flies away only for the chain to appear to keep it from going any further.
+
+        PopUp("Damn this chain and damn you I refuse to carry prey that’s not for eating.");
+        yield return new WaitForSeconds(5f);
+
+        fPopUp("Then forget it.");
+        yield return new WaitForSeconds(5f);
+
+        //GIANT TEXT: I wouldn’t give up yet if I were you
+        //CAMERA PANS OVER TO A RESTING CHIMERA
+
+        PopUp("How long have you been watching us Chimera");
+        yield return new WaitForSeconds(5f);
+
+        //Chimera: Long enough to know that if you refuse to work together then it’ll only be a matter of time before you both become colorless yourselves.
+        //CHIMERA FADES AWAY INTO THE BACKGROUND
+
+        fPopUp("...");
+        yield return new WaitForSeconds(5f);
+
+        PopUp("...");
+        yield return new WaitForSeconds(5f);
+
+        fPopUp("You gonna pick me up now");
+        yield return new WaitForSeconds(5f);
+
+        PopUp("fine...");
+        yield return new WaitForSeconds(5f);
+
+        //Unlocks the pickup ability
+        StartCoroutine(PlayCloseAnimation());
+
+        //isCoroutineRunning = false;
+        //hasLvl2AirRun = true;
+    }
+    // v do this one v
+    IEnumerator Lvl6Cut()
+    {
+        //As they move forward, they come across a soul that’s in a high place.
+        fPopUp("You have to be kidding me");
+        yield return new WaitForSeconds(5f);
+
+        PopUp("Hahaha, I see you’re still useless after all Mutt");
+        yield return new WaitForSeconds(5f);
+
+        fPopUp("Shut it. There are bound to be other souls I don’t need that one per se");
+        yield return new WaitForSeconds(5f);
+
+        //After running into more souls that are on higher ground
+        fPopUp("That’s IT! Carry me");
+        yield return new WaitForSeconds(5f);
+
+        PopUp(" …What.");
+        yield return new WaitForSeconds(5f);
+
+        fPopUp("Carry. Me. If we want to move forward, I need to collect my souls and all my souls are not ground level so therefore Pick.Me.Up.");
+        yield return new WaitForSeconds(5f);
+
+        PopUp("No.");
+        yield return new WaitForSeconds(5f);
+
+        //Hawk flies away only for the chain to appear to keep it from going any further.
+
+        PopUp("Damn this chain and damn you I refuse to carry prey that’s not for eating.");
+        yield return new WaitForSeconds(5f);
+
+        fPopUp("Then forget it.");
+        yield return new WaitForSeconds(5f);
+
+        //GIANT TEXT: I wouldn’t give up yet if I were you
+        //CAMERA PANS OVER TO A RESTING CHIMERA
+
+        PopUp("How long have you been watching us Chimera");
+        yield return new WaitForSeconds(5f);
+
+        //Chimera: Long enough to know that if you refuse to work together then it’ll only be a matter of time before you both become colorless yourselves.
+        //CHIMERA FADES AWAY INTO THE BACKGROUND
+
+        fPopUp("...");
+        yield return new WaitForSeconds(5f);
+
+        PopUp("...");
+        yield return new WaitForSeconds(5f);
+
+        fPopUp("You gonna pick me up now");
+        yield return new WaitForSeconds(5f);
+
+        PopUp("fine...");
+        yield return new WaitForSeconds(5f);
+
+        //Unlocks the pickup ability
+        StartCoroutine(PlayCloseAnimation());
+
+        //isCoroutineRunning = false;
+        //hasLvl2AirRun = true;
+    }
+
+    //Passing Comments
     IEnumerator Lvl2Air()
     {
         isCoroutineRunning = true;
@@ -404,6 +654,8 @@ public class HTalk : MonoBehaviour
         //yield return new WaitForSeconds(5f);
         //PopDown();
     }
+
+    //Technical Methods
     public void PopUp(string text)
     {
         popUpBox.SetActive(true);
@@ -426,7 +678,6 @@ public class HTalk : MonoBehaviour
         animator.Play("close");
         //popUpBox.SetActive(false);
     }
-
     void FlipHBox(bool faceRight)
     {      
         // Flip the character's scale based on the direction.
