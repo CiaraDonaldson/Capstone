@@ -55,12 +55,12 @@ public class FoxController : MonoBehaviour
 
         if (!Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.LeftArrow))
         {
-            rb.AddForce(Vector3.left * moveForce, ForceMode2D.Impulse);
+            moveLeft();
             anim.Play("Run");
         }
         else if (!Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.RightArrow))
         {
-            rb.AddForce(Vector3.right * moveForce, ForceMode2D.Impulse);
+            moveRight();
             anim.Play("Run");
         }
         else if (!Input.anyKey)
@@ -69,6 +69,15 @@ public class FoxController : MonoBehaviour
             //anim.Play("Idle");
         }
 
+    }
+
+    public void moveLeft()
+    {
+        rb.AddForce(Vector3.left * moveForce, ForceMode2D.Impulse);
+    }
+    public void moveRight()
+    {
+        rb.AddForce(Vector3.right * moveForce, ForceMode2D.Impulse);
     }
     void FlipCharacter(bool faceRight)
     {

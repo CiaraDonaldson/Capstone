@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/lvls+/Map.unity
     guid: fe0627a77c02cfa4f9e8b2d62d1786dc
   - enabled: 1
-    path: Assets/Scenes/Cutscenes/LivingWorld.unity
+    path: Assets/Scenes/Cutscenes+/LivingWorld.unity
     guid: fd6e6722f0adce74e99ae2fbf15dc020
   - enabled: 1
     path: Assets/Scenes/lvls+/Lvl1.unity
@@ -54,15 +54,15 @@ EditorBuildSettings:
     path: Assets/Scenes/lvls+/Lvl10.unity
     guid: 71ccab58f393b3249ae8747dfd86ce42
   - enabled: 1
-    path: Assets/Scenes/Cutscenes/Lvl1 Cutscene.unity
+    path: Assets/Scenes/Cutscenes+/Lvl1 Cutscene.unity
     guid: bcca582166abf0c4b8be4638b99af3ed
   - enabled: 1
-    path: Assets/Scenes/Cutscenes/Lvl3Cutscene.unity
+    path: Assets/Scenes/Cutscenes+/Lvl3Cutscene.unity
     guid: 6d84b34b02473234a8ce0401005198d9
   - enabled: 1
-    path: Assets/Scenes/Cutscenes/Lvl5Cutscene.unity
+    path: Assets/Scenes/Cutscenes+/Lvl5Cutscene.unity
     guid: 0b21c82d3b8f4ed49af38876e12d65c2
   - enabled: 1
-    path: Assets/Scenes/Cutscenes/Lvl7Cutscene.unity
+    path: Assets/Scenes/Cutscenes+/Lvl7Cutscene.unity
     guid: 06c9f435c0ed0ef4f8fe373f1cb39f84
   m_configObjects: {}
