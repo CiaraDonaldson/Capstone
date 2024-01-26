@@ -526,6 +526,8 @@ public class HTalk : MonoBehaviour
     IEnumerator Lvl5Cut()
     {
         //As they move forward, they come across a soul that’s in a high place.
+        yield return new WaitForSeconds(5f);
+
         dialougeImage.sprite = FImg;
         dialougeText.text = ("You have to be kidding me");
         //fPopUp("You have to be kidding me");
@@ -617,36 +619,55 @@ public class HTalk : MonoBehaviour
     IEnumerator Lvl7Cut()
     {
         //Seeing a ground soulless
-        fPopUp("What’s that?");
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("What’s that?");
+        //fPopUp("What’s that?");
         yield return new WaitForSeconds(5f);
 
-        PopUp("I’m not sure, it’s not a colorless");
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("I’m not sure, it’s definetly not a colorless");
+        //PopUp("I’m not sure, it’s not a colorless");
         yield return new WaitForSeconds(5f);
 
-        fPopUp("Let’s just avoid it for now ");
-        yield return new WaitForSeconds(5f);
-                //Pause...
-        fPopUp("By the spirits, will you just get off your high horse");
-        yield return new WaitForSeconds(5f);
-
-        PopUp("And lower myself to your level? I think not");
-        yield return new WaitForSeconds(5f);
-
-        fPopUp("You’ll get us both killed for your pride?");
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("Let’s just avoid it for now");
+        //fPopUp("Let’s just avoid it for now..");
+        yield return new WaitForSeconds(8f);
+        //Pause...
+        dialougeText.text = ("By the spirits, will you just get off your high horse");
+        //fPopUp("");
         yield return new WaitForSeconds(5f);
 
-        PopUp("Stop talking to me Mutt");
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("And put myself to your level? I think not");
+        //PopUp("");
+        yield return new WaitForSeconds(5f);
+
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("You’ll get us both killed for your pride?");
+       // fPopUp("");
+        yield return new WaitForSeconds(5f);
+
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("Stop talking to me Mutt");
+        //PopUp("Stop talking to me Mutt");
         yield return new WaitForSeconds(5f);
 
         //*Taunt is unlocked*
-        fPopUp("Get down, you winged RAT");
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("Get down, you winged RAT");
+        //fPopUp("");
         yield return new WaitForSeconds(5f);
 
         //*Taunted* 
-        PopUp("Watch how you speak to me-");
-        yield return new WaitForSeconds(5f);
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("WATCH YOUR TOUNGUE-");
+        //PopUp("");
+        yield return new WaitForSeconds(2f);
 
-        fPopUp("Shut up and stay down, Imma get us through this.");
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("Just shut up and stay down! Imma get us through this.");
+        //fPopUp("");
         yield return new WaitForSeconds(5f);
 
        
