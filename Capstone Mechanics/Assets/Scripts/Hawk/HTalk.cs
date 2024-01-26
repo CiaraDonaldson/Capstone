@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using System;
+using UnityEngine.UI;
 
 public class HTalk : MonoBehaviour
 {
@@ -29,6 +30,13 @@ public class HTalk : MonoBehaviour
     private GameObject Fox;
     private Vector3 initialScale;
     private Quaternion initialRotation;
+
+    public TMP_Text dialougeText;
+    public Image dialougeImage;
+
+    public Sprite CImg;
+    public Sprite HImg;
+    public Sprite FImg;
 
     public int scanreact = 0;
     private float wKeyHoldTime = 0f;
@@ -66,6 +74,7 @@ public class HTalk : MonoBehaviour
         
        Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
+        //Cutscenes
         if (sceneName == "Lvl1 Cutscene")
         {
             if (digCount == 0)
@@ -74,7 +83,30 @@ public class HTalk : MonoBehaviour
                 digCount++;
             }
         }
-
+        if (sceneName == "Lvl3Cutscene")
+        {
+            if (digCount == 0)
+            {
+                StartCoroutine("Lvl3Cut");
+                digCount++;
+            }
+        }
+        if (sceneName == "Lvl5Cutscene")
+        {
+            if (digCount == 0)
+            {
+                StartCoroutine("Lvl5Cut");
+                digCount++;
+            }
+        }
+        if (sceneName == "Lvl7Cutscene")
+        {
+            if (digCount == 0)
+            {
+                StartCoroutine("Lvl7Cut");
+                digCount++;
+            }
+        }
         //LEVEL 2
         if (sceneName == "Lvl2")
         {
@@ -258,105 +290,149 @@ public class HTalk : MonoBehaviour
         isCoroutineRunning = true;
         yield return new WaitForSeconds(9f);
 
-        fPopUp("Can you STOP already?!? I’m sure you noticed that if you hurt me any further, you’ll feel it just as much.");
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("Can you STOP already?!? I’m sure you noticed that if you hurt me any further, you’ll feel it just as much.");
+       // fPopUp("Can you STOP already?!? I’m sure you noticed that if you hurt me any further, you’ll feel it just as much.");
         yield return new WaitForSeconds(5f);
-        fPopUp("");
+        // fPopUp("");
 
-        PopUp("What did you do to me?");
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("What have you done to me?!?");
+        //PopUp("What did you do to me?!?");
         yield return new WaitForSeconds(3f);
-        PopUp("");
+        //PopUp("");
 
-        fPopUp("Well, I wanted to make us suffer....");
+
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("Well, I wanted to make us suffer....");
+        //fPopUp("Well, I wanted to make us suffer....");
         yield return new WaitForSeconds(5f);
-        fPopUp("");
+       // fPopUp("");
 
-        fPopUp("OBVIOUSLY I DIDN'T KNOW");
+        dialougeText.text = ("OBVIOUSLY I DIDN'T KNOW!");
+        //fPopUp("OBVIOUSLY I DIDN'T KNOW!");
         yield return new WaitForSeconds(3f);
-        fPopUp("");
+       // fPopUp("");
 
-        fPopUp("All right birdbrain.. all I know is that we’re connected somehow.");
+        dialougeText.text = ("All I know birdbrain is that we’re connected somehow.");
+        //fPopUp("All I know birdbrain is that we’re connected somehow.");
         yield return new WaitForSeconds(5f);
-        fPopUp("");
+       //fPopUp("");
 
-        PopUp("No we aren’t");
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("No we can't be..");
+        //PopUp("No we can't be..");
         yield return new WaitForSeconds(5f);
-        PopUp("");
+        //PopUp("");
 
-        fPopUp("Don’t say I didn’t warn you.");
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("Don’t say I didn’t warn you.");
+        //fPopUp("Don’t say I didn’t warn you.");
         yield return new WaitForSeconds(5f);
-        fPopUp("");
+       // fPopUp("");
 
-        PopUp("Then undo this you miserable mutt, You’re the one who led me here. Fix. It.");
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("Then undo this you mutt, You’re the one who led me here. Fix. It.");
+        //PopUp("Then undo this you mutt, You’re the one who led me here. Fix. It.");
         yield return new WaitForSeconds(5f);
-        PopUp("");
+       // PopUp("");
 
-        fPopUp("If you weren’t so hellbent on trying to eat me, we wouldn’t even be in this mess.");
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("If you weren’t so hellbent on trying to eat me, we wouldn’t even be in this mess.");
+        //fPopUp("If you weren’t so hellbent on trying to eat me, we wouldn’t even be in this mess.");
         yield return new WaitForSeconds(5f);
-        fPopUp("");
+        //fPopUp("");
 
 
-        PopUp("No if you didn’t resort to such cowardly tactics, you’d be just another quick meal.");
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("No if you didn’t resort to such cowardly tactics, you’d be just another meal.");
+        //PopUp("No if you didn’t resort to such cowardly tactics, you’d be just another meal.");
         yield return new WaitForSeconds(5f);
 
-        fPopUp("");
+        //fPopUp("");
    
-        PopUp("");
-     
+        //PopUp("");
+
         //Chimera appers
+        dialougeImage.sprite = null;
+        dialougeText.text = ("What an amusing display…");
+       // cPopUp("What an amusing display…");
+        yield return new WaitForSeconds(2f);
+        dialougeText.text = ("Two opposing souls are somehow linked together.");
+       // cPopUp("Two opposing souls are somehow linked together.");
+        yield return new WaitForSeconds(3f);
 
-        cPopUp("What an amusing display…Two opposing souls are somehow linked together.");
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("Who or what are you?");
+        //PopUp("Who or what are you?");
         yield return new WaitForSeconds(5f);
 
-        PopUp("Who or what are you?");
+        dialougeImage.sprite = CImg;
+        dialougeText.text = ("You may simply call me Chimera, but a better question is who are you? A Fox or a Hawk?");
+        //cPopUp("You may simply call me Chimera, but a better question is who are you? A Fox or a Hawk?");
         yield return new WaitForSeconds(5f);
 
+        dialougeText.text = ("A Fox!" + "A Hawk!");
+        //fPopUp("A fox");
+        // PopUp("A hawk");
+        yield return new WaitForSeconds(2f);
 
-        cPopUp("You may simply call me Chimera, but a better question is who are you? A Fox or a Hawk?");
+        dialougeImage.sprite = CImg;
+        dialougeText.text = ("Normally I would agree if it weren’t for the chain that keeps you linked");
+        //cPopUp("Normally I would agree if it weren’t for the chain that keeps you linked");
         yield return new WaitForSeconds(5f);
-
-        fPopUp("A fox");
-        PopUp("A hawk");
-
-
-        cPopUp("Normally I would agree if it weren’t for the chain that keeps you linked");
-        yield return new WaitForSeconds(5f);
-        fPopUp("");
-        PopUp("");
+        //fPopUp("");
+        //PopUp("");
         //Chain Appears
 
-        cPopUp("As long as your souls are linked, your fates are entwined, not even death can do you part.");
+        dialougeText.text = ("As long as your souls are linked, your fates are entwined, not even death can do you part.");
+       // cPopUp("As long as your souls are linked, your fates are entwined, not even death can do you part.");
         yield return new WaitForSeconds(5f);
 
-        fPopUp("Then what can?");
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("Then what can?");
+        //fPopUp("Then what can?");
         yield return new WaitForSeconds(5f);
 
         //ANIMATION FRAME EDIT: the souls that need to be collected appear over their rightful characters
-     
-        cPopUp("You need to find yourselves before you can rebuild. Give before you take.");
+        dialougeImage.sprite = CImg;
+        dialougeText.text = ("You need to find yourselves before you can rebuild. Give before you take.");
+        //cPopUp("You need to find yourselves before you can rebuild. Give before you take.");
         yield return new WaitForSeconds(5f);
-        fPopUp("");
-        //There will be souls out there, scattered souls that you will need to collect and give to lost beings that are called The Colorless. 
-        cPopUp("There will be souls out there, scattered souls that you will need to collect and give to lost beings that are called The Colorless.");
+       // fPopUp("");
+        //There will be souls out there, scattered souls that you will need to collect and give to lost beings that are called The Colorless.
+        dialougeText.text = ("There will be souls out there, scattered souls that you will need to collect and give to lost beings that are called The Colorless.");
+        //cPopUp("There will be souls out there, scattered souls that you will need to collect and give to lost beings that are called The Colorless.");
         yield return new WaitForSeconds(5f);
 
-        PopUp("How can we find these pieces if we’re bound together?");
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("How can we find these pieces if we’re bound together?");
+        //PopUp("How can we find these pieces if we’re bound together?");
         yield return new WaitForSeconds(5f);
 
-        fPopUp("");
-        PopUp("");
+        //fPopUp("");
+        //PopUp("");
         //Simple, work together.
-        cPopUp("Simple, work together.");
+        dialougeImage.sprite = CImg;
+        dialougeText.text = ("Simple, work together.");
+        //cPopUp("Simple, work together.");
         yield return new WaitForSeconds(5f);
         //ANIMATION FRAME EDIT: The hawk and the fox look at each other and laugh, they look back to the chimera 
 
-        fPopUp("I don’t need some birdbrain following me around.");
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("I don’t need some rat with wings following me around.");
+        //fPopUp("I don’t need some birdbrain following me around.");
         yield return new WaitForSeconds(5f);
 
-        PopUp("And I don’t need a mangy mutt slowing me down.");
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("And I don’t need a mangy mutt slowing me down.");
+        //PopUp("And I don’t need a mangy mutt slowing me down.");
         yield return new WaitForSeconds(5f);
 
         //Very well, good luck then
-        cPopUp("Very well, good luck then");
+        dialougeImage.sprite = CImg;
+        dialougeText.text = ("Very well, good luck then");
+        //cPopUp("Very well, good luck then");
         yield return new WaitForSeconds(5f);
         //ANIMATION FRAME EDIT: The chimera disappears and leaves the hawk and fox to complete their first-level
 
@@ -372,49 +448,74 @@ public class HTalk : MonoBehaviour
     IEnumerator Lvl3Cut()
     {
         //The fox and hawk are casually walking/flying, the hawk begins to say
-        PopUp("Just as I thought, I don’t need you.");
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("Just as I thought, I don’t need you.");
+       //PopUp();
         yield return new WaitForSeconds(5f);
 
-        fPopUp("Well I didn’t need you either. I collected all my souls without a hitch.");
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("Well I didn’t need you either. I collected all my souls without a hitch.");
+        //fPopUp();
         yield return new WaitForSeconds(5f);
 
-        PopUp("Yes I saw, dirtying yourself to unearth your soul fits you, mutt.");
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("Yes I saw, dirtying yourself to unearth your soul fits you, mutt.");
+        //PopUp();
         yield return new WaitForSeconds(5f);
 
-        fPopUp("whatever...");
-        yield return new WaitForSeconds(5f);
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("whatever...");
+       // fPopUp();
+        yield return new WaitForSeconds(10f);
 
         //They approach a new colorless, but this time it has two sockets.
-        fPopUp("That’s odd, it’s asking for two souls?");
+        dialougeText.text = ("That’s odd, it’s asking for two souls?");
+        //fPopUp();
         yield return new WaitForSeconds(5f);
 
-        PopUp("How is it odd, just give it two of your souls so we can move on.");
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("How is it odd, just give it two of your souls so we can move on.");
+        //PopUp();
         yield return new WaitForSeconds(5f);
 
-        fPopUp("You’re stupid and colorblind? Pick a struggle. It looks like this colorless is asking for both of our souls.");
-        yield return new WaitForSeconds(5f);
-
-        PopUp("What an annoyance, let’s go");
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("You’re stupid and colorblind? Pick a struggle. It looks like this colorless is asking for both of our souls.");
+        //fPopUp();
         yield return new WaitForSeconds(5f);
 
         //After a while of not finding any more souls, the ability to scan is unlocked
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("Enough of this!");
+        yield return new WaitForSeconds(7f);
+        dialougeText.text = ("Damn it part of my soul is underneath this.");
+        //PopUp();
+        yield return new WaitForSeconds(3f);
 
-        PopUp("Enough of this! *Scans for the first time* Damn it part of my soul is under that log.");
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("Hah, look who's useless now. Observe.");
+        yield return new WaitForSeconds(7f);
+        dialougeText.text = (" Here’s your soul.");
+        //fPopUp("Hah, look who's useless now. Observe. *Sneaks for the first time* Here’s your soul.");
+        yield return new WaitForSeconds(3f);
+
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("…Thank you, Mutt");
+        //PopUp();
         yield return new WaitForSeconds(5f);
 
-        fPopUp("Hah, look who's useless now. Observe. *Sneaks for the first time* Here’s your soul.");
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("What was that birdbrain? Did you just thank me?");
+        //fPopUp();
         yield return new WaitForSeconds(5f);
 
-        PopUp("…Thank you, Mutt");
+        dialougeImage.sprite = HImg;
+        dialougeText.text = (" I suppose those long ears are just for show isn’t it?");
+        //PopUp();
         yield return new WaitForSeconds(5f);
 
-        fPopUp("What was that birdbrain? Did you just thank me?");
-        yield return new WaitForSeconds(5f);
-
-        PopUp(" I suppose those long ears are just for show isn’t it?");
-        yield return new WaitForSeconds(5f);
-
-        fPopUp("Mhm");
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("Mhm");
+        //fPopUp();
         yield return new WaitForSeconds(5f);
 
         StartCoroutine(PlayCloseAnimation());
@@ -425,55 +526,86 @@ public class HTalk : MonoBehaviour
     IEnumerator Lvl5Cut()
     {
         //As they move forward, they come across a soul that’s in a high place.
-        fPopUp("You have to be kidding me");
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("You have to be kidding me");
+        //fPopUp("You have to be kidding me");
         yield return new WaitForSeconds(5f);
 
-        PopUp("Hahaha, I see you’re still useless after all Mutt");
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("Hahaha, I see you’re still useless after all Mutt");
+        //PopUp("Hahaha, I see you’re still useless after all Mutt");
         yield return new WaitForSeconds(5f);
 
-        fPopUp("Shut it. There are bound to be other souls I don’t need that one per se");
-        yield return new WaitForSeconds(5f);
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("Shut it. There are bound to be other souls I don’t need that one per se");
+        //fPopUp("");
+        yield return new WaitForSeconds(10f);
 
         //After running into more souls that are on higher ground
-        fPopUp("That’s IT! Carry me");
+        dialougeText.text = ("That’s IT! Carry me");
+        //fPopUp("That’s IT! Carry me");
         yield return new WaitForSeconds(5f);
 
-        PopUp(" …What.");
+        dialougeImage.sprite = HImg;
+        dialougeText.text = (" …What.");
+        //PopUp("");
         yield return new WaitForSeconds(5f);
 
-        fPopUp("Carry. Me. If we want to move forward, I need to collect my souls and all my souls are not ground level so therefore Pick.Me.Up.");
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("Carry. Me. If we want to move forward, I need to collect my souls and all my souls are not ground level so therefore Pick.Me.Up.");
+        //fPopUp("");
         yield return new WaitForSeconds(5f);
 
-        PopUp("No.");
-        yield return new WaitForSeconds(5f);
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("No.");
+       // PopUp("");
+        yield return new WaitForSeconds(2f);
 
         //Hawk flies away only for the chain to appear to keep it from going any further.
-
-        PopUp("Damn this chain and damn you I refuse to carry prey that’s not for eating.");
+        dialougeText.text = ("Damn this chain and damn you I refuse to carry prey that’s not for eating.");
+       // PopUp("");
         yield return new WaitForSeconds(5f);
 
-        fPopUp("Then forget it.");
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("Then forget it.");
+        //fPopUp("");
         yield return new WaitForSeconds(5f);
 
-        //GIANT TEXT: I wouldn’t give up yet if I were you
+        //GIANT TEXT: 
         //CAMERA PANS OVER TO A RESTING CHIMERA
-
-        PopUp("How long have you been watching us Chimera");
+        dialougeImage.sprite = CImg;
+        dialougeText.text = ("I wouldn’t give up yet if I were you");
         yield return new WaitForSeconds(5f);
 
-        //Chimera: Long enough to know that if you refuse to work together then it’ll only be a matter of time before you both become colorless yourselves.
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("How long have you been watching us Chimera");
+        //PopUp("");
+        yield return new WaitForSeconds(5f);
+
+        //Chimera:
+        dialougeImage.sprite = CImg;
+        dialougeText.text = (" Long enough to know that if you refuse to work together then it’ll only be a matter of time before you both become colorless yourselves.");
+        yield return new WaitForSeconds(5f);
         //CHIMERA FADES AWAY INTO THE BACKGROUND
 
-        fPopUp("...");
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("...");
+        //fPopUp("");
+        yield return new WaitForSeconds(2f);
+
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("...");
+        //PopUp("...");
+        yield return new WaitForSeconds(2f);
+
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("You gonna pick me up now");
+        //fPopUp("");
         yield return new WaitForSeconds(5f);
 
-        PopUp("...");
-        yield return new WaitForSeconds(5f);
-
-        fPopUp("You gonna pick me up now");
-        yield return new WaitForSeconds(5f);
-
-        PopUp("fine...");
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("fine...");
+        //PopUp("");
         yield return new WaitForSeconds(5f);
 
         //Unlocks the pickup ability
