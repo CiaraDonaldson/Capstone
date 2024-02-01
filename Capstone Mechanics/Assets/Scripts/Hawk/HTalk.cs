@@ -297,7 +297,7 @@ public class HTalk : MonoBehaviour
         // fPopUp("");
 
         dialougeImage.sprite = HImg;
-        dialougeText.text = ("What have you done to me?!?");
+        dialougeText.text = ("What hast thou done to me?!?");
         //PopUp("What did you do to me?!?");
         yield return new WaitForSeconds(3f);
         //PopUp("");
@@ -320,7 +320,7 @@ public class HTalk : MonoBehaviour
        //fPopUp("");
 
         dialougeImage.sprite = HImg;
-        dialougeText.text = ("No we can't be..");
+        dialougeText.text = ("Nay, we are not.");
         //PopUp("No we can't be..");
         yield return new WaitForSeconds(5f);
         //PopUp("");
@@ -332,7 +332,7 @@ public class HTalk : MonoBehaviour
        // fPopUp("");
 
         dialougeImage.sprite = HImg;
-        dialougeText.text = ("Then undo this you mutt, You’re the one who led me here. Fix. It.");
+        dialougeText.text = ("Undo this plight Mutt, thou art the guide who brought me hither. Mend it.");
         //PopUp("Then undo this you mutt, You’re the one who led me here. Fix. It.");
         yield return new WaitForSeconds(5f);
        // PopUp("");
@@ -345,7 +345,7 @@ public class HTalk : MonoBehaviour
 
 
         dialougeImage.sprite = HImg;
-        dialougeText.text = ("No if you didn’t resort to such cowardly tactics, you’d be just another meal.");
+        dialougeText.text = ("Nay, if thou hadst not resorted to such craven tactics, thou wouldst be just another meal.");
         //PopUp("No if you didn’t resort to such cowardly tactics, you’d be just another meal.");
         yield return new WaitForSeconds(5f);
 
@@ -363,7 +363,7 @@ public class HTalk : MonoBehaviour
         yield return new WaitForSeconds(3f);
 
         dialougeImage.sprite = HImg;
-        dialougeText.text = ("Who or what are you?");
+        dialougeText.text = ("Who or what art thou?");
         //PopUp("Who or what are you?");
         yield return new WaitForSeconds(5f);
 
@@ -425,7 +425,7 @@ public class HTalk : MonoBehaviour
         yield return new WaitForSeconds(5f);
 
         dialougeImage.sprite = HImg;
-        dialougeText.text = ("And I don’t need a mangy mutt slowing me down.");
+        dialougeText.text = ("And I doth require a mangy mutt slowing me down.");
         //PopUp("And I don’t need a mangy mutt slowing me down.");
         yield return new WaitForSeconds(5f);
 
