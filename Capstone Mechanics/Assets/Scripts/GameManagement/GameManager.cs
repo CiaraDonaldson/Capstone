@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
     {
         // Cursor.visible = true;
         GameObject.Find("StoryMode").GetComponent<DoNotDestroy>().enabled = true;
-        SceneManager.LoadScene("CutsceneTest");
+        SceneManager.LoadScene("LivingWorld");
     }
     public void startCredit()
     {

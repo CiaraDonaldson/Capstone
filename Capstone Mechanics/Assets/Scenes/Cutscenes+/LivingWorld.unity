@@ -4199,6 +4199,8 @@ PlayableDirector:
     value: {fileID: 279268130}
   - key: {fileID: -1344674956448992705, guid: b140b8799a2a70e49abdd8228e2f8e05, type: 2}
     value: {fileID: 1065051252}
+  - key: {fileID: -4020946983921488020, guid: b140b8799a2a70e49abdd8228e2f8e05, type: 2}
+    value: {fileID: 7242947379290755825}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &920567471
@@ -25894,6 +25896,47 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 8152445746744044638, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
+--- !u!114 &7242947379290755824 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3532447289540305711, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
+  m_PrefabInstance: {fileID: 7242947379290755823}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831184729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5683c86a6d521b41b6111020c7cabc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7242947379290755825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831184729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: f093fc339d662924487f5e4ba196a534, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7242947379290755824}
+          m_TargetAssemblyTypeName: SceneSwitch, Assembly-CSharp
+          m_MethodName: Lvl1Cutscene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &8788973899131526098
 PrefabInstance:
   m_ObjectHideFlags: 0

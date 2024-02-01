@@ -43,8 +43,27 @@ public class Colorlessinteract : MonoBehaviour
     }
     private void loadNextScene()
     {
-        // int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (!GameObject.Find("StoryMode"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
+        if (GameObject.Find("StoryMode") && SceneManager.GetActiveScene().name == "Lvl2")
+        {
+            SceneManager.LoadScene("Lvl3Cutscene");
+        }
+        else if (GameObject.Find("StoryMode") && SceneManager.GetActiveScene().name == "Lvl4")
+        {
+            SceneManager.LoadScene("Lvl5Cutscene");
+        }
+        else if (GameObject.Find("StoryMode") && SceneManager.GetActiveScene().name == "Lvl6")
+        {
+            SceneManager.LoadScene("Lvl7Cutscene");
+        }
+        else if (GameObject.Find("StoryMode") && SceneManager.GetActiveScene().name != "Lvl2" || SceneManager.GetActiveScene().name != "Lvl4" || SceneManager.GetActiveScene().name != "Lvl6")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
     void OnTriggerExit2D(Collider2D other)
     {

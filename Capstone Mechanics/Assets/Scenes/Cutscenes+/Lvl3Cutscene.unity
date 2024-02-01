@@ -1046,7 +1046,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 317560744}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4649999, y: -1.2250001, z: 5.74}
+  m_LocalPosition: {x: -1.4800003, y: -1.345, z: 5.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2733,7 +2733,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 574360867}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4649999, y: -1.2250001, z: -12.26}
+  m_LocalPosition: {x: 31.130001, y: -41.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2806,9 +2806,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 40
+  field of view: 60
   orthographic: 1
-  orthographic size: 7.94375
+  orthographic size: 8.09375
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -2948,7 +2948,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602537853}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4649999, y: -1.2250001, z: -12.26}
+  m_LocalPosition: {x: -1.4799998, y: -1.345, z: -12.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -27936,6 +27936,8 @@ PlayableDirector:
     value: {fileID: 957979271}
   - key: {fileID: -7977986087974650307, guid: 1a8d8f5af769c9a40b25beeabdf8c664, type: 2}
     value: {fileID: 574360872}
+  - key: {fileID: 4812784571601813779, guid: 1a8d8f5af769c9a40b25beeabdf8c664, type: 2}
+    value: {fileID: 7242947379290755825}
   m_ExposedReferences:
     m_References:
     - aa682401dccd1a844b2bdc03a0e25fc1: {fileID: 602537855}
@@ -28317,3 +28319,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
+--- !u!114 &7242947379290755824 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3532447289540305711, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
+  m_PrefabInstance: {fileID: 7242947379290755823}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098408037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5683c86a6d521b41b6111020c7cabc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7242947379290755825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098408037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: f093fc339d662924487f5e4ba196a534, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7242947379290755824}
+          m_TargetAssemblyTypeName: SceneSwitch, Assembly-CSharp
+          m_MethodName: Lvl3
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

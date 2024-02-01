@@ -8,6 +8,22 @@ using UnityEngine.SceneManagement;
 public class SceneSwitch : MonoBehaviour
 {
     // Start is called before the first frame update
+    public void Lvl1Cutscene()
+    {
+        SceneManager.LoadScene("Lvl1 Cutscene");
+    }
+    public void Lvl3Cutscene()
+    {
+        SceneManager.LoadScene("Lvl3Cutscene");
+    }
+    public void Lvl5Cutscene()
+    {
+        SceneManager.LoadScene("Lvl5Cutscene");
+    }
+    public void Lvl7Cutscene()
+    {
+        SceneManager.LoadScene("Lvl7Cutscene");
+    }
     public void Lvl1()
     {
         SceneManager.LoadScene("Lvl1");

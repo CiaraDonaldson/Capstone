@@ -31,7 +31,7 @@ public class PlayerHealth : MonoBehaviour
             }
         }
 
-        if (Fox.GetComponent<Rigidbody2D>().velocity.y > -5)
+        if (Fox.GetComponent<Rigidbody2D>().velocity.y > -7)
         {
             hasBeenMet = false;
         }
@@ -60,7 +60,7 @@ public class PlayerHealth : MonoBehaviour
     }
     public bool getFVelocity()
     {
-        if (Fox.GetComponent<Rigidbody2D>().velocity.y < -12)
+        if (Fox.GetComponent<Rigidbody2D>().velocity.y < -15)
         {
             return true;
         }

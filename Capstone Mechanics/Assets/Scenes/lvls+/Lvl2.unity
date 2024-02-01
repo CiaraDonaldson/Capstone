@@ -22914,6 +22914,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2504173011534774232, guid: 3c3cf35ee6efe35428039f5379a48fcd, type: 3}
   m_PrefabInstance: {fileID: 1958116938}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1958116940 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7858801935430137862, guid: 3c3cf35ee6efe35428039f5379a48fcd, type: 3}
+  m_PrefabInstance: {fileID: 1958116938}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b730e8719211ed4da79e7b605cfb0dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1974538359 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5994833546034890095, guid: 9ba8c35c83088ff498fdef283840e3d3, type: 3}
@@ -23598,7 +23609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4294462642601201026, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -42
+      value: -40.7
       objectReference: {fileID: 0}
     - target: {fileID: 4294462642601201026, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
       propertyPath: m_LocalPosition.z
@@ -23641,8 +23652,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 107318109}
     - target: {fileID: 8152445746744044638, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
+      propertyPath: Health
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152445746744044638, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
+      propertyPath: MaxHealth
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152445746744044638, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
       propertyPath: healthBar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1958116940}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
