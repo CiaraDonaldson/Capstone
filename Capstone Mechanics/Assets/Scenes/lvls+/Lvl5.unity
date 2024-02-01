@@ -22436,7 +22436,11 @@ PrefabInstance:
     - target: {fileID: 2714537676946483875, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 08df24bdf27947148b7194467c3be3be, type: 3}
+      objectReference: {fileID: 8300000, guid: cd5deee584a7d1a408b69e077a7b2184, type: 3}
+    - target: {fileID: 2997700918804816313, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3089826482837696849, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
       propertyPath: Fox
       value: 
