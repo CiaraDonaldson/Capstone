@@ -406,7 +406,7 @@ public class HTalk : MonoBehaviour
         yield return new WaitForSeconds(5f);
 
         dialougeImage.sprite = HImg;
-        dialougeText.text = ("How can we find these pieces if we’re bound together?");
+        dialougeText.text = ("How can we find these fragments if we be entwined?");
         //PopUp("How can we find these pieces if we’re bound together?");
         yield return new WaitForSeconds(5f);
 
@@ -425,7 +425,7 @@ public class HTalk : MonoBehaviour
         yield return new WaitForSeconds(5f);
 
         dialougeImage.sprite = HImg;
-        dialougeText.text = ("And I doth require a mangy mutt slowing me down.");
+        dialougeText.text = ("And I need not a scrawny cur hindering my pace.");
         //PopUp("And I don’t need a mangy mutt slowing me down.");
         yield return new WaitForSeconds(5f);
 
@@ -449,72 +449,72 @@ public class HTalk : MonoBehaviour
     {
         //The fox and hawk are casually walking/flying, the hawk begins to say
         dialougeImage.sprite = HImg;
-        dialougeText.text = ("Just as I thought, I don’t need you.");
+        dialougeText.text = ("Just as I reckon, I have no need of thee.");
        //PopUp();
         yield return new WaitForSeconds(5f);
 
         dialougeImage.sprite = FImg;
-        dialougeText.text = ("Well I didn’t need you either. I collected all my souls without a hitch.");
+        dialougeText.text = ("Well, I didn't need youse either. I collected all my souls without a hitch.");
         //fPopUp();
         yield return new WaitForSeconds(5f);
 
         dialougeImage.sprite = HImg;
-        dialougeText.text = ("Yes I saw, dirtying yourself to unearth your soul fits you, mutt.");
+        dialougeText.text = ("Aye, I beheld it, soiling thyself to uncover thy soul befits thee, thou cur.");
         //PopUp();
         yield return new WaitForSeconds(5f);
 
         dialougeImage.sprite = FImg;
-        dialougeText.text = ("whatever...");
+        dialougeText.text = ("whateva.");
        // fPopUp();
         yield return new WaitForSeconds(10f);
 
         //They approach a new colorless, but this time it has two sockets.
-        dialougeText.text = ("That’s odd, it’s asking for two souls?");
+        dialougeText.text = ("That's odd, it's askin' for two souls?");
         //fPopUp();
         yield return new WaitForSeconds(5f);
 
         dialougeImage.sprite = HImg;
-        dialougeText.text = ("How is it odd, just give it two of your souls so we can move on.");
+        dialougeText.text = ("How is it strange? Just render it two of thy souls, so we may proceed.");
         //PopUp();
         yield return new WaitForSeconds(5f);
 
         dialougeImage.sprite = FImg;
-        dialougeText.text = ("You’re stupid and colorblind? Pick a struggle. It looks like this colorless is asking for both of our souls.");
+        dialougeText.text = ("You're stupid and colorblind? It looks like this colorless is askin' for both of our souls.");
         //fPopUp();
         yield return new WaitForSeconds(5f);
 
         //After a while of not finding any more souls, the ability to scan is unlocked
         dialougeImage.sprite = HImg;
-        dialougeText.text = ("Enough of this!");
+        dialougeText.text = ("What a vexation, let us away.");
         yield return new WaitForSeconds(7f);
-        dialougeText.text = ("Damn it part of my soul is underneath this.");
+        dialougeText.text = ("Damn it, part of my soul is beneath the earth.");
         //PopUp();
         yield return new WaitForSeconds(3f);
 
         dialougeImage.sprite = FImg;
         dialougeText.text = ("Hah, look who's useless now. Observe.");
         yield return new WaitForSeconds(7f);
-        dialougeText.text = (" Here’s your soul.");
+        dialougeText.text = ("Here's ya soul.");
         //fPopUp("Hah, look who's useless now. Observe. *Sneaks for the first time* Here’s your soul.");
         yield return new WaitForSeconds(3f);
 
         dialougeImage.sprite = HImg;
-        dialougeText.text = ("…Thank you, Mutt");
+        dialougeText.text = ("…Thank thee, Mutt.");
         //PopUp();
         yield return new WaitForSeconds(5f);
 
         dialougeImage.sprite = FImg;
-        dialougeText.text = ("What was that birdbrain? Did you just thank me?");
+        dialougeText.text = ("What was that, birdbrain? Did ya just thank me?");
         //fPopUp();
         yield return new WaitForSeconds(5f);
 
         dialougeImage.sprite = HImg;
-        dialougeText.text = (" I suppose those long ears are just for show isn’t it?");
+        dialougeText.text = ("I suppose those lengthy ears are merely for display, art they not?");
         //PopUp();
         yield return new WaitForSeconds(5f);
 
         dialougeImage.sprite = FImg;
-        dialougeText.text = ("Mhm");
+        dialougeText.text = ("*Grumbles*");
         //fPopUp();
         yield return new WaitForSeconds(5f);
 
@@ -529,17 +529,17 @@ public class HTalk : MonoBehaviour
         yield return new WaitForSeconds(5f);
 
         dialougeImage.sprite = FImg;
-        dialougeText.text = ("You have to be kidding me");
+        dialougeText.text = ("You gotta be kiddin' me.");
         //fPopUp("You have to be kidding me");
         yield return new WaitForSeconds(5f);
 
         dialougeImage.sprite = HImg;
-        dialougeText.text = ("Hahaha, I see you’re still useless after all Mutt");
+        dialougeText.text = ("Hahaha, I perceive thou art still ineffectual, Mutt.");
         //PopUp("Hahaha, I see you’re still useless after all Mutt");
         yield return new WaitForSeconds(5f);
 
         dialougeImage.sprite = FImg;
-        dialougeText.text = ("Shut it. There are bound to be other souls I don’t need that one per se");
+        dialougeText.text = ("Shaddap. There are bound to be other souls. I don't need that one.");
         //fPopUp("");
         yield return new WaitForSeconds(10f);
 
@@ -554,7 +554,7 @@ public class HTalk : MonoBehaviour
         yield return new WaitForSeconds(5f);
 
         dialougeImage.sprite = FImg;
-        dialougeText.text = ("Carry. Me. If we want to move forward, I need to collect my souls and all my souls are not ground level so therefore Pick.Me.Up.");
+        dialougeText.text = ("If we wanna move forward, I gotta collect my souls, and all my souls ain't ground level, so therefore, Pick. Me. Up.");
         //fPopUp("");
         yield return new WaitForSeconds(5f);
 
@@ -564,7 +564,7 @@ public class HTalk : MonoBehaviour
         yield return new WaitForSeconds(2f);
 
         //Hawk flies away only for the chain to appear to keep it from going any further.
-        dialougeText.text = ("Damn this chain and damn you I refuse to carry prey that’s not for eating.");
+        dialougeText.text = ("Damn this chain, and damn thee! I refuse to bear quarry unfit for consumption.");
        // PopUp("");
         yield return new WaitForSeconds(5f);
 
@@ -580,7 +580,7 @@ public class HTalk : MonoBehaviour
         yield return new WaitForSeconds(5f);
 
         dialougeImage.sprite = HImg;
-        dialougeText.text = ("How long have you been watching us Chimera");
+        dialougeText.text = (" For how long hast thou been observing us, Chimera?");
         //PopUp("");
         yield return new WaitForSeconds(5f);
 
@@ -601,7 +601,7 @@ public class HTalk : MonoBehaviour
         yield return new WaitForSeconds(2f);
 
         dialougeImage.sprite = FImg;
-        dialougeText.text = ("You gonna pick me up now");
+        dialougeText.text = ("Ya gonna pick me up now?");
         //fPopUp("");
         yield return new WaitForSeconds(5f);
 
@@ -681,10 +681,10 @@ public class HTalk : MonoBehaviour
     IEnumerator Lvl2Air()
     {
         isCoroutineRunning = true;
-        fPopUp("Stop flying so high, before you kill us both bird brain");
+        fPopUp("Stop flyin' so high, before youse kill us both, birdbrain.");
         yield return new WaitForSeconds(5f);
 
-        PopUp("If I could, I’d drop you from the highest point");
+        PopUp("If I could, I would cast thee from the loftiest summit.");
         yield return new WaitForSeconds(5f);
        // PopDown();
        
@@ -698,7 +698,7 @@ public class HTalk : MonoBehaviour
     {
         isCoroutineRunning = true;
 
-        PopUp("Can you dig any faster mutt!?");
+        PopUp("Canst thou dig any swifter?!?");
 
         yield return new WaitForSeconds(5f);
 
@@ -715,13 +715,13 @@ public class HTalk : MonoBehaviour
     IEnumerator Lvl4Scan()
     {
         isCoroutineRunning = true;
-        fPopUp("You had the ability to see all the orbs this entire time and just now using it.");
+        fPopUp("So ya tellin' me you had the ability to see all the orbs this entire time and just now usin' it?");
         yield return new WaitForSeconds(5f);
 
-        PopUp("...Short answer yes, long answer no");
+        PopUp("...Shortly, aye; lengthily, nay");
         yield return new WaitForSeconds(5f);
 
-        fPopUp("Your a moron");
+        fPopUp(" I hate you");
         yield return new WaitForSeconds(5f);
 
         digCount++;
@@ -734,7 +734,7 @@ public class HTalk : MonoBehaviour
     {
         isCoroutineRunning = true;
 
-        PopUp(" You’re a feline");
+        PopUp("Thou must be some manner of cat.");
         yield return new WaitForSeconds(5f);
 
         fPopUp("What !?! No I’m not");
