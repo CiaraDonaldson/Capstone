@@ -9,17 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/titlescreen+/Title.unity
     guid: 268717ae22c383b44b39943a0dea0799
   - enabled: 1
-    path: Assets/Scenes/titlescreen+/Credits.unity
-    guid: 97dfa79c6aed12949947c86b758fc9a9
-  - enabled: 1
-    path: Assets/Scenes/titlescreen+/Controls.unity
-    guid: d61da4f255d3c7a49a4138eac1fb0ae4
-  - enabled: 1
     path: Assets/Scenes/titlescreen+/Options.unity
     guid: ec4c9a3911905324e8551b7ad6041aee
   - enabled: 1
     path: Assets/Scenes/titlescreen+/GameMode.unity
     guid: d1ae672ebe65c314098babc4453cd5f2
+  - enabled: 1
+    path: Assets/Scenes/titlescreen+/Controls.unity
+    guid: d61da4f255d3c7a49a4138eac1fb0ae4
+  - enabled: 1
+    path: Assets/Scenes/titlescreen+/Credits.unity
+    guid: 97dfa79c6aed12949947c86b758fc9a9
   - enabled: 1
     path: Assets/Scenes/lvls+/Map.unity
     guid: fe0627a77c02cfa4f9e8b2d62d1786dc

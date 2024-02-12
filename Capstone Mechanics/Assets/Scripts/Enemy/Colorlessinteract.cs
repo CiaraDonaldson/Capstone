@@ -13,17 +13,17 @@ public class Colorlessinteract : MonoBehaviour
     public GameObject popUpBox;
     public Animator animator;
     public TMP_Text popUpText;
+    public AudioSource Audio;
+   //Color lerpedColor = Color.white;
+    //Renderer renderer;
+    bool changingColor = false;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        //renderer = GetComponent<Renderer>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.name == "Hawk" | other.gameObject.name == "Fox")
@@ -33,6 +33,7 @@ public class Colorlessinteract : MonoBehaviour
 
         if (GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().fOrbs == fOrbCount && GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().hOrbs == hOrbCount)
         {
+            StartCoroutine(LerpColor(this.GetComponent<MeshRenderer>(), Color.white, Color.magenta, 1f));
             StartCoroutine(PopUpAndSwitch());
         }
 
@@ -95,15 +96,37 @@ public class Colorlessinteract : MonoBehaviour
         PopUp("You Did It! Thank you!");
 
         // Wait for a certain duration before changing the color
-        yield return new WaitForSeconds(2f); // Adjust the duration as needed
-
-        Color lerpedColor = Color.Lerp(Color.white, Color.magenta, 20f);
-        this.GetComponent<SpriteRenderer>().color = lerpedColor;
+        //yield return new WaitForSeconds(2f); // Adjust the duration as needed
+        Audio.Play();
+       
         pass = true;
 
         // Wait for another duration before switching scenes
-        yield return new WaitForSeconds(2f); // Adjust the duration as needed
+        yield return new WaitForSeconds(4f); // Adjust the duration as needed
 
         loadNextScene();
+    }
+    IEnumerator LerpColor(MeshRenderer mesh, Color fromColor, Color toColor, float duration)
+    {
+        if (changingColor)
+        {
+            yield break;
+        }
+        changingColor = true;
+        float counter = 0;
+
+        while (counter < duration)
+        {
+            counter += Time.deltaTime;
+
+            float colorTime = counter / duration;
+            Debug.Log(colorTime);
+
+            //Change color
+            this.gameObject.GetComponent<SpriteRenderer>().color = Color.Lerp(fromColor, toColor, counter / duration);
+            //Wait for a frame
+            yield return null;
+        }
+        changingColor = false;
     }
 }

@@ -182,9 +182,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: d6c310fd6af26bc4c9de314c3c2b60be, type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_audioClip: {fileID: 8300000, guid: 3485ce01832db8c468930853a75ebf6e, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.673
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -309,7 +309,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 288c6a4597f38414ca40cc5c5215ae15, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e28989ba44f047e48837f213745fbe7b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -339,6 +339,7 @@ MonoBehaviour:
   popUpBox: {fileID: 118218828291232195}
   animator: {fileID: 118218828291232199}
   popUpText: {fileID: 118218826677051949}
+  Audio: {fileID: 2550222981695676469}
 --- !u!58 &118218826731709320
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -372,7 +373,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.6, y: 3.6}
+    oldSize: {x: 10.8, y: 10.8}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
