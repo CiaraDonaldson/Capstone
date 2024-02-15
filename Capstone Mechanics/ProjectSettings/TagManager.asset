@@ -11,6 +11,8 @@ TagManager:
   - Fox
   - Hawk
   - Colorless
+  - colorsplit1
+  - colorsplit2
   layers:
   - Default
   - TransparentFX

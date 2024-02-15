@@ -51,6 +51,9 @@ public class HTalk : MonoBehaviour
     private bool isFacingRight = true;
     private bool Lvl8Play = false;
 
+    private Color fox = new Color(0.5f, 0.5f, 1.0f);   // Light blue
+    private Color hawk = new Color(1.0f, 0.5f, 0.5f);  // Light red
+    private Color chimera = new Color(1.0f, 0.5f, 1.0f); //purple
     // Start is called before the first frame update
     void Start()
     {
@@ -290,19 +293,21 @@ public class HTalk : MonoBehaviour
         isCoroutineRunning = true;
         yield return new WaitForSeconds(9f);
 
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("Can you STOP already?!? I’m sure you noticed that if you hurt me any further, you’ll feel it just as much.");
        // fPopUp("Can you STOP already?!? I’m sure you noticed that if you hurt me any further, you’ll feel it just as much.");
         yield return new WaitForSeconds(5f);
         // fPopUp("");
 
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("What hast thou done to me?!?");
         //PopUp("What did you do to me?!?");
         yield return new WaitForSeconds(3f);
         //PopUp("");
 
-
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("Well, I wanted to make us suffer....");
         //fPopUp("Well, I wanted to make us suffer....");
@@ -317,43 +322,46 @@ public class HTalk : MonoBehaviour
         dialougeText.text = ("All I know birdbrain is that we’re connected somehow.");
         //fPopUp("All I know birdbrain is that we’re connected somehow.");
         yield return new WaitForSeconds(5f);
-       //fPopUp("");
-
+        //fPopUp("");
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("Nay, we are not.");
         //PopUp("No we can't be..");
         yield return new WaitForSeconds(5f);
         //PopUp("");
 
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("Don’t say I didn’t warn you.");
         //fPopUp("Don’t say I didn’t warn you.");
         yield return new WaitForSeconds(5f);
-       // fPopUp("");
-
+        // fPopUp("");
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("Undo this plight Mutt, thou art the guide who brought me hither. Mend it.");
         //PopUp("Then undo this you mutt, You’re the one who led me here. Fix. It.");
         yield return new WaitForSeconds(5f);
-       // PopUp("");
+        // PopUp("");
 
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("If you weren’t so hellbent on trying to eat me, we wouldn’t even be in this mess.");
         //fPopUp("If you weren’t so hellbent on trying to eat me, we wouldn’t even be in this mess.");
         yield return new WaitForSeconds(5f);
         //fPopUp("");
 
-
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("Nay, if thou hadst not resorted to such craven tactics, thou wouldst be just another meal.");
         //PopUp("No if you didn’t resort to such cowardly tactics, you’d be just another meal.");
         yield return new WaitForSeconds(5f);
 
         //fPopUp("");
-   
+
         //PopUp("");
 
         //Chimera appers
+        dialougeText.color = chimera;
         dialougeImage.sprite = null;
         dialougeText.text = ("What an amusing display…");
        // cPopUp("What an amusing display…");
@@ -362,21 +370,26 @@ public class HTalk : MonoBehaviour
        // cPopUp("Two opposing souls are somehow linked together.");
         yield return new WaitForSeconds(3f);
 
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("Who or what art thou?");
         //PopUp("Who or what are you?");
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = chimera;
         dialougeImage.sprite = CImg;
         dialougeText.text = ("You may simply call me Chimera, but a better question is who are you? A Fox or a Hawk?");
         //cPopUp("You may simply call me Chimera, but a better question is who are you? A Fox or a Hawk?");
         yield return new WaitForSeconds(5f);
 
-        dialougeText.text = ("A Fox!" + "A Hawk!");
+        dialougeImage.sprite = null;
+        //dialougeText.color = fox;
+        dialougeText.text = ("<color=#7F7FFF> A Fox! </color>\n" + "<color=#FF7F7F>A Hawk! </color>");
         //fPopUp("A fox");
         // PopUp("A hawk");
         yield return new WaitForSeconds(2f);
 
+        dialougeText.color = chimera;
         dialougeImage.sprite = CImg;
         dialougeText.text = ("Normally I would agree if it weren’t for the chain that keeps you linked");
         //cPopUp("Normally I would agree if it weren’t for the chain that keeps you linked");
@@ -389,12 +402,14 @@ public class HTalk : MonoBehaviour
        // cPopUp("As long as your souls are linked, your fates are entwined, not even death can do you part.");
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("Then what can?");
         //fPopUp("Then what can?");
         yield return new WaitForSeconds(5f);
 
         //ANIMATION FRAME EDIT: the souls that need to be collected appear over their rightful characters
+        dialougeText.color = chimera;
         dialougeImage.sprite = CImg;
         dialougeText.text = ("You need to find yourselves before you can rebuild. Give before you take.");
         //cPopUp("You need to find yourselves before you can rebuild. Give before you take.");
@@ -405,6 +420,7 @@ public class HTalk : MonoBehaviour
         //cPopUp("There will be souls out there, scattered souls that you will need to collect and give to lost beings that are called The Colorless.");
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("How can we find these fragments if we be entwined?");
         //PopUp("How can we find these pieces if we’re bound together?");
@@ -413,23 +429,27 @@ public class HTalk : MonoBehaviour
         //fPopUp("");
         //PopUp("");
         //Simple, work together.
+        dialougeText.color = chimera;
         dialougeImage.sprite = CImg;
         dialougeText.text = ("Simple, work together.");
         //cPopUp("Simple, work together.");
         yield return new WaitForSeconds(5f);
         //ANIMATION FRAME EDIT: The hawk and the fox look at each other and laugh, they look back to the chimera 
 
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("I don’t need some rat with wings following me around.");
         //fPopUp("I don’t need some birdbrain following me around.");
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("And I need not a scrawny cur hindering my pace.");
         //PopUp("And I don’t need a mangy mutt slowing me down.");
         yield return new WaitForSeconds(5f);
 
         //Very well, good luck then
+        dialougeText.color = chimera;
         dialougeImage.sprite = CImg;
         dialougeText.text = ("Very well, good luck then");
         //cPopUp("Very well, good luck then");

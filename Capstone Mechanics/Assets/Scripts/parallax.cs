@@ -16,6 +16,11 @@ public class parallax : MonoBehaviour
         SetupTexture();
         virtualCamera = Camera.main.GetComponent<CinemachineVirtualCamera>();
 
+        if (virtualCamera == null)
+        {
+            this.enabled = false;
+        }
+
     }
 
     void SetupTexture()

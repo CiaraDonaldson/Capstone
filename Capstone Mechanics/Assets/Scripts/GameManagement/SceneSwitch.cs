@@ -7,7 +7,43 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitch : MonoBehaviour
 {
+    public float nKeyPressStartTime = 0;
     // Start is called before the first frame update
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.N))
+        {
+            nKeyPressStartTime += Time.deltaTime;
+        }
+        if (Input.GetKeyUp(KeyCode.N))
+        {
+            nKeyPressStartTime = 0f;
+        }
+        if (nKeyPressStartTime >= 5f)
+        {
+            Debug.Log("it hit 5");
+            if (SceneManager.GetActiveScene().name.ToString() == "LivingWorld")
+            {
+                SceneManager.LoadScene("Lvl1 Cutscene");
+            }
+            if (SceneManager.GetActiveScene().name.ToString() == "Lvl1 Cutscene")
+            {
+                SceneManager.LoadScene("Lvl1");
+            }
+            if (SceneManager.GetActiveScene().name.ToString() == "Lvl3Cutscene")
+            {
+                SceneManager.LoadScene("Lvl3");
+            }
+            if (SceneManager.GetActiveScene().name.ToString() == "Lvl5Cutscene")
+            {
+                SceneManager.LoadScene("Lvl5");
+            }
+            if (SceneManager.GetActiveScene().name.ToString() == "Lvl7Cutscene")
+            {
+                SceneManager.LoadScene("Lvl7");
+            }
+        }
+    }
     public void Lvl1Cutscene()
     {
         SceneManager.LoadScene("Lvl1 Cutscene");

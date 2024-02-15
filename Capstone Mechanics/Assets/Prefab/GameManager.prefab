@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3532447289540305711}
   - component: {fileID: 3089826482837696849}
   - component: {fileID: 831184746}
+  - component: {fileID: 5413710029787860264}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -279,6 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5683c86a6d521b41b6111020c7cabc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nKeyPressStartTime: 0
 --- !u!114 &3089826482837696849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,3 +322,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.9, y: 1.74}
   m_EdgeRadius: 0
+--- !u!114 &5413710029787860264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4911954467482499003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 687edc451618c3a44a5492daaf5666eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indicatorTimer: 1
+  maxIndicatorTimer: 1
+  radialIndicatorUI: {fileID: 0}
+  selectKey: 110
+  myEvent:
+    m_PersistentCalls:
+      m_Calls: []

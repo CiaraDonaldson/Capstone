@@ -15,22 +15,45 @@ public class GameManager : MonoBehaviour
     public Canvas pauseMenuUI;
     public GameObject Story;
 
+    public GameObject popUpBox;
+    public Animator animator;
+    public TMP_Text popUpText;
+    public string popUptext;
+
+    [SerializeField] private GameObject c1;
+    [SerializeField] private GameObject c2;
     // Start is called before the first frame update
     void Start()
     {
+         c1 = GameObject.FindWithTag("colorsplit1");
+         c2 = GameObject.FindWithTag("colorsplit2");
+
         Story = GameObject.Find("StoryMode");
-      
+        if (SceneManager.GetActiveScene().name.ToString() == "Lvl3Cutscene")
+        {
+            animator.Play("Pop");
+            //animator.Play("Idle");
+        }
+        else
+        {
+            if (SceneManager.GetActiveScene().name.ToString() != "Lvl3Cutscene")
+            {
+                if (popUpBox == null & animator == null & popUpText == null)
+                {
+                    Debug.Log("Nothings here");
+                }
+            }
+
+        }
     }
 
     // Update is called once per frame
     void Update()
-    {
-       
-           
+    {          
        
         if (fText == null)
         {
-            Debug.Log("no count");
+            Debug.Log(" ");
         }
         else
         {
@@ -38,7 +61,7 @@ public class GameManager : MonoBehaviour
         }
         if (hText == null)
         {
-            Debug.Log("no count");
+            Debug.Log(" ");
         }
         else
         {
@@ -46,7 +69,7 @@ public class GameManager : MonoBehaviour
         }
         if (fText2 == null)
         {
-            Debug.Log("no count");
+            Debug.Log(" ");
         }
         else
         {
@@ -54,13 +77,24 @@ public class GameManager : MonoBehaviour
         }
         if (hText2 == null)
         {
-            Debug.Log("no count");
+            Debug.Log(" ");
         }
         else
         {
             hText2.text = hOrbs.ToString();
-        }          
-      
+        }
+
+        if (c1.GetComponent<ColorlessSplitInt>().count == 1 && c2.GetComponent<OtherColorlessSplitInt>().count == 1)
+        {
+
+            c1.GetComponent<ColorlessSplitInt>().myEvent.Invoke();
+            //c1.GetComponent<ColorlessSplitInt>().count++;
+
+            c2.GetComponent<OtherColorlessSplitInt>().myEvent.Invoke();
+            //c2.GetComponent<OtherColorlessSplitInt>().count++;
+
+
+        }
        // string sceneName = SceneManager.GetActiveScene().ToString();
 
        /* if (sceneName != "Title" | !pauseMenuUI.enabled)
