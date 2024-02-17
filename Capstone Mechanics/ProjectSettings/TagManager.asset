@@ -13,6 +13,8 @@ TagManager:
   - Colorless
   - colorsplit1
   - colorsplit2
+  - TitleAudio
+  - Image
   layers:
   - Default
   - TransparentFX

@@ -15,9 +15,9 @@ public class SetActive : MonoBehaviour
     {
         if (GameObject.Find("StoryMode"))
         {
-            this.gameObject.SetActive(true);
+            this.gameObject.SetActive(false);
         }
         else
-        { this.gameObject.SetActive(false); }
+        { this.gameObject.SetActive(true); }
     }
 }

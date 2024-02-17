@@ -44,6 +44,10 @@ public class SceneSwitch : MonoBehaviour
             }
         }
     }
+    public void Title2()
+    {
+        SceneManager.LoadScene("TitleTwo");
+    }
     public void Lvl1Cutscene()
     {
         SceneManager.LoadScene("Lvl1 Cutscene");

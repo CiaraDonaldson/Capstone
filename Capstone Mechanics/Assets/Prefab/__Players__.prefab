@@ -11840,7 +11840,7 @@ GameObject:
   - component: {fileID: 4929190396440106213}
   - component: {fileID: 550391368929835394}
   - component: {fileID: 6654098819639733398}
-  - component: {fileID: 3512563472291296771}
+  - component: {fileID: 7238576665453612657}
   - component: {fileID: 4103722379551422420}
   m_Layer: 0
   m_Name: Fox
@@ -12082,7 +12082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dust: {fileID: 0}
   rb: {fileID: 0}
-  moveForce: 5
+  moveForce: 3
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -12093,7 +12093,7 @@ MonoBehaviour:
   digLayer:
     serializedVersion: 2
     m_Bits: 64
-  Hawk: {fileID: 0}
+  Hawk: {fileID: 8391183921164731601}
 --- !u!114 &8391183920730606038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12172,7 +12172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fManager: {fileID: 0}
   Hawk: {fileID: 0}
---- !u!114 &3512563472291296771
+--- !u!114 &7238576665453612657
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12623,7 +12623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerRb: {fileID: 8391183921164731607}
-  walkForce: 5
+  walkForce: 3
   anim: {fileID: 5395613376024856800}
   cCircle: {fileID: 8391183921164731604}
   cCapsule: {fileID: 8391183921164731604}
@@ -12656,7 +12656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elevateHeight: 3
-  cameraZoomOutSize: 35
+  cameraZoomOutSize: 40
   orbsMoveDistance: 5
   lerpSpeed: 10
   keyHoldDuration: 5

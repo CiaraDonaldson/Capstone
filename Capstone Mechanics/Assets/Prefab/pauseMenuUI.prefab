@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3331233567203360599
 RectTransform:
   m_ObjectHideFlags: 0
@@ -756,7 +756,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3331233567958470414}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6813294932599987573, guid: b2de719bd064dac4085eb36cde625292, type: 3}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: LoadMap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3331233568289122496
 GameObject:
   m_ObjectHideFlags: 0
@@ -1298,9 +1310,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3089826482837696849, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: LoadMenu
+      - m_Target: {fileID: 3532447289540305711, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
+        m_TargetAssemblyTypeName: SceneSwitch, Assembly-CSharp
+        m_MethodName: Title2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

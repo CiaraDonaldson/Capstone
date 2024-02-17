@@ -7178,6 +7178,8 @@ PlayableDirector:
     value: {fileID: 279268130}
   - key: {fileID: 5087234941477588287, guid: b140b8799a2a70e49abdd8228e2f8e05, type: 2}
     value: {fileID: 1065051252}
+  - key: {fileID: -4576185964784992054, guid: b140b8799a2a70e49abdd8228e2f8e05, type: 2}
+    value: {fileID: 7242947379290755825}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &832715148
@@ -62514,6 +62516,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2714537676946483875, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714537676946483875, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f460a6a72c17c4b46a344832c8dcc7bc, type: 3}
     - target: {fileID: 3089826482837696849, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
       propertyPath: Fox
       value: 
@@ -62599,6 +62609,10 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 5413710029787860264, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
+      propertyPath: radialIndicatorGO
+      value: 
+      objectReference: {fileID: 1441785934}
+    - target: {fileID: 5413710029787860264, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
       propertyPath: radialIndicatorUI
       value: 
       objectReference: {fileID: 1441785936}
@@ -62665,10 +62679,28 @@ MonoBehaviour:
   indicatorTimer: 1
   maxIndicatorTimer: 1
   radialIndicatorUI: {fileID: 1441785936}
+  radialIndicatorGO: {fileID: 0}
   selectKey: 110
   myEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7242947379290755827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831184729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c58ff22a75855a846ba39c967b89cc1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 0
+  MaxHealth: 0
+  Fox: {fileID: 0}
+  hasBeenMet: 0
+  healthBar: {fileID: 0}
 --- !u!1001 &8788973899131526098
 PrefabInstance:
   m_ObjectHideFlags: 0

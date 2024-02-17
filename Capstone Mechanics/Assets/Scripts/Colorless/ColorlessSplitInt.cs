@@ -34,7 +34,10 @@ public class ColorlessSplitInt: MonoBehaviour
         {
             count++;
         }
-
+        if (count >= 1 && GameObject.Find("OtherColourlessSplit/Colorless").GetComponent<OtherColorlessSplitInt>().count < 1)
+        {
+            StartCoroutine(Finish());
+        }
         if (GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().hOrbs > hOrbCount)
         {
             StartCoroutine(TooMany());
@@ -82,6 +85,12 @@ public class ColorlessSplitInt: MonoBehaviour
         animator.Play("close");
         //popUpBox.SetActive(false);
     }
+    IEnumerator Finish()
+    {
+        PopUp("Thank you!");
+        yield return new WaitForSeconds(2f);
+        PopUp("You still need to bring the other their pieces");
+    }
     IEnumerator TooMany()
     {
         PopUp("This is way too many!");
@@ -95,7 +104,7 @@ public class ColorlessSplitInt: MonoBehaviour
     }
     public IEnumerator PopUpAndSwitch()
     {
-        PopUp("You Did It! Thank you!");
+        PopUp("I'm Complete! Thank you!");
 
         // Wait for a certain duration before changing the color
         //yield return new WaitForSeconds(2f); // Adjust the duration as needed

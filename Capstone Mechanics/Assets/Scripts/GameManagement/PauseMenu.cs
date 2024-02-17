@@ -9,16 +9,26 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     public GameObject Hawk;
     public GameObject Fox;
+
+    private void Awake()
+    {
+      
+    }
     private void Start()
     {
         Fox = GameObject.Find("Fox");
         Hawk = GameObject.Find("Hawk");
+        //pauseMenuUI = GameObject.Find("pauseMenuUI");
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
     void Update()
     {
+       // Fox = GameObject.Find("Fox");
+        //Hawk = GameObject.Find("Hawk");
+       
+       //s pauseMenuUI.SetActive(false);
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (GameIsPaused)

@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/titlescreen+/Title.unity
     guid: 268717ae22c383b44b39943a0dea0799
   - enabled: 1
+    path: Assets/Scenes/titlescreen+/TitleTwo.unity
+    guid: d7aea5c703a8dfd4aaf4abe666960912
+  - enabled: 1
     path: Assets/Scenes/titlescreen+/Options.unity
     guid: ec4c9a3911905324e8551b7ad6041aee
   - enabled: 1
@@ -26,6 +29,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cutscenes+/LivingWorld.unity
     guid: fd6e6722f0adce74e99ae2fbf15dc020
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes+/Lvl1 Cutscene.unity
+    guid: bcca582166abf0c4b8be4638b99af3ed
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes+/Lvl3Cutscene.unity
+    guid: 6d84b34b02473234a8ce0401005198d9
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes+/Lvl5Cutscene.unity
+    guid: 0b21c82d3b8f4ed49af38876e12d65c2
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes+/Lvl7Cutscene.unity
+    guid: 06c9f435c0ed0ef4f8fe373f1cb39f84
   - enabled: 1
     path: Assets/Scenes/lvls+/Lvl1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
@@ -53,16 +68,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/lvls+/Lvl10.unity
     guid: 71ccab58f393b3249ae8747dfd86ce42
-  - enabled: 1
-    path: Assets/Scenes/Cutscenes+/Lvl1 Cutscene.unity
-    guid: bcca582166abf0c4b8be4638b99af3ed
-  - enabled: 1
-    path: Assets/Scenes/Cutscenes+/Lvl3Cutscene.unity
-    guid: 6d84b34b02473234a8ce0401005198d9
-  - enabled: 1
-    path: Assets/Scenes/Cutscenes+/Lvl5Cutscene.unity
-    guid: 0b21c82d3b8f4ed49af38876e12d65c2
-  - enabled: 1
-    path: Assets/Scenes/Cutscenes+/Lvl7Cutscene.unity
-    guid: 06c9f435c0ed0ef4f8fe373f1cb39f84
   m_configObjects: {}

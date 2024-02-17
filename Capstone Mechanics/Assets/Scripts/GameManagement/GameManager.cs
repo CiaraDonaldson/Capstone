@@ -23,13 +23,55 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject c1;
     [SerializeField] private GameObject c2;
     // Start is called before the first frame update
+    void Awake()
+    {
+        if (SceneManager.GetActiveScene().name.ToString() == "LivingWorld" || SceneManager.GetActiveScene().name.ToString() == "Lvl1 Cutscene" || SceneManager.GetActiveScene().name.ToString() == "Lvl3Cutscene" || SceneManager.GetActiveScene().name.ToString() == "Lvl5Cutscene" || SceneManager.GetActiveScene().name.ToString() == "Lvl7Cutscene")
+        {
+            this.GetComponent<circleLoad>().enabled = true;
+
+        }
+        else
+        {
+            this.GetComponent<circleLoad>().enabled = false;
+        }
+        if (SceneManager.GetActiveScene().buildIndex >= 0 && SceneManager.GetActiveScene().buildIndex <= 11)
+        {
+            this.GetComponent<PlayerHealth>().enabled = false;
+            if (GameObject.Find("Fox"))
+            {
+                GameObject.Find("Fox").GetComponent<FoxController>().enabled = false;
+            }
+            if (GameObject.Find("Hawk"))
+            {
+                GameObject.Find("Hawk").GetComponent<Scan>().enabled = false;
+            }
+        }
+        else
+        {
+            this.GetComponent<PlayerHealth>().enabled = true;
+            if (GameObject.Find("Fox"))
+            {
+                GameObject.Find("Fox").GetComponent<FoxController>().enabled = true;
+            }
+            if (GameObject.Find("Hawk"))
+            {
+                GameObject.Find("Hawk").GetComponent<Scan>().enabled = true;
+            }
+        }
+
+    }
     void Start()
     {
-         c1 = GameObject.FindWithTag("colorsplit1");
-         c2 = GameObject.FindWithTag("colorsplit2");
+        hOrbs = 0;
+        fOrbs = 0;
+
+        c1 = GameObject.Find("ColourlessSplit/Colorless");
+         c2 = GameObject.Find("OtherColourlessSplit/Colorless");
 
         Story = GameObject.Find("StoryMode");
-        if (SceneManager.GetActiveScene().name.ToString() == "Lvl3Cutscene")
+
+      
+            if (SceneManager.GetActiveScene().name.ToString() == "Lvl3Cutscene")
         {
             animator.Play("Pop");
             //animator.Play("Idle");
@@ -49,51 +91,32 @@ public class GameManager : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {          
-       
-        if (fText == null)
+    {
+
+        if (fText == null | hText == null | fText2 == null | hText2 == null)
         {
-            Debug.Log(" ");
+            //nothing
         }
         else
         {
             fText.text = fOrbs.ToString();
-        }
-        if (hText == null)
-        {
-            Debug.Log(" ");
-        }
-        else
-        {
             hText.text = hOrbs.ToString();
-        }
-        if (fText2 == null)
-        {
-            Debug.Log(" ");
-        }
-        else
-        {
             fText2.text = fOrbs.ToString();
-        }
-        if (hText2 == null)
-        {
-            Debug.Log(" ");
-        }
-        else
-        {
             hText2.text = hOrbs.ToString();
         }
 
-        if (c1.GetComponent<ColorlessSplitInt>().count == 1 && c2.GetComponent<OtherColorlessSplitInt>().count == 1)
+        if (c1 != null && c2 != null)
+        {
+            if (GameObject.Find("ColourlessSplit/Colorless").GetComponent<ColorlessSplitInt>().count >= 1 && GameObject.Find("OtherColourlessSplit/Colorless").GetComponent<OtherColorlessSplitInt>().count >= 1) 
         {
 
-            c1.GetComponent<ColorlessSplitInt>().myEvent.Invoke();
-            //c1.GetComponent<ColorlessSplitInt>().count++;
+                c1.GetComponent<ColorlessSplitInt>().myEvent.Invoke();
+                //c1.GetComponent<ColorlessSplitInt>().count++;
 
-            c2.GetComponent<OtherColorlessSplitInt>().myEvent.Invoke();
-            //c2.GetComponent<OtherColorlessSplitInt>().count++;
+                c2.GetComponent<OtherColorlessSplitInt>().myEvent.Invoke();
+                //c2.GetComponent<OtherColorlessSplitInt>().count++;
 
-
+            }
         }
        // string sceneName = SceneManager.GetActiveScene().ToString();
 
@@ -154,13 +177,5 @@ public class GameManager : MonoBehaviour
     {
         fOrbs = fOrbs + 1;
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.name == "Fox" || collision.gameObject.name == "Hawk")
-        {
-            collision.transform.Translate(Vector3.up * 3f);
-
-        }
-    }
-   
+      
 }

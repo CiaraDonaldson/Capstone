@@ -23,9 +23,9 @@ public class FoxController : MonoBehaviour
     void Start()
     {
         characterTransform = transform;
-        rend = GetComponent<SpriteRenderer>();
-        anim = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
+        rend = this.GetComponent<SpriteRenderer>();
+        anim = this.GetComponent<Animator>();
+        rb = this.GetComponent<Rigidbody2D>();
         GameObject particleSystemObject = GameObject.Find("FDust");
         dust = particleSystemObject.GetComponent<ParticleSystem>();
         Hawk = GameObject.Find("Hawk");

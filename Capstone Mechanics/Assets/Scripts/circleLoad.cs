@@ -12,6 +12,7 @@ public class circleLoad : MonoBehaviour
 
     [Header("Indicator")]
     [SerializeField] private Image radialIndicatorUI = null;
+    [SerializeField] public GameObject radialIndicatorGO = null;
 
     [Header("Key Code")]
     [SerializeField] private KeyCode selectKey = KeyCode.N;
@@ -23,9 +24,20 @@ public class circleLoad : MonoBehaviour
 
     private void Start()
     {
+        Transform canvasTransform = GameObject.Find("Canvas").transform;
+
+        if (canvasTransform != null)
+        {
+            radialIndicatorGO = canvasTransform.Find("Image").gameObject;
+
+            if (radialIndicatorGO != null)
+            {
+                radialIndicatorUI = radialIndicatorGO.GetComponent<Image>();
+            }
+        }
         if (radialIndicatorUI == null)
         {
-            this.enabled = false;
+            Debug.Log("Not Here");
         }
         radialIndicatorUI.enabled = false;
     }

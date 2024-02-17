@@ -14,11 +14,13 @@ public class parallax : MonoBehaviour
     void Start()
     {
         SetupTexture();
-        virtualCamera = Camera.main.GetComponent<CinemachineVirtualCamera>();
-
-        if (virtualCamera == null)
+        if (GameObject.Find("Main Camera"))
         {
-            this.enabled = false;
+            virtualCamera = GameObject.Find("Main Camera").GetComponent<CinemachineVirtualCamera>();
+        }
+        else
+        {
+            this.GetComponent<parallax>().enabled = false;
         }
 
     }

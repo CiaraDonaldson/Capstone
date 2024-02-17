@@ -21,6 +21,7 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      
         if (!hasBeenMet)
         {
             if (getFVelocity())
@@ -31,7 +32,7 @@ public class PlayerHealth : MonoBehaviour
             }
         }
 
-        if (Fox.GetComponent<Rigidbody2D>().velocity.y > -7)
+        if (GameObject.Find("Fox") & Fox.GetComponent<Rigidbody2D>().velocity.y > -7)
         {
             hasBeenMet = false;
         }
@@ -60,10 +61,13 @@ public class PlayerHealth : MonoBehaviour
     }
     public bool getFVelocity()
     {
-        if (Fox.GetComponent<Rigidbody2D>().velocity.y < -15)
+        if (GameObject.Find("Fox") & Fox.GetComponent<Rigidbody2D>().velocity.y < -15)
         {
             return true;
         }
-        return false;
+        else
+        {
+            return false;
+        }
     }
 }

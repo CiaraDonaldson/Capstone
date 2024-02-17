@@ -5,27 +5,40 @@ using UnityEngine.SceneManagement;
 
 public class TitleAudio : MonoBehaviour
 {
-    private void Awake()
+    public AudioSource audioSource;
+   // public GameObject titleAudio;
+    private void Update()
     {
+        //GameObject titleAudio = GameObject.FindWithTag("TitleAudio");
+        DontDestroyOnLoad(transform.gameObject);
+        audioSource = GetComponent<AudioSource>();
         Scene scene = SceneManager.GetActiveScene();
 
-        if (scene.buildIndex == 0 || scene.buildIndex == 1 || scene.buildIndex == 2 || scene.buildIndex == 3)
+        // if (titleAudio == null)
+        //   {
+        //       Instantiate(titleAudio);
+        //   }
+        // Check if the scene is one of the specified scenes
+        if (SceneManager.GetActiveScene().buildIndex >= 0 && SceneManager.GetActiveScene().buildIndex <= 4)
         {
-            DontDestroyOnLoad(GameObject.Find("TitleAudio"));
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+                audioSource.volume = 1;
+                audioSource.enabled = true;
+            }
         }
-        
-        
-    
-        //string SName = scene.name.ToString();
-        //if (GameObject.Find("Title Audio") != this.gameObject)
-        //{
-       //     Destroy(this.gameObject);
-      //  }
+        else
+        {
+            if (audioSource.isPlaying)
+            {
+                audioSource.Stop();
+                audioSource.volume = 0;
+                audioSource.enabled = false;
+            }
+        }
+
 
     }
-    void Update()
-    {
 
-      
-    }
 }

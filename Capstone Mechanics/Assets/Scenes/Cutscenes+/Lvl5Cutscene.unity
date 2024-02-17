@@ -523,7 +523,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.895703
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -13879,7 +13879,7 @@ PlayableDirector:
   - key: {fileID: 889982202841681514, guid: 39e940bcf14269d448ab269af1beb847, type: 2}
     value: {fileID: 3052058697377604513}
   - key: {fileID: -4941667396908310005, guid: 39e940bcf14269d448ab269af1beb847, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 831184748}
   m_ExposedReferences:
     m_References:
     - 9090f57826860cf4ca03145764ac82db: {fileID: 8459035}
@@ -13897,6 +13897,21 @@ PlayableDirector:
     - 00892fdf8d621564c9586c5bee6c1411: {fileID: 35751695}
     - 23cb1968d59562e4a9f5dbbffb2bad4a: {fileID: 8459035}
     - 9b78733b9b6790745b6f5d50fc74c26f: {fileID: 0}
+--- !u!114 &831184748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130453281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals: []
+    m_Events: []
 --- !u!1 &865895262
 GameObject:
   m_ObjectHideFlags: 0
@@ -22394,6 +22409,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 644128502}
     m_Modifications:
+    - target: {fileID: 5122351679672475916, guid: 91e53aa9c2d501544aa67a03b222d5c2, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4076863487
+      objectReference: {fileID: 0}
     - target: {fileID: 5871078539125426459, guid: 91e53aa9c2d501544aa67a03b222d5c2, type: 3}
       propertyPath: m_Name
       value: Unlock Ability Text
