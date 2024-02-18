@@ -11,7 +11,7 @@ public class TitleAudio : MonoBehaviour
     {
         //GameObject titleAudio = GameObject.FindWithTag("TitleAudio");
         DontDestroyOnLoad(transform.gameObject);
-        audioSource = GetComponent<AudioSource>();
+        audioSource = this.GetComponent<AudioSource>();
         Scene scene = SceneManager.GetActiveScene();
 
         // if (titleAudio == null)

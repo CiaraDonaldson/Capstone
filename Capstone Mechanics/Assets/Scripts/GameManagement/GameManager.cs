@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
             if (GameObject.Find("Fox"))
             {
                 GameObject.Find("Fox").GetComponent<FoxController>().enabled = false;
+                //GameObject.Find("Fox").GetComponent<Taunt>().enabled = false;
             }
             if (GameObject.Find("Hawk"))
             {
@@ -52,6 +53,8 @@ public class GameManager : MonoBehaviour
             if (GameObject.Find("Fox"))
             {
                 GameObject.Find("Fox").GetComponent<FoxController>().enabled = true;
+                //GameObject.Find("Fox").GetComponent<Taunt>().enabled = true;
+
             }
             if (GameObject.Find("Hawk"))
             {

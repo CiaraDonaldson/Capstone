@@ -468,21 +468,25 @@ public class HTalk : MonoBehaviour
     IEnumerator Lvl3Cut()
     {
         //The fox and hawk are casually walking/flying, the hawk begins to say
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("Just as I reckon, I have no need of thee.");
        //PopUp();
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("Well, I didn't need youse either. I collected all my souls without a hitch.");
         //fPopUp();
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("Aye, I beheld it, soiling thyself to uncover thy soul befits thee, thou cur.");
         //PopUp();
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("whateva.");
        // fPopUp();
@@ -493,17 +497,20 @@ public class HTalk : MonoBehaviour
         //fPopUp();
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("How is it strange? Just render it two of thy souls, so we may proceed.");
         //PopUp();
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("You're stupid and colorblind? It looks like this colorless is askin' for both of our souls.");
         //fPopUp();
         yield return new WaitForSeconds(5f);
 
         //After a while of not finding any more souls, the ability to scan is unlocked
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("What a vexation, let us away.");
         yield return new WaitForSeconds(7f);
@@ -511,6 +518,7 @@ public class HTalk : MonoBehaviour
         //PopUp();
         yield return new WaitForSeconds(3f);
 
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("Hah, look who's useless now. Observe.");
         yield return new WaitForSeconds(7f);
@@ -518,21 +526,25 @@ public class HTalk : MonoBehaviour
         //fPopUp("Hah, look who's useless now. Observe. *Sneaks for the first time* Here’s your soul.");
         yield return new WaitForSeconds(3f);
 
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("…Thank thee, Mutt.");
         //PopUp();
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("What was that, birdbrain? Did ya just thank me?");
         //fPopUp();
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("I suppose those lengthy ears are merely for display, art they not?");
         //PopUp();
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("*Grumbles*");
         //fPopUp();
@@ -548,16 +560,19 @@ public class HTalk : MonoBehaviour
         //As they move forward, they come across a soul that’s in a high place.
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("You gotta be kiddin' me.");
         //fPopUp("You have to be kidding me");
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("Hahaha, I perceive thou art still ineffectual, Mutt.");
         //PopUp("Hahaha, I see you’re still useless after all Mutt");
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("Shaddap. There are bound to be other souls. I don't need that one.");
         //fPopUp("");
@@ -568,16 +583,19 @@ public class HTalk : MonoBehaviour
         //fPopUp("That’s IT! Carry me");
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = (" …What.");
         //PopUp("");
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("If we wanna move forward, I gotta collect my souls, and all my souls ain't ground level, so therefore, Pick. Me. Up.");
         //fPopUp("");
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("No.");
        // PopUp("");
@@ -588,6 +606,7 @@ public class HTalk : MonoBehaviour
        // PopUp("");
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("Then forget it.");
         //fPopUp("");
@@ -595,36 +614,44 @@ public class HTalk : MonoBehaviour
 
         //GIANT TEXT: 
         //CAMERA PANS OVER TO A RESTING CHIMERA
+
+        dialougeText.color = chimera;
         dialougeImage.sprite = CImg;
         dialougeText.text = ("I wouldn’t give up yet if I were you");
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = (" For how long hast thou been observing us, Chimera?");
         //PopUp("");
         yield return new WaitForSeconds(5f);
 
         //Chimera:
+        dialougeText.color = chimera;
         dialougeImage.sprite = CImg;
         dialougeText.text = (" Long enough to know that if you refuse to work together then it’ll only be a matter of time before you both become colorless yourselves.");
         yield return new WaitForSeconds(5f);
         //CHIMERA FADES AWAY INTO THE BACKGROUND
 
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("...");
         //fPopUp("");
         yield return new WaitForSeconds(2f);
 
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("...");
         //PopUp("...");
         yield return new WaitForSeconds(2f);
 
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("Ya gonna pick me up now?");
         //fPopUp("");
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("fine...");
         //PopUp("");
@@ -639,16 +666,19 @@ public class HTalk : MonoBehaviour
     IEnumerator Lvl7Cut()
     {
         //Seeing a ground soulless
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("What’s that?");
         //fPopUp("What’s that?");
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("I’m not sure, it’s definetly not a colorless");
         //PopUp("I’m not sure, it’s not a colorless");
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("Let’s just avoid it for now");
         //fPopUp("Let’s just avoid it for now..");
@@ -658,33 +688,39 @@ public class HTalk : MonoBehaviour
         //fPopUp("");
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("And put myself to your level? I think not");
         //PopUp("");
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("You’ll get us both killed for your pride?");
        // fPopUp("");
         yield return new WaitForSeconds(5f);
 
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("Stop talking to me Mutt");
         //PopUp("Stop talking to me Mutt");
         yield return new WaitForSeconds(5f);
 
         //*Taunt is unlocked*
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("Get down, you winged RAT");
         //fPopUp("");
         yield return new WaitForSeconds(5f);
 
         //*Taunted* 
+        dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("WATCH YOUR TOUNGUE-");
         //PopUp("");
         yield return new WaitForSeconds(2f);
 
+        dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = ("Just shut up and stay down! Imma get us through this.");
         //fPopUp("");
