@@ -12082,7 +12082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dust: {fileID: 0}
   rb: {fileID: 0}
-  moveForce: 3
+  moveForce: 2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -12157,7 +12157,7 @@ MonoBehaviour:
   rb: {fileID: 8391183920730606029}
   rend: {fileID: 8391183920730606035}
   inAir: 0
-  sneakForce: 4
+  sneakForce: 1
 --- !u!114 &6654098819639733398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12623,7 +12623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerRb: {fileID: 8391183921164731607}
-  walkForce: 3
+  walkForce: 2
   anim: {fileID: 5395613376024856800}
   cCircle: {fileID: 8391183921164731604}
   cCapsule: {fileID: 8391183921164731604}
