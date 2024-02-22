@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Sneak : MonoBehaviour
 {
     public float radius = 2f;
@@ -16,6 +17,11 @@ public class Sneak : MonoBehaviour
     public SpriteRenderer rend;
     public bool inAir = false;
     public float sneakForce = 5f;
+
+    public AudioClip sneak;
+    AudioSource MyAudioSource;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +29,7 @@ public class Sneak : MonoBehaviour
         cCollider = GetComponent<CircleCollider2D>();
         capCollider = GetComponent<CapsuleCollider2D>();
         rb = GetComponent<Rigidbody2D>();
+        MyAudioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -36,14 +43,18 @@ public class Sneak : MonoBehaviour
         Debug.DrawRay(transform.position, down, Color.red);
 
         if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.LeftArrow))
-            {
+        {
             rb.AddForce(Vector3.left * sneakForce, ForceMode2D.Impulse);
             anim.Play("Sneak");
+            MyAudioSource.clip = sneak;
+            MyAudioSource.Play();
         }
         else if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.RightArrow))
-            {
+        {
             rb.AddForce(Vector3.right * sneakForce, ForceMode2D.Impulse);
             anim.Play("Sneak");
+            MyAudioSource.clip = sneak;
+            MyAudioSource.Play();
         }
 
         if (hit.collider != null || hit2.collider != null)
@@ -79,6 +90,8 @@ public class Sneak : MonoBehaviour
             {
 
                 anim.Play("Sneak");
+                MyAudioSource.clip = sneak;
+                MyAudioSource.Play();
             }
           
         }

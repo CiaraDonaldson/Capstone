@@ -10,6 +10,8 @@ public class Dig : MonoBehaviour
     public Animator anim;
     public Rigidbody2D rb;
 
+    public AudioClip dig;
+    AudioSource MyAudioSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,8 @@ public class Dig : MonoBehaviour
         if (hit.collider != null)
         {
             anim.Play("Dig");
+            MyAudioSource.clip = dig;
+            MyAudioSource.Play();
             yield return new WaitForSeconds(.5f);
             // Object on the dig layer is hit, destroy it
             Destroy(hit.collider.gameObject);

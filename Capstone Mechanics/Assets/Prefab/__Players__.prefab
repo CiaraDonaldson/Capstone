@@ -12130,6 +12130,7 @@ MonoBehaviour:
   isDigging: 0
   anim: {fileID: 4103722379551422420}
   rb: {fileID: 8391183920730606029}
+  dig: {fileID: 8300000, guid: e1b62039074017a43b4a251dfae504ea, type: 3}
 --- !u!114 &550391368929835394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12158,6 +12159,7 @@ MonoBehaviour:
   rend: {fileID: 8391183920730606035}
   inAir: 0
   sneakForce: 1
+  sneak: {fileID: 8300000, guid: c9789b40369ed7044a3c5d11f5b7dad0, type: 3}
 --- !u!114 &6654098819639733398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12451,11 +12453,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: d6c310fd6af26bc4c9de314c3c2b60be, type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 164e83289f1445642ad7616996f81116, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
