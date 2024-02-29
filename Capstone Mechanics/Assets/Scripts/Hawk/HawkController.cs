@@ -13,6 +13,7 @@ public class HawkController : MonoBehaviour
     private Transform characterTransform;
     private bool isFacingRight = true;
 
+
     public Collider2D cCircle;
     public Collider2D cCapsule;
     //private GameController gameControllerReference;

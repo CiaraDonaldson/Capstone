@@ -970,7 +970,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Exit
+  m_text: Options
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 991505cb5c5fb1e45a14a51ec826578a, type: 2}
   m_sharedMaterial: {fileID: 1869894409925117031, guid: 991505cb5c5fb1e45a14a51ec826578a, type: 2}
@@ -1176,9 +1176,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3089826482837696849, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: QuitGame
+      - m_Target: {fileID: 3130635588401428609, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: startOptions
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

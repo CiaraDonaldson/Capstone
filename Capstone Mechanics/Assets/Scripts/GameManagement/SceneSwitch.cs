@@ -7,19 +7,19 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitch : MonoBehaviour
 {
-    public float nKeyPressStartTime = 0;
+    public float nKeyPressStartTime = 5;
     // Start is called before the first frame update
     private void Update()
     {
         if (Input.GetKey(KeyCode.N))
-        {
-            nKeyPressStartTime += Time.deltaTime;
+        {            
+            nKeyPressStartTime -= Time.deltaTime;
         }
         if (Input.GetKeyUp(KeyCode.N))
         {
-            nKeyPressStartTime = 0f;
+            nKeyPressStartTime += Time.deltaTime;
         }
-        if (nKeyPressStartTime >= 5f)
+        if (nKeyPressStartTime <= 0f)
         {
             Debug.Log("it hit 5");
             if (SceneManager.GetActiveScene().name.ToString() == "LivingWorld")

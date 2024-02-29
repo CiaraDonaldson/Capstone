@@ -9,14 +9,14 @@ public class Dig : MonoBehaviour
     public bool isDigging = false;
     public Animator anim;
     public Rigidbody2D rb;
+    public GameObject Hawk;
 
-    public AudioClip dig;
-    AudioSource MyAudioSource;
+
     // Start is called before the first frame update
     void Start()
     {
-
         rb = GetComponent<Rigidbody2D>();
+        Hawk = GameObject.Find("Hawk");
     }
 
     // Update is called once per frame
@@ -24,7 +24,10 @@ public class Dig : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.DownArrow) && !isDigging)
         {
-            StartCoroutine(DigCoroutine());
+            if (!Hawk.GetComponent<Scan>().isElevating)
+            {
+                StartCoroutine(DigCoroutine());
+            }
         }
 
     }
@@ -38,8 +41,6 @@ public class Dig : MonoBehaviour
         if (hit.collider != null)
         {
             anim.Play("Dig");
-            MyAudioSource.clip = dig;
-            MyAudioSource.Play();
             yield return new WaitForSeconds(.5f);
             // Object on the dig layer is hit, destroy it
             Destroy(hit.collider.gameObject);

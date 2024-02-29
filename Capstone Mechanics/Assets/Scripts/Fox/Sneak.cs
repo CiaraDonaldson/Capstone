@@ -17,10 +17,7 @@ public class Sneak : MonoBehaviour
     public SpriteRenderer rend;
     public bool inAir = false;
     public float sneakForce = 5f;
-
-    public AudioClip sneak;
-    AudioSource MyAudioSource;
-
+    public GameObject Hawk;
 
     // Start is called before the first frame update
     void Start()
@@ -29,13 +26,16 @@ public class Sneak : MonoBehaviour
         cCollider = GetComponent<CircleCollider2D>();
         capCollider = GetComponent<CapsuleCollider2D>();
         rb = GetComponent<Rigidbody2D>();
-        MyAudioSource = GetComponent<AudioSource>();
+        Hawk = GameObject.Find("Hawk");
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 raycastOrigin = transform.position;
+        if (!Hawk.GetComponent<Scan>().isElevating)
+        {
+            Vector3 raycastOrigin = transform.position;
         Vector3 raycastDirection = transform.forward;
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, digDepth, digLayer);
         RaycastHit2D hit2 = Physics2D.Raycast(transform.position, Vector2.down, digDepth, groundLayer);
@@ -46,21 +46,18 @@ public class Sneak : MonoBehaviour
         {
             rb.AddForce(Vector3.left * sneakForce, ForceMode2D.Impulse);
             anim.Play("Sneak");
-            MyAudioSource.clip = sneak;
-            MyAudioSource.Play();
         }
         else if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.RightArrow))
         {
             rb.AddForce(Vector3.right * sneakForce, ForceMode2D.Impulse);
             anim.Play("Sneak");
-            MyAudioSource.clip = sneak;
-            MyAudioSource.Play();
         }
+
 
         if (hit.collider != null || hit2.collider != null)
         {
             inAir = false;
-         
+
         }
         else
         {
@@ -70,6 +67,8 @@ public class Sneak : MonoBehaviour
         if (Input.GetKey(KeyCode.DownArrow))
         {
             float velocityMagnitude = rb.velocity.magnitude;
+
+
 
             if (hit.collider != null)
             {
@@ -90,10 +89,8 @@ public class Sneak : MonoBehaviour
             {
 
                 anim.Play("Sneak");
-                MyAudioSource.clip = sneak;
-                MyAudioSource.Play();
             }
-          
+
         }
         else
         {
@@ -101,5 +98,6 @@ public class Sneak : MonoBehaviour
             cCollider.enabled = true;
             capCollider.enabled = false;
         }
+    }
     }
 }

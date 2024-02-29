@@ -15,7 +15,8 @@ public class FoxController : MonoBehaviour
     public LayerMask digLayer;
     public GameObject Hawk;
 
-    
+
+
     private Transform characterTransform;
     private bool isFacingRight = true;
     //private GameController gameControllerReference;

@@ -251,6 +251,12 @@ MonoBehaviour:
   fOrbs: 0
   pauseMenuUI: {fileID: 0}
   Story: {fileID: 0}
+  popUpBox: {fileID: 0}
+  animator: {fileID: 0}
+  popUpText: {fileID: 0}
+  popUptext: 
+  c1: {fileID: 0}
+  c2: {fileID: 0}
 --- !u!114 &8152445746744044638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,7 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5683c86a6d521b41b6111020c7cabc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nKeyPressStartTime: 0
+  nKeyPressStartTime: 5
 --- !u!114 &3089826482837696849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,6 +343,7 @@ MonoBehaviour:
   indicatorTimer: 1
   maxIndicatorTimer: 1
   radialIndicatorUI: {fileID: 0}
+  radialIndicatorGO: {fileID: 0}
   selectKey: 110
   myEvent:
     m_PersistentCalls:

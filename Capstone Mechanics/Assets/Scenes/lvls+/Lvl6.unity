@@ -1312,7 +1312,7 @@ PrefabInstance:
     - target: {fileID: 8391183921164731608, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: virtualCamera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1469929549}
     - target: {fileID: 8391183921385032736, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: m_RootOrder
       value: 0

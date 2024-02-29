@@ -11841,6 +11841,7 @@ GameObject:
   - component: {fileID: 550391368929835394}
   - component: {fileID: 6654098819639733398}
   - component: {fileID: 7238576665453612657}
+  - component: {fileID: 4589751762420223464}
   - component: {fileID: 4103722379551422420}
   m_Layer: 0
   m_Name: Fox
@@ -11857,7 +11858,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8391183920730606028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.52, y: -1.71, z: 0}
+  m_LocalPosition: {x: 2.5199995, y: -1.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11881,7 +11882,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -12130,7 +12131,6 @@ MonoBehaviour:
   isDigging: 0
   anim: {fileID: 4103722379551422420}
   rb: {fileID: 8391183920730606029}
-  dig: {fileID: 8300000, guid: e1b62039074017a43b4a251dfae504ea, type: 3}
 --- !u!114 &550391368929835394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12159,7 +12159,6 @@ MonoBehaviour:
   rend: {fileID: 8391183920730606035}
   inAir: 0
   sneakForce: 1
-  sneak: {fileID: 8300000, guid: c9789b40369ed7044a3c5d11f5b7dad0, type: 3}
 --- !u!114 &6654098819639733398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12187,6 +12186,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Story: {fileID: 0}
+--- !u!114 &4589751762420223464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8391183920730606028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf5977c9fffc994192cde6be443e14b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  digDepth: 3
+  digLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  sneak: {fileID: 8300000, guid: 807b56149c36c6241a032e48e3d62f8f, type: 3}
+  run: {fileID: 8300000, guid: 59c1988f971ae004e9aa9eb06634f0e8, type: 3}
+  taunt: {fileID: 0}
+  dig: {fileID: 8300000, guid: e1b62039074017a43b4a251dfae504ea, type: 3}
+  MyAudioSource: {fileID: 4790116612721951696}
 --- !u!95 &4103722379551422420
 Animator:
   serializedVersion: 5
@@ -12330,7 +12350,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.028989185, y: -0.96336424}
-  m_ConnectedAnchor: {x: 0.3529992, y: -0.45000005}
+  m_ConnectedAnchor: {x: 0.3529997, y: -0.45000005}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -12378,6 +12398,7 @@ GameObject:
   - component: {fileID: 8391183921164731604}
   - component: {fileID: 8391183921164731606}
   - component: {fileID: 5395613376024856800}
+  - component: {fileID: 7396290857993285479}
   m_Layer: 0
   m_Name: Hawk
   m_TagString: Hawk
@@ -12454,14 +12475,14 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: d6c310fd6af26bc4c9de314c3c2b60be, type: 2}
   m_audioClip: {fileID: 8300000, guid: 164e83289f1445642ad7616996f81116, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 3
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 205
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -12580,7 +12601,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 78049575ad54ca148802edcea69d52c1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0ea732bc82edcba49a92e5c8ad6e20fc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -12658,16 +12679,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elevateHeight: 3
-  cameraZoomOutSize: 40
+  cameraZoomOutSize: 9
   orbsMoveDistance: 5
   lerpSpeed: 10
   keyHoldDuration: 5
   virtualCamera: {fileID: 0}
+  componentBase: {fileID: 0}
   Fox: {fileID: 8391183920730606028}
   wKeyPressStartTime: 0
   orbs: []
   canScan: 0
   Smoke: {fileID: 8781469635242267163}
+  Border: {fileID: 0}
 --- !u!114 &8391183921164731609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12784,6 +12807,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &7396290857993285479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8391183921164731601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebff51cd0782a6e439cfb8e02aac16c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fly: {fileID: 8300000, guid: 164e83289f1445642ad7616996f81116, type: 3}
+  scan: {fileID: 8300000, guid: 01ac9ae044b0e1c4aa5bdf4359fbd833, type: 3}
+  MyAudioSource: {fileID: 5873912495588460522}
 --- !u!1 &8391183921385032739
 GameObject:
   m_ObjectHideFlags: 0

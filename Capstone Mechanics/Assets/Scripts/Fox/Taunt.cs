@@ -25,7 +25,10 @@ public class Taunt : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            isHolding = true;
+            if (!Hawk.GetComponent<Scan>().isElevating)
+            {
+                isHolding = true;
+            }
            
         }
 

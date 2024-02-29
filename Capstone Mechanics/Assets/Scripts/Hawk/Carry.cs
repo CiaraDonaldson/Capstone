@@ -17,6 +17,7 @@ public class Carry : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private bool isFacingRight = true;
+
     void Start()
     {
         fDust = GameObject.Find("FDust");
