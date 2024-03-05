@@ -16,8 +16,12 @@ public class Colorlessinteract : MonoBehaviour
     public AudioSource Audio;
     private int count = 0;
     bool changingColor = false;
+    public GameObject GameManager;
 
-
+    private void Start()
+    {
+        GameManager = GameObject.Find("GameManager");
+    }
     private void Update()
     {
         if (count == 1)
@@ -52,22 +56,26 @@ public class Colorlessinteract : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
-        if (GameObject.Find("StoryMode") && SceneManager.GetActiveScene().name == "Lvl2")
+        if (GameObject.Find("StoryMode"))
         {
-            SceneManager.LoadScene("Lvl3Cutscene");
+            if (SceneManager.GetActiveScene().name == "Lvl2")
+            {
+                SceneManager.LoadScene("Lvl3Cutscene");
+            }
+            if (SceneManager.GetActiveScene().name == "Lvl4")
+            {
+                SceneManager.LoadScene("Lvl5Cutscene");
+            }
+            if (SceneManager.GetActiveScene().name == "Lvl6")
+            {
+                SceneManager.LoadScene("Lvl7Cutscene");
+            }
+            if (SceneManager.GetActiveScene().name != "Lvl2" || SceneManager.GetActiveScene().name != "Lvl4" || SceneManager.GetActiveScene().name != "Lvl6")
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
         }
-        else if (GameObject.Find("StoryMode") && SceneManager.GetActiveScene().name == "Lvl4")
-        {
-            SceneManager.LoadScene("Lvl5Cutscene");
-        }
-        else if (GameObject.Find("StoryMode") && SceneManager.GetActiveScene().name == "Lvl6")
-        {
-            SceneManager.LoadScene("Lvl7Cutscene");
-        }
-        else if (GameObject.Find("StoryMode") && SceneManager.GetActiveScene().name != "Lvl2" || SceneManager.GetActiveScene().name != "Lvl4" || SceneManager.GetActiveScene().name != "Lvl6")
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+       
     }
     void OnTriggerExit2D(Collider2D other)
     {
@@ -91,7 +99,7 @@ public class Colorlessinteract : MonoBehaviour
     {
         PopUp("This is way too many!");
         yield return new WaitForSeconds(2f);
-        PopUp("You need to bring me the exact amount, or I cant restore :[");
+        PopUp("You need to bring me exactly " + fOrbCount + "Fox Orbs and " + hOrbCount + "Hawk Orbs, or I cant restore :[");
     }
     IEnumerator PopUpAndSwitch()
     {
@@ -104,7 +112,7 @@ public class Colorlessinteract : MonoBehaviour
         pass = true;
 
         // Wait for another duration before switching scenes
-        yield return new WaitForSeconds(4f); // Adjust the duration as needed
+        yield return new WaitForSeconds(3f); // Adjust the duration as needed
 
         loadNextScene();
     }
@@ -122,7 +130,7 @@ public class Colorlessinteract : MonoBehaviour
             counter += Time.deltaTime;
 
             float colorTime = counter / duration;
-            Debug.Log(colorTime);
+           // Debug.Log(colorTime);
 
             //Change color
             this.gameObject.GetComponent<SpriteRenderer>().color = Color.Lerp(fromColor, toColor, counter / duration);

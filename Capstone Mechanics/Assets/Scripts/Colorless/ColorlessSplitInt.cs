@@ -50,21 +50,24 @@ public class ColorlessSplitInt: MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
-        if (GameObject.Find("StoryMode") && SceneManager.GetActiveScene().name == "Lvl2")
+        if (GameObject.Find("StoryMode"))
         {
-            SceneManager.LoadScene("Lvl3Cutscene");
-        }
-        else if (GameObject.Find("StoryMode") && SceneManager.GetActiveScene().name == "Lvl4")
-        {
-            SceneManager.LoadScene("Lvl5Cutscene");
-        }
-        else if (GameObject.Find("StoryMode") && SceneManager.GetActiveScene().name == "Lvl6")
-        {
-            SceneManager.LoadScene("Lvl7Cutscene");
-        }
-        else if (GameObject.Find("StoryMode") && SceneManager.GetActiveScene().name != "Lvl2" || SceneManager.GetActiveScene().name != "Lvl4" || SceneManager.GetActiveScene().name != "Lvl6")
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            if (SceneManager.GetActiveScene().name == "Lvl2")
+            {
+                SceneManager.LoadScene("Lvl3Cutscene");
+            }
+            if (SceneManager.GetActiveScene().name == "Lvl4")
+            {
+                SceneManager.LoadScene("Lvl5Cutscene");
+            }
+            if (SceneManager.GetActiveScene().name == "Lvl6")
+            {
+                SceneManager.LoadScene("Lvl7Cutscene");
+            }
+            if (SceneManager.GetActiveScene().name != "Lvl2" || SceneManager.GetActiveScene().name != "Lvl4" || SceneManager.GetActiveScene().name != "Lvl6")
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
         }
     }
     void OnTriggerExit2D(Collider2D other)

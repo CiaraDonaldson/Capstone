@@ -21793,7 +21793,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3130635588401428609, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
   m_PrefabInstance: {fileID: 7242947379290755823}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 7242947379290755824}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b57077de596d4f0489e77f2d2eee8dd0, type: 3}
@@ -21804,7 +21804,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3089826482837696849, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
   m_PrefabInstance: {fileID: 7242947379290755823}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 7242947379290755824}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fbbfd56236882341b1dcc65841284c1, type: 3}
@@ -31165,6 +31165,10 @@ PrefabInstance:
       propertyPath: hOrbCount
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 118218826731709321, guid: 6acec6ff5177bff4898a5d86eceacda4, type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 7242947379290755824}
     - target: {fileID: 5685789291837631792, guid: 6acec6ff5177bff4898a5d86eceacda4, type: 3}
       propertyPath: m_Name
       value: ColourlessGrp
@@ -32873,3 +32877,8 @@ PrefabInstance:
       objectReference: {fileID: 1014035486}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
+--- !u!1 &7242947379290755824 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4911954467482499003, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
+  m_PrefabInstance: {fileID: 7242947379290755823}
+  m_PrefabAsset: {fileID: 0}
