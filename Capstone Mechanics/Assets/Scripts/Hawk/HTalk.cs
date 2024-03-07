@@ -66,10 +66,7 @@ public class HTalk : MonoBehaviour
 
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-     /*   if (sceneName == "Lvl4")
-        {
-            digCount = 0;
-        }*/
+ 
     }
 
     // Update is called once per frame
@@ -108,6 +105,14 @@ public class HTalk : MonoBehaviour
             if (digCount == 0)
             {
                 StartCoroutine("Lvl7Cut");
+                digCount++;
+            }
+        }
+        if (sceneName == "Lvl10Cutscene")
+        {
+            if (digCount == 0)
+            {
+                StartCoroutine("Lvl10Cut");
                 digCount++;
             }
         }
@@ -206,6 +211,20 @@ public class HTalk : MonoBehaviour
             if (!isCoroutineRunning && !Lvl8Play)
             {
                 StartCoroutine("Lvl8Pass");
+            }
+        }
+
+        //LEVEL9
+        if (sceneName == "Lvl9")
+        {
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                Count++;
+            }
+            if (Count == 4)
+            {
+                Lvl9Pass();
+                Count++;
             }
         }
 
@@ -739,20 +758,63 @@ public class HTalk : MonoBehaviour
     {
         dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
-        dialougeText.text = ("WATCH YOUR TOUNGUE-");
+        dialougeText.text = ("When will we be released Chimera");
         //PopUp("");
+        yield return new WaitForSeconds(3f);
+
+        dialougeText.color = fox;
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("I was wondering the same thing, ya know?");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.color = chimera;
+        dialougeImage.sprite = CImg;
+        dialougeText.text = ("*Chuckles* I only have, but a single question");
+        yield return new WaitForSeconds(5f);
+
+        dialougeImage.sprite = BImg;
+        dialougeText.text = ("<color=#7F7FFF> What </color> /n" + "<color=#FF7F7F> What </color>");
+        yield return new WaitForSeconds(2f);
+
+        dialougeText.color = chimera;
+        dialougeImage.sprite = CImg;
+        dialougeText.text = ("Were you able to do this alone?");
+        yield return new WaitForSeconds(8f);
+
+        dialougeImage.sprite = BImg;
+        dialougeText.text = ("<color=#7F7FFF> No </color>/n" + "<color=#FF7F7F> No </color>");
+        yield return new WaitForSeconds(4f);
+
+        dialougeText.color = chimera;
+        dialougeImage.sprite = CImg;
+        dialougeText.text = ("Good, there will be no colorless here, instead you will be coming to me. I need, but only one soul of each. Do that and you shall be set free.");
+        yield return new WaitForSeconds(8f);
+
+        dialougeText.color = fox;
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("Well birdbrain, I guess this is it. Let's end this.");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.color = hawk;
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("Wait…before we go…my name is <b><i> .... </i></b>");
+        yield return new WaitForSeconds(3f);
+
+        dialougeText.color = fox;
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("*Chuckles* Nice to meet you, my name is <b><i> .... </i></b>");
+        yield return new WaitForSeconds(3f);
+
+        dialougeText.color = hawk;
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("Now may we proceed. ");
         yield return new WaitForSeconds(2f);
 
         dialougeText.color = fox;
         dialougeImage.sprite = FImg;
-        dialougeText.text = ("Just shut up and stay down! Imma get us through this.");
+        dialougeText.text = ("Lets finish this");
         yield return new WaitForSeconds(5f);
-
-
-        dialougeText.color = chimera;
-        dialougeImage.sprite = CImg;
-        dialougeText.text = ("I wouldn’t give up yet if I were you");
-        yield return new WaitForSeconds(5f);
+        StartCoroutine(PlayCloseAnimation());
     }
 
     //Passing Comments

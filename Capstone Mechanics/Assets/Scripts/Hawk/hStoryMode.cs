@@ -16,18 +16,18 @@ public class hStoryMode : MonoBehaviour
     void Update()
     {
         int y = SceneManager.GetActiveScene().buildIndex;
-        if (Story != null && y <= 14)
+        if (Story != null && y <= 13)
         {
             this.gameObject.GetComponent<Scan>().enabled = false;
             this.gameObject.GetComponent<Carry>().enabled = false;
 
         }
-        else if (Story != null && y == 16 || y == 17)
+        else if (Story != null && y == 15 || y == 16)
         {
             this.gameObject.GetComponent<Scan>().enabled = true;
             this.gameObject.GetComponent<Carry>().enabled = false;
         }
-        else if (Story != null && y < 17)
+        else if (Story != null && y < 16)
         {
             this.gameObject.GetComponent<Scan>().enabled = true;
             this.gameObject.GetComponent<Carry>().enabled = true;

@@ -59,19 +59,21 @@ public class Colorlessinteract : MonoBehaviour
 
         if (GameObject.Find("StoryMode"))
         {
-            if (SceneManager.GetActiveScene().name == "Lvl2")
+            Scene currentScene = SceneManager.GetActiveScene();
+            string sceneName = currentScene.name;
+            if (sceneName == "Lvl2")
             {
                 SceneManager.LoadScene("Lvl3Cutscene");
             }
-            if (SceneManager.GetActiveScene().name == "Lvl4")
+            else if (sceneName == "Lvl4")
             {
-                GameManager.GetComponent<SceneSwitch>().Lvl5Cutscene();
+                SceneManager.LoadScene("Lvl5Cutscene");
             }
-            if (SceneManager.GetActiveScene().name == "Lvl6")
+            else if (sceneName == "Lvl6")
             {
                 SceneManager.LoadScene("Lvl7Cutscene");
             }
-            if (SceneManager.GetActiveScene().name != "Lvl2" || SceneManager.GetActiveScene().name != "Lvl4" || SceneManager.GetActiveScene().name != "Lvl6")
+            else
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
