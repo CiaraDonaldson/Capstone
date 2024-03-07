@@ -340,6 +340,7 @@ MonoBehaviour:
   animator: {fileID: 118218828291232199}
   popUpText: {fileID: 118218826677051949}
   Audio: {fileID: 2550222981695676469}
+  GameManager: {fileID: 4911954467482499003, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
 --- !u!58 &118218826731709320
 CircleCollider2D:
   m_ObjectHideFlags: 0

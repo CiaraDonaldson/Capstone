@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -64,7 +65,7 @@ public class Colorlessinteract : MonoBehaviour
             }
             if (SceneManager.GetActiveScene().name == "Lvl4")
             {
-                SceneManager.LoadScene("Lvl5Cutscene");
+                GameManager.GetComponent<SceneSwitch>().Lvl5Cutscene();
             }
             if (SceneManager.GetActiveScene().name == "Lvl6")
             {

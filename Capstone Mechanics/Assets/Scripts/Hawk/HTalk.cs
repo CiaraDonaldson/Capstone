@@ -37,6 +37,7 @@ public class HTalk : MonoBehaviour
     public Sprite CImg;
     public Sprite HImg;
     public Sprite FImg;
+    public Sprite BImg;
 
     public int scanreact = 0;
     private float wKeyHoldTime = 0f;
@@ -384,6 +385,8 @@ public class HTalk : MonoBehaviour
 
         dialougeImage.sprite = null;
         //dialougeText.color = fox;
+        dialougeImage.sprite = BImg;
+
         dialougeText.text = ("<color=#7F7FFF> A Fox! </color>\n" + "<color=#FF7F7F>A Hawk! </color>");
         //fPopUp("A fox");
         // PopUp("A hawk");
@@ -732,6 +735,25 @@ public class HTalk : MonoBehaviour
         //isCoroutineRunning = false;
         //hasLvl2AirRun = true;
     }
+    IEnumerator Lvl10Cut()
+    {
+        dialougeText.color = hawk;
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("WATCH YOUR TOUNGUE-");
+        //PopUp("");
+        yield return new WaitForSeconds(2f);
+
+        dialougeText.color = fox;
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("Just shut up and stay down! Imma get us through this.");
+        yield return new WaitForSeconds(5f);
+
+
+        dialougeText.color = chimera;
+        dialougeImage.sprite = CImg;
+        dialougeText.text = ("I wouldn’t give up yet if I were you");
+        yield return new WaitForSeconds(5f);
+    }
 
     //Passing Comments
     IEnumerator Lvl2Air()
@@ -866,6 +888,44 @@ public class HTalk : MonoBehaviour
         PopUp("no...?");
         yield return new WaitForSeconds(3f);
 
+        //digCount++;
+        Lvl8Play = true;
+        // Play the close animation
+        StartCoroutine(PlayCloseAnimation());
+
+        isCoroutineRunning = false;
+    }
+    IEnumerator Lvl9Pass()
+    {
+        isCoroutineRunning = true;
+        yield return new WaitForSeconds(10f);
+        PopUp("Pray tell, doth filth truly not vex thee?!");
+        yield return new WaitForSeconds(3f);
+
+        fPopUp("You're still on this??");
+        yield return new WaitForSeconds(3f);
+
+        PopUp("Yes, dost thou not yearn for the ability to soar through the heavens?!");
+        yield return new WaitForSeconds(3f);
+
+        fPopUp("Absolutely NOT.");
+        yield return new WaitForSeconds(5f);
+
+        PopUp("WHY NOT");
+        yield return new WaitForSeconds(4f);
+
+        fPopUp("I’M SCARED OF HEIGHTS");
+        yield return new WaitForSeconds(3f);
+
+        PopUp("...");
+        fPopUp("...");
+        yield return new WaitForSeconds(4f);
+
+        PopUp("This whole time-");
+        yield return new WaitForSeconds(2f);
+
+        PopUp("Shut Up");
+        yield return new WaitForSeconds(4f);
         //digCount++;
         Lvl8Play = true;
         // Play the close animation
