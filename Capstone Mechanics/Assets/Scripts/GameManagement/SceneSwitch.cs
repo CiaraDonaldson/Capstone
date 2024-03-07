@@ -100,7 +100,7 @@ public class SceneSwitch : MonoBehaviour
     {
         SceneManager.LoadScene("Lvl9");
     }
-    public void Lvl110()
+    public void Lvl10()
     {
         SceneManager.LoadScene("Lvl10");
     }
