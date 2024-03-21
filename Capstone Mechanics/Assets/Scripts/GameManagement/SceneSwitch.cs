@@ -104,4 +104,8 @@ public class SceneSwitch : MonoBehaviour
     {
         SceneManager.LoadScene("Lvl10");
     }
+    public void TheFall()
+    {
+        SceneManager.LoadScene("TheFall");
+    }
 }

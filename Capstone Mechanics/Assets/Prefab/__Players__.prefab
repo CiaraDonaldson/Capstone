@@ -12083,7 +12083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dust: {fileID: 0}
   rb: {fileID: 0}
-  moveForce: 2
+  moveForce: 1
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -12159,7 +12159,7 @@ MonoBehaviour:
   rb: {fileID: 8391183920730606029}
   rend: {fileID: 8391183920730606035}
   inAir: 0
-  sneakForce: 1
+  sneakForce: 0.5
   Hawk: {fileID: 0}
 --- !u!114 &6654098819639733398
 MonoBehaviour:
@@ -12461,6 +12461,7 @@ MonoBehaviour:
   fAudio: {fileID: 8300000, guid: ab68b1e1cab1f454a84bce1c46969be4, type: 3}
   hAudio: {fileID: 8300000, guid: 67429244713ace442978b6eeec3ecc48, type: 3}
   cAudio: {fileID: 8300000, guid: ceac891cdc98a054b980d68bf07b6c15, type: 3}
+  MyAudioSource: {fileID: 0}
   dialougeText: {fileID: 0}
   dialougeImage: {fileID: 0}
   CImg: {fileID: 21300000, guid: bca6d6bcad468404796fbbe171198c08, type: 3}
@@ -12652,7 +12653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerRb: {fileID: 8391183921164731607}
-  walkForce: 2
+  walkForce: 1
   anim: {fileID: 5395613376024856800}
   cCircle: {fileID: 8391183921164731604}
   cCapsule: {fileID: 8391183921164731604}

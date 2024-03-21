@@ -74,4 +74,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/lvls+/Lvl10.unity
     guid: 71ccab58f393b3249ae8747dfd86ce42
+  - enabled: 1
+    path: Assets/Scenes/TheFall.unity
+    guid: b41ec6cb033e5d8468428266f02a9058
   m_configObjects: {}

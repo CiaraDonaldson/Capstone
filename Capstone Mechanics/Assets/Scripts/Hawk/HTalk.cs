@@ -932,6 +932,11 @@ public class HTalk : MonoBehaviour
     }
     IEnumerator Lvl10Cut()
     {
+        dialougeText.color = chimera;
+        dialougeImage.sprite = CImg;
+        dialougeText.text = ("Well done, through better and worse, you’ve come this far.");
+        yield return new WaitForSeconds(5f);
+
         dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("When will we be released Chimera");
@@ -949,7 +954,7 @@ public class HTalk : MonoBehaviour
         yield return new WaitForSeconds(5f);
 
         dialougeImage.sprite = BImg;
-        dialougeText.text = ("<color=#7F7FFF> What </color> /n" + "<color=#FF7F7F> What </color>");
+        dialougeText.text = ("<color=#7F7FFF> What </color> \n" + "<color=#FF7F7F> What </color>");
         yield return new WaitForSeconds(2f);
 
         dialougeText.color = chimera;
@@ -958,7 +963,7 @@ public class HTalk : MonoBehaviour
         yield return new WaitForSeconds(8f);
 
         dialougeImage.sprite = BImg;
-        dialougeText.text = ("<color=#7F7FFF> No </color>/n" + "<color=#FF7F7F> No </color>");
+        dialougeText.text = ("<color=#7F7FFF> No </color>\n" + "<color=#FF7F7F> No </color>");
         yield return new WaitForSeconds(4f);
 
         dialougeText.color = chimera;
@@ -973,23 +978,19 @@ public class HTalk : MonoBehaviour
 
         dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
-        dialougeText.text = ("Wait…before we go…my name is <b><i> .... </i></b>");
+        dialougeText.text = ("Wait…before we go…my name is <b><i>__ __ __ __ __ </i></b>");
         yield return new WaitForSeconds(3f);
 
         dialougeText.color = fox;
         dialougeImage.sprite = FImg;
-        dialougeText.text = ("*Chuckles* Nice to meet you, my name is <b><i> .... </i></b>");
+        dialougeText.text = ("*Chuckles* Nice to meet you, my name is <b><i> __ __ __ __ __ </i></b>");
         yield return new WaitForSeconds(3f);
 
         dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("Now may we proceed. ");
-        yield return new WaitForSeconds(2f);
-
-        dialougeText.color = fox;
-        dialougeImage.sprite = FImg;
-        dialougeText.text = ("Lets finish this");
         yield return new WaitForSeconds(5f);
+
         StartCoroutine(PlayCloseAnimation());
     }
 

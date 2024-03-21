@@ -13,7 +13,7 @@ public class colorLerp : MonoBehaviour
     void Start()
     {
         //Color lilacColor = new Color(0.8f, 0.6f, 1.0f);
-        LerpColor(this.GetComponent<MeshRenderer>(), startColor, endColor, 5f);
+        StartCoroutine(LerpColor(this.GetComponent<MeshRenderer>(), startColor, endColor, 20f));
     }
 
     // Update is called once per frame
