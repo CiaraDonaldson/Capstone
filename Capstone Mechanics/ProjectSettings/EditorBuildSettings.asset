@@ -77,4 +77,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TheFall.unity
     guid: b41ec6cb033e5d8468428266f02a9058
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes+/LivingWorldEnd.unity
+    guid: 93c040ac78c8e4845ab40f178c56af7b
   m_configObjects: {}

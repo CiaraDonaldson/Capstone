@@ -20,15 +20,12 @@ public class HTalk : MonoBehaviour
     public TMP_Text fpopUpText;
     public string fpopUptext;
 
-    public GameObject cpopUpBox;
     public Animator canimator;
-    public TMP_Text cpopUpText;
-    public string cpopUptext;
 
     public AudioClip fAudio;
     public AudioClip hAudio;
     public AudioClip cAudio;
-    public AudioSource MyAudioSource;
+    private AudioSource MyAudioSource;
 
     private GameObject Hawk;
     private GameObject Fox;
@@ -117,6 +114,10 @@ public class HTalk : MonoBehaviour
                 StartCoroutine("Lvl10Cut");
                 digCount++;
             }
+        }
+        if (sceneName == "LivingWorldEnd")
+        { 
+            StartCoroutine(SurfaceEnd()); 
         }
         //LEVEL 2
         if (sceneName == "Lvl2")
@@ -227,6 +228,15 @@ public class HTalk : MonoBehaviour
             {
                 Lvl9Pass();
                 Count++;
+            }
+        }
+
+        //LEVEL10
+        if (sceneName == "Lvl10")
+        {
+            if (GameObject.Find("Square").GetComponent<TimelineTrigger>().count == 1)
+            {
+                StartCoroutine(Lvl10End());
             }
         }
 
@@ -994,6 +1004,129 @@ public class HTalk : MonoBehaviour
         StartCoroutine(PlayCloseAnimation());
     }
 
+    IEnumerator Lvl10End()
+    {
+        yield return new WaitForSeconds(30f);
+
+        dialougeText.color = chimera;
+        dialougeImage.sprite = CImg;
+        dialougeText.text = ("I see two united souls approaching and yet I still wonder who they are.");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.color = hawk;
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("He is a sly fox.");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.color = fox;
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("And she’s a hawk, can ya believe it?");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.color = chimera;
+        dialougeImage.sprite = CImg;
+        dialougeText.text = ("True, now what am I?");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.color = fox;
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("What do you mean, youse Chimera ain’t cha?");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.color = chimera;
+        dialougeImage.sprite = CImg;
+        dialougeText.text = ("Also true, but everything in this realm is more than meets the eye, yes?");
+        yield return new WaitForSeconds(5f);
+        //The Chimera approaches them slowly as the orbs they’ve collected flow towards and morph into one becoming purple and absorbed by the Chimera.
+
+        dialougeText.color = fox;
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("...You're us…");
+        yield return new WaitForSeconds(3f);
+
+        dialougeText.color = hawk;
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("Nay, they are more than mere reflections... thou art a mirror unto ourselves.");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.color = chimera;
+        dialougeImage.sprite = CImg;
+        dialougeText.text = ("*Boastful Laughter* Both of you are correct, but think of me as your tether. I’m the representative of your souls combined, understanding that in order to be free there must be cooperation. Problem is this revelation is always in the deepest recesses of the soul.");
+        yield return new WaitForSeconds(10f);
+
+        dialougeText.color = fox;
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("Wait so in order to break this tether we just had to work together?");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.color = chimera;
+        dialougeImage.sprite = CImg;
+        dialougeText.text = ("Think more little fox");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.color = fox;
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("...we had to learn to accept each other in order to be free");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.color = hawk;
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("Pray tell, what of the Colorless and the soulless? Are they but phantasms of our minds or facets of our innermost essence? Do we dwell in an alternate realm or simply reside in unconsciousness-");
+        yield return new WaitForSeconds(10f);
+
+        dialougeText.color = chimera;
+        dialougeImage.sprite = CImg;
+        dialougeText.text = ("Calm, I can tell you now that the only thing I understand from this realm is that myself, the tether and everything here is linked to it, but that’s as much knowledge it lends to me.What I can assure is the way home.");
+        yield return new WaitForSeconds(10f);
+        //The portal from the beginning opens up behind the chimera
+
+        dialougeText.text = ("If you two ever want to come back to explore this realm you can, but I won’t be there to help. You’ll be on your own, but for now I suggest rest.");
+        yield return new WaitForSeconds(10f);
+        //The players have control again and enter the portal.
+    }
+    IEnumerator SurfaceEnd()
+    {
+        yield return new WaitForSeconds(30f);
+        dialougeText.color = hawk;
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("Hmm, dost thou require assistance once more??");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.color = fox;
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("haha, depends. Do you wish to go back, the portal hasn’t closed.");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.color = hawk;
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("The chimera shall no longer be present to aid us henceforth.");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.color = fox;
+        dialougeImage.sprite = FImg;
+        dialougeText.text = ("physically, that is, but they’re still with us within.");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.color = hawk;
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("Indeed, one day let us reconvene at this very place and embark upon further adventures. What sayeth thou?");
+        yield return new WaitForSeconds(5f);
+        //The fox jumps onto a platform
+
+        dialougeText.color = fox;
+        dialougeImage.sprite = FImg;
+        dialougeText.text = (" I’d say don’t keep me waiting birdbrain");
+        yield return new WaitForSeconds(5f);
+        //Runs off screen, the fox starts to fly off until she stops and turns around quickly.
+
+        dialougeText.color = hawk;
+        dialougeImage.sprite = HImg;
+        dialougeText.text = ("HOLD! tHOU COULD LEAP ALL THIS WHILE, YOU FU-");
+        yield return new WaitForSeconds(5f);
+
+        //Credits
+    }
+
     //Passing Comments
     IEnumerator Lvl2Air()
     {
@@ -1266,7 +1399,6 @@ public class HTalk : MonoBehaviour
         yield return new WaitForSeconds(2f); // Adjust the delay if needed
         PopDown();
         fPopDown();
-        cPopDown();
     }
 
     IEnumerator canScanNeg()
@@ -1316,20 +1448,9 @@ public class HTalk : MonoBehaviour
         fpopUpText.text = text;
         fanimator.Play("pop");
     }
-    public void cPopUp(string text)
-    {
-        cpopUpBox.SetActive(true);
-        cpopUpText.text = text;
-        canimator.Play("pop");
-    }
     public void PopDown()
     {
         animator.Play("close");
-        //popUpBox.SetActive(false);
-    }
-    public void cPopDown()
-    {
-        canimator.Play("close");
         //popUpBox.SetActive(false);
     }
     public void fPopDown()
@@ -1353,15 +1474,6 @@ public class HTalk : MonoBehaviour
         Vector3 newScale = fpopUpBox.transform.localScale;
         newScale.x = faceRight ? .2f : -.2f;
         fpopUpBox.transform.localScale = newScale;
-
-        isFacingRight = faceRight;
-    }
-    void FlipCBox(bool faceRight)
-    {
-        // Flip the character's scale based on the direction.
-        Vector3 newScale = cpopUpBox.transform.localScale;
-        newScale.x = faceRight ? .2f : -.2f;
-        cpopUpBox.transform.localScale = newScale;
 
         isFacingRight = faceRight;
     }

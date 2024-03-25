@@ -24,9 +24,9 @@ public class TimelineTrigger : MonoBehaviour
             count++;
         }
     }
-    private void OnCollisionEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player" && count == 1)
+        if (collision.gameObject.tag == "Hawk" || collision.gameObject.tag == "Fox" && count == 1)
         {
             timeline.Play();
             this.GetComponent<BoxCollider2D>().enabled = false;
