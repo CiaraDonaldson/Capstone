@@ -40,6 +40,8 @@ public class HTalk : MonoBehaviour
     public Sprite FImg;
     public Sprite BImg;
     public Sprite B2Img;
+    public Sprite H2Img;
+    public Sprite F2Img;
 
     public int scanreact = 0;
     private float wKeyHoldTime = 0f;
@@ -1096,39 +1098,39 @@ public class HTalk : MonoBehaviour
     {
         yield return new WaitForSeconds(10f);
         dialougeText.color = hawk;
-        dialougeImage.sprite = HImg;
+        dialougeImage.sprite = H2Img;
         dialougeText.text = ("Hmm, dost thou require assistance once more??");
         yield return new WaitForSeconds(5f);
 
         dialougeText.color = fox;
-        dialougeImage.sprite = FImg;
+        dialougeImage.sprite = F2Img;
         dialougeText.text = ("haha, depends. Do you wish to go back, the portal hasn’t closed.");
         yield return new WaitForSeconds(5f);
 
         dialougeText.color = hawk;
-        dialougeImage.sprite = HImg;
+        dialougeImage.sprite = H2Img;
         dialougeText.text = ("The chimera shall no longer be present to aid us henceforth.");
         yield return new WaitForSeconds(5f);
 
         dialougeText.color = fox;
-        dialougeImage.sprite = FImg;
+        dialougeImage.sprite = F2Img;
         dialougeText.text = ("physically, that is, but they’re still with us within.");
         yield return new WaitForSeconds(5f);
 
         dialougeText.color = hawk;
-        dialougeImage.sprite = HImg;
+        dialougeImage.sprite = H2Img;
         dialougeText.text = ("Indeed, one day let us reconvene at this very place and embark upon further adventures. What sayeth thou?");
         yield return new WaitForSeconds(5f);
         //The fox jumps onto a platform
 
         dialougeText.color = fox;
-        dialougeImage.sprite = FImg;
+        dialougeImage.sprite = F2Img;
         dialougeText.text = (" I’d say don’t keep me waiting birdbrain");
         yield return new WaitForSeconds(8f);
         //Runs off screen, the fox starts to fly off until she stops and turns around quickly.
 
         dialougeText.color = hawk;
-        dialougeImage.sprite = HImg;
+        dialougeImage.sprite = H2Img;
         dialougeText.text = ("HOLD! tHOU COULD LEAP ALL THIS WHILE, YOU FU-");
         yield return new WaitForSeconds(5f);
 
