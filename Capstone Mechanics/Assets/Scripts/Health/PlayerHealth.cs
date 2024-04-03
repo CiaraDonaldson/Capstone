@@ -21,7 +21,13 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+        if (SceneManager.GetActiveScene().buildIndex == 23)
+        {
+            if (GameObject.Find("Square").GetComponent<BoxCollider2D>().enabled == false)
+            {
+                this.GetComponent<PlayerHealth>().enabled = false;
+            }
+        }
         if (!hasBeenMet)
         {
             if (getFVelocity())

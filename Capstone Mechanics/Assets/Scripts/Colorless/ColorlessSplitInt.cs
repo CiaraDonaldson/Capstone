@@ -38,10 +38,20 @@ public class ColorlessSplitInt: MonoBehaviour
         {
             StartCoroutine(Finish());
         }
+        if (GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().hOrbs < hOrbCount)
+        {
+            StartCoroutine(TooFew());
+        }
         if (GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().hOrbs > hOrbCount)
         {
             StartCoroutine(TooMany());
         }
+    }
+    IEnumerator TooFew()
+    {
+        PopUp("Help me restore before I lose myself!");
+        yield return new WaitForSeconds(2f);
+        PopUp("I need you to bring me exactly " + hOrbCount + "Hawk Orbs, or I cant restore D:");
     }
     private void loadNextScene()
     {

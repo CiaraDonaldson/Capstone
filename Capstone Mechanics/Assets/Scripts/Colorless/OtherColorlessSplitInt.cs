@@ -38,6 +38,10 @@ public class OtherColorlessSplitInt : MonoBehaviour
         {
             StartCoroutine(Finish());
         }
+        if (GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().fOrbs < fOrbCount)
+        {
+            StartCoroutine(TooFew());
+        }
         if (GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().fOrbs > fOrbCount)
         {
             StartCoroutine(TooMany());
@@ -84,6 +88,12 @@ public class OtherColorlessSplitInt : MonoBehaviour
     {
         animator.Play("close");
         //popUpBox.SetActive(false);
+    }
+    IEnumerator TooFew()
+    {
+        PopUp("Help me restore before I lose myself!");
+        yield return new WaitForSeconds(2f);
+        PopUp("I need you to bring me exactly " + fOrbCount + "Fox Orbs or I cant restore D:");
     }
     IEnumerator TooMany()
     {

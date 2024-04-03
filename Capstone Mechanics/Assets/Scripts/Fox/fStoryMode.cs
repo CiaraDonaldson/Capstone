@@ -16,20 +16,20 @@ public class fStoryMode : MonoBehaviour
     void Update()
     {
         int y = SceneManager.GetActiveScene().buildIndex;
-        if (Story != null && y <= 13)
+        if (Story != null && y <= 14)
         {
             this.gameObject.GetComponent<Sneak>().enabled = false;
 
         }
-        if (Story != null && y > 13)
+        if (Story != null && y > 14)
         {
             this.gameObject.GetComponent<Sneak>().enabled = true;
         }
-         if (Story != null && y < 17)
+         if (Story != null && y < 18)
         {
             this.gameObject.GetComponent<Taunt>().enabled = false;
         }
-        if (Story != null && y >= 17)
+        if (Story != null && y >= 18)
         {
             this.gameObject.GetComponent<Taunt>().enabled = true;
         }

@@ -108,4 +108,8 @@ public class SceneSwitch : MonoBehaviour
     {
         SceneManager.LoadScene("TheFall");
     }
+    public void LiveEnd()
+    {
+        SceneManager.LoadScene("LivingWorldEnd");
+    }
 }

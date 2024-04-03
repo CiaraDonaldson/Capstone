@@ -34,17 +34,22 @@ public class GameManager : MonoBehaviour
         {
             this.GetComponent<circleLoad>().enabled = false;
         }
-        if (SceneManager.GetActiveScene().buildIndex >= 0 && SceneManager.GetActiveScene().buildIndex <= 11)
+        if (SceneManager.GetActiveScene().buildIndex >= 0 && SceneManager.GetActiveScene().buildIndex <= 13)
         {
             this.GetComponent<PlayerHealth>().enabled = false;
             if (GameObject.Find("Fox"))
             {
-                GameObject.Find("Fox").GetComponent<FoxController>().enabled = false;
-                //GameObject.Find("Fox").GetComponent<Taunt>().enabled = false;
+                if (GameObject.Find("Fox").GetComponent<FoxController>())
+                {
+                    GameObject.Find("Fox").GetComponent<FoxController>().enabled = false;
+                }
             }
             if (GameObject.Find("Hawk"))
             {
-                GameObject.Find("Hawk").GetComponent<Scan>().enabled = false;
+                if (GameObject.Find("Hawk").GetComponent<Scan>())
+                {
+                    GameObject.Find("Hawk").GetComponent<Scan>().enabled = false;
+                }
             }
         }
         else
@@ -158,7 +163,7 @@ public class GameManager : MonoBehaviour
     {
        // Cursor.visible = true;
 
-        SceneManager.LoadScene("Credits");
+        SceneManager.LoadScene("Scroll Credits");
     }
     public void startOptions()
     {

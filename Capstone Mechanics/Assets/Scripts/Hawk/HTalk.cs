@@ -39,6 +39,7 @@ public class HTalk : MonoBehaviour
     public Sprite HImg;
     public Sprite FImg;
     public Sprite BImg;
+    public Sprite B2Img;
 
     public int scanreact = 0;
     private float wKeyHoldTime = 0f;
@@ -79,7 +80,7 @@ public class HTalk : MonoBehaviour
         {
             if (digCount == 0)
             {
-                StartCoroutine("Lvl1Cut");
+                StartCoroutine(Lvl1Cut());
                 digCount++;
             }
         }
@@ -87,7 +88,7 @@ public class HTalk : MonoBehaviour
         {
             if (digCount == 0)
             {
-                StartCoroutine("Lvl3Cut");
+                StartCoroutine(Lvl3Cut());
                 digCount++;
             }
         }
@@ -95,7 +96,7 @@ public class HTalk : MonoBehaviour
         {
             if (digCount == 0)
             {
-                StartCoroutine("Lvl5Cut");
+                StartCoroutine(Lvl5Cut());
                 digCount++;
             }
         }
@@ -103,7 +104,7 @@ public class HTalk : MonoBehaviour
         {
             if (digCount == 0)
             {
-                StartCoroutine("Lvl7Cut");
+                StartCoroutine(Lvl7Cut());
                 digCount++;
             }
         }
@@ -111,13 +112,17 @@ public class HTalk : MonoBehaviour
         {
             if (digCount == 0)
             {
-                StartCoroutine("Lvl10Cut");
+                StartCoroutine(Lvl10Cut());
                 digCount++;
             }
         }
         if (sceneName == "LivingWorldEnd")
-        { 
-            StartCoroutine(SurfaceEnd()); 
+        {
+            if (Count == 0)
+            {
+                StartCoroutine(SurfaceEnd());
+                Count++;
+            }
         }
         //LEVEL 2
         if (sceneName == "Lvl2")
@@ -195,7 +200,7 @@ public class HTalk : MonoBehaviour
             if (Count == 3)
             {
                 Count++;
-                StartCoroutine("Lvl6Carry");
+                StartCoroutine(Lvl6Carry());
             }
             if (Input.GetKeyDown(KeyCode.S) && this.GetComponent<Carry>().isCarrying)
             {
@@ -204,7 +209,7 @@ public class HTalk : MonoBehaviour
             if (digCount == 1)
             {
                 digCount++;
-                StartCoroutine("Lvl6Drop");
+                StartCoroutine(Lvl6Drop());
             }
         }
 
@@ -213,7 +218,7 @@ public class HTalk : MonoBehaviour
         {
             if (!isCoroutineRunning && !Lvl8Play)
             {
-                StartCoroutine("Lvl8Pass");
+                StartCoroutine(Lvl8Pass());
             }
         }
 
@@ -226,7 +231,7 @@ public class HTalk : MonoBehaviour
             }
             if (Count == 4)
             {
-                Lvl9Pass();
+                StartCoroutine(Lvl9Pass());
                 Count++;
             }
         }
@@ -267,55 +272,59 @@ public class HTalk : MonoBehaviour
         {
             wKeyHoldTime = 0f; // Reset the timer if W key is not held
         }
-        switch (scanreact)
-        {
-            case 0:
-                if (Fox.GetComponent<Sneak>().inAir && wKeyHoldTime >= 3f)
-                {
-                    StartCoroutine(canScanNeg());
-                    }
-                    if (!Fox.GetComponent<Sneak>().inAir && !isCoroutineRunning)
-                    {
-                    StopCoroutine(canScanNeg());
-                    PopDown();
-                    }
-                
-      break;
-        
-      //  else if (scanreact == 1)
-      //  {
-            case 1:
 
-                if (Fox.GetComponent<Sneak>().inAir && wKeyHoldTime >= 3f)
-                {
-                    StartCoroutine(canScanNeu());
+        if (SceneManager.GetActiveScene().buildIndex > 13)
+        {
+            switch (scanreact)
+            {
+                case 0:
+                    if (Fox.GetComponent<Sneak>().inAir && wKeyHoldTime >= 3f)
+                    {
+                        StartCoroutine(canScanNeg());
                     }
                     if (!Fox.GetComponent<Sneak>().inAir && !isCoroutineRunning)
                     {
-                    StopCoroutine(canScanNeu());
-                    PopDown();
+                        StopCoroutine(canScanNeg());
+                        PopDown();
                     }
-                
-               break;
-       // else if (scanreact == 2)
-        //{
-              case 2:
-               
-                if (Fox.GetComponent<Sneak>().inAir && wKeyHoldTime >= 3f)
+
+                    break;
+
+                //  else if (scanreact == 1)
+                //  {
+                case 1:
+
+                    if (Fox.GetComponent<Sneak>().inAir && wKeyHoldTime >= 3f)
+                    {
+                        StartCoroutine(canScanNeu());
+                    }
+                    if (!Fox.GetComponent<Sneak>().inAir && !isCoroutineRunning)
+                    {
+                        StopCoroutine(canScanNeu());
+                        PopDown();
+                    }
+
+                    break;
+                // else if (scanreact == 2)
+                //{
+                case 2:
+
+                    if (Fox.GetComponent<Sneak>().inAir && wKeyHoldTime >= 3f)
                     {
                         StartCoroutine(canScanPos());
                     }
                     if (!Fox.GetComponent<Sneak>().inAir && !isCoroutineRunning)
                     {
-                    StopCoroutine(canScanPos());
-                    PopDown();
+                        StopCoroutine(canScanPos());
+                        PopDown();
                     }
-                
-       // }
-               break;
-           default:
-                Debug.LogError("Invalid reaction value");
-                break;
+
+                    // }
+                    break;
+                default:
+                    Debug.LogError("Invalid reaction value");
+                    break;
+            }
         }
 
     }
@@ -963,7 +972,7 @@ public class HTalk : MonoBehaviour
         dialougeText.text = ("*Chuckles* I only have, but a single question");
         yield return new WaitForSeconds(5f);
 
-        dialougeImage.sprite = BImg;
+        dialougeImage.sprite = B2Img;
         dialougeText.text = ("<color=#7F7FFF> What </color> \n" + "<color=#FF7F7F> What </color>");
         yield return new WaitForSeconds(2f);
 
@@ -972,7 +981,7 @@ public class HTalk : MonoBehaviour
         dialougeText.text = ("Were you able to do this alone?");
         yield return new WaitForSeconds(8f);
 
-        dialougeImage.sprite = BImg;
+        dialougeImage.sprite = B2Img;
         dialougeText.text = ("<color=#7F7FFF> No </color>\n" + "<color=#FF7F7F> No </color>");
         yield return new WaitForSeconds(4f);
 
@@ -1003,10 +1012,9 @@ public class HTalk : MonoBehaviour
 
         StartCoroutine(PlayCloseAnimation());
     }
-
     IEnumerator Lvl10End()
     {
-        yield return new WaitForSeconds(30f);
+        yield return new WaitForSeconds(50f);
 
         dialougeText.color = chimera;
         dialougeImage.sprite = CImg;
@@ -1020,7 +1028,7 @@ public class HTalk : MonoBehaviour
 
         dialougeText.color = fox;
         dialougeImage.sprite = FImg;
-        dialougeText.text = ("And she’s a hawk, can ya believe it?");
+        dialougeText.text = ("And she’s a smart hawk, can ya believe it?");
         yield return new WaitForSeconds(5f);
 
         dialougeText.color = chimera;
@@ -1086,7 +1094,7 @@ public class HTalk : MonoBehaviour
     }
     IEnumerator SurfaceEnd()
     {
-        yield return new WaitForSeconds(30f);
+        yield return new WaitForSeconds(10f);
         dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         dialougeText.text = ("Hmm, dost thou require assistance once more??");
@@ -1116,7 +1124,7 @@ public class HTalk : MonoBehaviour
         dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         dialougeText.text = (" I’d say don’t keep me waiting birdbrain");
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(8f);
         //Runs off screen, the fox starts to fly off until she stops and turns around quickly.
 
         dialougeText.color = hawk;

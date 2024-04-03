@@ -44,7 +44,10 @@ public class Colorlessinteract : MonoBehaviour
         {
             count++;
         }
-
+        if (GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().fOrbs < fOrbCount | GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().hOrbs < hOrbCount)
+        {
+            StartCoroutine(TooFew());
+        }
         if (GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().fOrbs > fOrbCount | GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().hOrbs > hOrbCount)
         {
             StartCoroutine(TooMany());
@@ -97,6 +100,12 @@ public class Colorlessinteract : MonoBehaviour
     {
         animator.Play("close");
         //popUpBox.SetActive(false);
+    }
+    IEnumerator TooFew()
+    {
+        PopUp("Help me restore before I lose myself!");
+        yield return new WaitForSeconds(2f);
+        PopUp("I need you to bring me exactly " + fOrbCount + "Fox Orbs and " + hOrbCount + "Hawk Orbs, or I cant restore D:");
     }
     IEnumerator TooMany()
     {
