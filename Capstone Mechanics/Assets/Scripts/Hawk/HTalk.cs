@@ -1,7 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -59,8 +58,9 @@ public class HTalk : MonoBehaviour
     private Color fox = new Color(0.5f, 0.5f, 1.0f);   // Light blue
     private Color hawk = new Color(1.0f, 0.5f, 0.5f);  // Light red
     private Color chimera = new Color(1.0f, 0.5f, 1.0f); //purple
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         initialScale = transform.localScale;
         initialRotation = transform.rotation;
@@ -72,10 +72,9 @@ public class HTalk : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
-       Scene currentScene = SceneManager.GetActiveScene();
+        Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
         //Cutscenes
         if (sceneName == "Lvl1 Cutscene")
@@ -135,8 +134,8 @@ public class HTalk : MonoBehaviour
             Debug.DrawRay(transform.position, down, Color.red);
 
             if (hit && Input.GetKeyDown(KeyCode.DownArrow))
-            { 
-                digCount++; 
+            {
+                digCount++;
             }
 
             if (!isCoroutineRunning && digCount == 2)
@@ -144,11 +143,9 @@ public class HTalk : MonoBehaviour
                 StartCoroutine(Lvl2Dig());
             }
 
-
             if (hit.collider == null && hit2.collider == null && this.GetComponent<Carry>().isCarrying && !isCoroutineRunning && !hasLvl2AirRun)
             {
                 StartCoroutine(Lvl2Air());
-
             }
         }
 
@@ -167,10 +164,10 @@ public class HTalk : MonoBehaviour
             }
             else
             {
-                wKeyHoldTime = 0f; 
+                wKeyHoldTime = 0f;
                 hasCounted = false;
             }
-            
+
             if (!isCoroutineRunning && digCount == 2)
             {
                 StartCoroutine(Lvl4Scan());
@@ -189,7 +186,6 @@ public class HTalk : MonoBehaviour
             {
                 StartCoroutine(Lvl4Sneak());
             }
-            
         }
 
         //LEVEL 6
@@ -265,7 +261,7 @@ public class HTalk : MonoBehaviour
         {
             FlipFBox(true);
         }
-        
+
         if (Input.GetKey(KeyCode.W))
         {
             wKeyHoldTime += Time.deltaTime;
@@ -323,15 +319,16 @@ public class HTalk : MonoBehaviour
 
                     // }
                     break;
+
                 default:
                     Debug.LogError("Invalid reaction value");
                     break;
             }
         }
-
     }
+
     //Cutscene Dialog
-    IEnumerator Lvl1Cut()
+    private IEnumerator Lvl1Cut()
     {
         isCoroutineRunning = true;
         yield return new WaitForSeconds(9f);
@@ -342,7 +339,7 @@ public class HTalk : MonoBehaviour
         MyAudioSource.pitch = Random.Range(1f, 1.5f);
         MyAudioSource.Play();
         dialougeText.text = ("Can you STOP already?!? I知 sure you noticed that if you hurt me any further, you値l feel it just as much.");
-       // fPopUp("Can you STOP already?!? I知 sure you noticed that if you hurt me any further, you値l feel it just as much.");
+        // fPopUp("Can you STOP already?!? I知 sure you noticed that if you hurt me any further, you値l feel it just as much.");
         yield return new WaitForSeconds(5f);
         // fPopUp("");
 
@@ -366,7 +363,6 @@ public class HTalk : MonoBehaviour
         yield return new WaitForSeconds(5f);
         // fPopUp("");
 
-
         MyAudioSource.clip = fAudio;
         MyAudioSource.pitch = Random.Range(1f, 1.5f);
         MyAudioSource.Play();
@@ -374,7 +370,6 @@ public class HTalk : MonoBehaviour
         //fPopUp("OBVIOUSLY I DIDN'T KNOW!");
         yield return new WaitForSeconds(3f);
         // fPopUp("");
-
 
         MyAudioSource.clip = fAudio;
         MyAudioSource.pitch = Random.Range(1f, 1.5f);
@@ -442,10 +437,10 @@ public class HTalk : MonoBehaviour
         MyAudioSource.pitch = Random.Range(1f, 1.5f);
         MyAudioSource.Play();
         dialougeText.text = ("What an amusing display�");
-       // cPopUp("What an amusing display�");
+        // cPopUp("What an amusing display�");
         yield return new WaitForSeconds(2f);
         dialougeText.text = ("Two opposing souls are somehow linked together.");
-       // cPopUp("Two opposing souls are somehow linked together.");
+        // cPopUp("Two opposing souls are somehow linked together.");
         yield return new WaitForSeconds(3f);
 
         dialougeText.color = hawk;
@@ -488,7 +483,7 @@ public class HTalk : MonoBehaviour
         //Chain Appears
 
         dialougeText.text = ("As long as your souls are linked, your fates are entwined, not even death can do you part.");
-       // cPopUp("As long as your souls are linked, your fates are entwined, not even death can do you part.");
+        // cPopUp("As long as your souls are linked, your fates are entwined, not even death can do you part.");
         yield return new WaitForSeconds(5f);
 
         dialougeText.color = fox;
@@ -509,7 +504,7 @@ public class HTalk : MonoBehaviour
         dialougeText.text = ("You need to find yourselves before you can rebuild. Give before you take.");
         //cPopUp("You need to find yourselves before you can rebuild. Give before you take.");
         yield return new WaitForSeconds(5f);
-       // fPopUp("");
+        // fPopUp("");
         //There will be souls out there, scattered souls that you will need to collect and give to lost beings that are called The Colorless.
         dialougeText.text = ("There will be souls out there, scattered souls that you will need to collect and give to lost beings that are called The Colorless.");
         //cPopUp("There will be souls out there, scattered souls that you will need to collect and give to lost beings that are called The Colorless.");
@@ -535,7 +530,7 @@ public class HTalk : MonoBehaviour
         dialougeText.text = ("Simple, work together.");
         //cPopUp("Simple, work together.");
         yield return new WaitForSeconds(5f);
-        //ANIMATION FRAME EDIT: The hawk and the fox look at each other and laugh, they look back to the chimera 
+        //ANIMATION FRAME EDIT: The hawk and the fox look at each other and laugh, they look back to the chimera
 
         dialougeText.color = fox;
         dialougeImage.sprite = FImg;
@@ -574,8 +569,9 @@ public class HTalk : MonoBehaviour
 
         //isCoroutineRunning = false;
         //hasLvl2AirRun = true;
-    } 
-    IEnumerator Lvl3Cut()
+    }
+
+    private IEnumerator Lvl3Cut()
     {
         //The fox and hawk are casually walking/flying, the hawk begins to say
         dialougeText.color = hawk;
@@ -584,7 +580,7 @@ public class HTalk : MonoBehaviour
         MyAudioSource.pitch = Random.Range(1f, 1.5f);
         MyAudioSource.Play();
         dialougeText.text = ("Just as I reckon, I have no need of thee.");
-       //PopUp();
+        //PopUp();
         yield return new WaitForSeconds(5f);
 
         dialougeText.color = fox;
@@ -608,9 +604,8 @@ public class HTalk : MonoBehaviour
         MyAudioSource.pitch = Random.Range(1f, 1.5f);
         MyAudioSource.Play();
         dialougeText.text = ("whateva.");
-       // fPopUp();
+        // fPopUp();
         yield return new WaitForSeconds(10f);
-
 
         MyAudioSource.clip = fAudio;
         MyAudioSource.pitch = Random.Range(1f, 1.5f);
@@ -699,7 +694,8 @@ public class HTalk : MonoBehaviour
         //isCoroutineRunning = false;
         //hasLvl2AirRun = true;
     }
-    IEnumerator Lvl5Cut()
+
+    private IEnumerator Lvl5Cut()
     {
         //As they move forward, they come across a soul that痴 in a high place.
         yield return new WaitForSeconds(5f);
@@ -730,7 +726,6 @@ public class HTalk : MonoBehaviour
         dialougeText.text = ("Shaddap. There are bound to be other souls. I don't need that one.");
         //fPopUp("");
         yield return new WaitForSeconds(10f);
-
 
         MyAudioSource.clip = fAudio;
         MyAudioSource.pitch = Random.Range(1f, 1.5f);
@@ -764,16 +759,15 @@ public class HTalk : MonoBehaviour
         MyAudioSource.pitch = Random.Range(1f, 1.5f);
         MyAudioSource.Play();
         dialougeText.text = ("No.");
-       // PopUp("");
+        // PopUp("");
         yield return new WaitForSeconds(2f);
-
 
         MyAudioSource.clip = hAudio;
         MyAudioSource.pitch = Random.Range(1f, 1.5f);
         MyAudioSource.Play();
         //Hawk flies away only for the chain to appear to keep it from going any further.
         dialougeText.text = ("Damn this chain, and damn thee! I refuse to bear quarry unfit for consumption.");
-       // PopUp("");
+        // PopUp("");
         yield return new WaitForSeconds(5f);
 
         dialougeText.color = fox;
@@ -785,7 +779,7 @@ public class HTalk : MonoBehaviour
         //fPopUp("");
         yield return new WaitForSeconds(5f);
 
-        //GIANT TEXT: 
+        //GIANT TEXT:
         //CAMERA PANS OVER TO A RESTING CHIMERA
 
         dialougeText.color = chimera;
@@ -851,7 +845,8 @@ public class HTalk : MonoBehaviour
         //isCoroutineRunning = false;
         //hasLvl2AirRun = true;
     }
-    IEnumerator Lvl7Cut()
+
+    private IEnumerator Lvl7Cut()
     {
         //Seeing a ground soulless
         dialougeText.color = fox;
@@ -904,7 +899,7 @@ public class HTalk : MonoBehaviour
         MyAudioSource.pitch = Random.Range(1f, 1.5f);
         MyAudioSource.Play();
         dialougeText.text = ("You値l get us both killed for your pride?");
-       // fPopUp("");
+        // fPopUp("");
         yield return new WaitForSeconds(5f);
 
         dialougeText.color = hawk;
@@ -926,7 +921,7 @@ public class HTalk : MonoBehaviour
         //fPopUp("");
         yield return new WaitForSeconds(5f);
 
-        //*Taunted* 
+        //*Taunted*
         dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
         MyAudioSource.clip = hAudio;
@@ -945,13 +940,13 @@ public class HTalk : MonoBehaviour
         //fPopUp("");
         yield return new WaitForSeconds(5f);
 
-       
         StartCoroutine(PlayCloseAnimation());
 
         //isCoroutineRunning = false;
         //hasLvl2AirRun = true;
     }
-    IEnumerator Lvl10Cut()
+
+    private IEnumerator Lvl10Cut()
     {
         dialougeText.color = chimera;
         dialougeImage.sprite = CImg;
@@ -1014,7 +1009,8 @@ public class HTalk : MonoBehaviour
 
         StartCoroutine(PlayCloseAnimation());
     }
-    IEnumerator Lvl10End()
+
+    private IEnumerator Lvl10End()
     {
         yield return new WaitForSeconds(50f);
 
@@ -1094,7 +1090,8 @@ public class HTalk : MonoBehaviour
         yield return new WaitForSeconds(10f);
         //The players have control again and enter the portal.
     }
-    IEnumerator SurfaceEnd()
+
+    private IEnumerator SurfaceEnd()
     {
         yield return new WaitForSeconds(10f);
         dialougeText.color = hawk;
@@ -1138,7 +1135,7 @@ public class HTalk : MonoBehaviour
     }
 
     //Passing Comments
-    IEnumerator Lvl2Air()
+    private IEnumerator Lvl2Air()
     {
         isCoroutineRunning = true;
         MyAudioSource.clip = fAudio;
@@ -1152,15 +1149,16 @@ public class HTalk : MonoBehaviour
         MyAudioSource.Play();
         PopUp("If I could, I would cast thee from the loftiest summit.");
         yield return new WaitForSeconds(5f);
-       // PopDown();
-       
+        // PopDown();
+
         // fPopDown();
         StartCoroutine(PlayCloseAnimation());
 
         isCoroutineRunning = false;
         hasLvl2AirRun = true;
     }
-    IEnumerator Lvl2Dig()
+
+    private IEnumerator Lvl2Dig()
     {
         isCoroutineRunning = true;
 
@@ -1184,7 +1182,8 @@ public class HTalk : MonoBehaviour
 
         isCoroutineRunning = false;
     }
-    IEnumerator Lvl4Scan()
+
+    private IEnumerator Lvl4Scan()
     {
         isCoroutineRunning = true;
 
@@ -1193,7 +1192,6 @@ public class HTalk : MonoBehaviour
         MyAudioSource.Play();
         fPopUp("So ya tellin' me you had the ability to see all the orbs this entire time and just now usin' it?");
         yield return new WaitForSeconds(5f);
-
 
         MyAudioSource.clip = hAudio;
         MyAudioSource.pitch = Random.Range(1f, 1.5f);
@@ -1210,10 +1208,11 @@ public class HTalk : MonoBehaviour
         digCount++;
         // Play the close animation
         StartCoroutine(PlayCloseAnimation());
-       
+
         isCoroutineRunning = false;
     }
-    IEnumerator Lvl4Sneak()
+
+    private IEnumerator Lvl4Sneak()
     {
         isCoroutineRunning = true;
 
@@ -1235,13 +1234,14 @@ public class HTalk : MonoBehaviour
         PopUp("Might need to talk to your mother then.");
         yield return new WaitForSeconds(5f);
 
-       Count++;
+        Count++;
         // Play the close animation
         StartCoroutine(PlayCloseAnimation());
 
         isCoroutineRunning = false;
     }
-    IEnumerator Lvl6Carry()
+
+    private IEnumerator Lvl6Carry()
     {
         isCoroutineRunning = true;
 
@@ -1258,14 +1258,13 @@ public class HTalk : MonoBehaviour
         fPopUp("I hate you.");
         yield return new WaitForSeconds(5f);
 
-        
-
         // Play the close animation
         StartCoroutine(PlayCloseAnimation());
 
         isCoroutineRunning = false;
     }
-    IEnumerator Lvl6Drop()
+
+    private IEnumerator Lvl6Drop()
     {
         isCoroutineRunning = true;
 
@@ -1300,7 +1299,8 @@ public class HTalk : MonoBehaviour
 
         isCoroutineRunning = false;
     }
-    IEnumerator Lvl8Pass()
+
+    private IEnumerator Lvl8Pass()
     {
         isCoroutineRunning = true;
         yield return new WaitForSeconds(10f);
@@ -1342,7 +1342,8 @@ public class HTalk : MonoBehaviour
 
         isCoroutineRunning = false;
     }
-    IEnumerator Lvl9Pass()
+
+    private IEnumerator Lvl9Pass()
     {
         isCoroutineRunning = true;
 
@@ -1404,25 +1405,27 @@ public class HTalk : MonoBehaviour
 
         isCoroutineRunning = false;
     }
-    IEnumerator PlayCloseAnimation()
+
+    private IEnumerator PlayCloseAnimation()
     {
         yield return new WaitForSeconds(2f); // Adjust the delay if needed
         PopDown();
         fPopDown();
     }
 
-    IEnumerator canScanNeg()
-        {
+    private IEnumerator canScanNeg()
+    {
         yield return new WaitForSeconds(3f);
 
         MyAudioSource.clip = hAudio;
         MyAudioSource.pitch = Random.Range(1f, 1.5f);
         MyAudioSource.Play();
         PopUp("Stupid Fox! Can you touch the ground!?");
-            //yield return new WaitForSeconds(5f);
-            //PopDown();
-        }
-    IEnumerator canScanNeu()
+        //yield return new WaitForSeconds(5f);
+        //PopDown();
+    }
+
+    private IEnumerator canScanNeu()
     {
         yield return new WaitForSeconds(3f);
 
@@ -1433,7 +1436,8 @@ public class HTalk : MonoBehaviour
         //yield return new WaitForSeconds(5f);
         //PopDown();
     }
-    IEnumerator canScanPos()
+
+    private IEnumerator canScanPos()
     {
         yield return new WaitForSeconds(3f);
 
@@ -1452,25 +1456,28 @@ public class HTalk : MonoBehaviour
         popUpText.text = text;
         animator.Play("pop");
     }
+
     public void fPopUp(string text)
     {
         fpopUpBox.SetActive(true);
         fpopUpText.text = text;
         fanimator.Play("pop");
     }
+
     public void PopDown()
     {
         animator.Play("close");
         //popUpBox.SetActive(false);
     }
+
     public void fPopDown()
     {
         fanimator.Play("close");
         //popUpBox.SetActive(false);
     }
 
-    void FlipHBox(bool faceRight)
-    {      
+    private void FlipHBox(bool faceRight)
+    {
         // Flip the character's scale based on the direction.
         Vector3 newScale = popUpBox.transform.localScale;
         newScale.x = faceRight ? .2f : -.2f;
@@ -1478,7 +1485,8 @@ public class HTalk : MonoBehaviour
 
         isFacingRight = faceRight;
     }
-    void FlipFBox(bool faceRight)
+
+    private void FlipFBox(bool faceRight)
     {
         // Flip the character's scale based on the direction.
         Vector3 newScale = fpopUpBox.transform.localScale;
@@ -1488,4 +1496,3 @@ public class HTalk : MonoBehaviour
         isFacingRight = faceRight;
     }
 }
-

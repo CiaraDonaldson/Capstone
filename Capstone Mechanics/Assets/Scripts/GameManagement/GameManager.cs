@@ -90,7 +90,7 @@ public class GameManager : MonoBehaviour
             {
                 if (popUpBox == null & animator == null & popUpText == null)
                 {
-                    Debug.Log("Nothings here");
+                    //nothing
                 }
             }
 

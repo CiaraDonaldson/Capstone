@@ -1,5 +1,5 @@
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
 public class moveUp : MonoBehaviour
 {
@@ -9,7 +9,7 @@ public class moveUp : MonoBehaviour
     private float textHeight;
     private Vector2 initialPosition;
 
-    void Start()
+    private void Start()
     {
         rectTransform = GetComponent<RectTransform>();
 
@@ -21,7 +21,7 @@ public class moveUp : MonoBehaviour
         initialPosition = rectTransform.anchoredPosition;
     }
 
-    void Update()
+    private void Update()
     {
         // Move the text upwards
         rectTransform.anchoredPosition += Vector2.up * scrollSpeed * Time.deltaTime;
