@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        if (SceneManager.GetActiveScene().name.ToString() == "LivingWorld" || SceneManager.GetActiveScene().name.ToString() == "Lvl1 Cutscene" || SceneManager.GetActiveScene().name.ToString() == "Lvl3Cutscene" || SceneManager.GetActiveScene().name.ToString() == "Lvl5Cutscene" || SceneManager.GetActiveScene().name.ToString() == "Lvl7Cutscene")
+        if (SceneManager.GetActiveScene().name.ToString() == "LivingWorld" || SceneManager.GetActiveScene().name.ToString() == "LivingWorldEnd" || SceneManager.GetActiveScene().name.ToString() == "Lvl1 Cutscene" || SceneManager.GetActiveScene().name.ToString() == "Lvl3Cutscene" || SceneManager.GetActiveScene().name.ToString() == "Lvl5Cutscene" || SceneManager.GetActiveScene().name.ToString() == "Lvl7Cutscene" || SceneManager.GetActiveScene().name.ToString() == "Lvl10Cutscene")
         {
             this.GetComponent<circleLoad>().enabled = true;
 

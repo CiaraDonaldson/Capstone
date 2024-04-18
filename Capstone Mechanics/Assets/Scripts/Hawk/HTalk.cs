@@ -125,6 +125,14 @@ public class HTalk : MonoBehaviour
                 Count++;
             }
         }
+        if (sceneName == "Trailer")
+        {
+            if (Count == 0)
+            {
+                StartCoroutine(Trailer());
+                Count++;
+            }
+        }
         //LEVEL 2
         if (sceneName == "Lvl2")
         {
@@ -1132,6 +1140,124 @@ public class HTalk : MonoBehaviour
         yield return new WaitForSeconds(5f);
 
         //Credits
+    }
+
+    private IEnumerator Trailer()
+    {
+        //Seeing a ground soulless
+        dialougeText.color = fox;
+        dialougeImage.sprite = FImg;
+        MyAudioSource.clip = fAudio;
+        MyAudioSource.pitch = Random.Range(1f, 1.5f);
+        MyAudioSource.Play();
+        dialougeText.text = ("…it could be argued");
+        yield return new WaitForSeconds(5f);
+
+        MyAudioSource.pitch = Random.Range(1f, 1.5f);
+        MyAudioSource.Play();
+        dialougeText.text = ("…it could be argued ..that this is my fault");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.color = hawk;
+        dialougeImage.sprite = HImg;
+        MyAudioSource.clip = hAudio;
+        MyAudioSource.pitch = Random.Range(1f, 1.5f);
+        MyAudioSource.Play();
+        dialougeText.text = ("It is your fault");
+        //PopUp("I’m not sure, it’s not a colorless");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.color = fox;
+        dialougeImage.sprite = FImg;
+        MyAudioSource.clip = fAudio;
+        MyAudioSource.pitch = Random.Range(1f, 1.5f);
+        MyAudioSource.Play();
+        dialougeText.text = ("Can you really fault me for not seeing that orb?");
+        //fPopUp("Let’s just avoid it for now..");
+        yield return new WaitForSeconds(8f);
+        //Pause...
+
+        dialougeText.color = hawk;
+        dialougeImage.sprite = HImg;
+        MyAudioSource.clip = hAudio;
+        MyAudioSource.pitch = Random.Range(1f, 1.5f);
+        MyAudioSource.Play();
+        dialougeText.text = ("YES");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.color = fox;
+        dialougeImage.sprite = FImg;
+        MyAudioSource.clip = fAudio;
+        MyAudioSource.pitch = Random.Range(1f, 1.5f);
+        MyAudioSource.Play();
+        dialougeText.text = ("Alright well maybe if you flown me up to avoid it, we wouldn’t be here");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.text = ("");
+
+        //*Quick flashback of the hawk refusing to carry the fox*
+        yield return new WaitForSeconds(15f);      
+
+        dialougeText.color = hawk;
+        dialougeImage.sprite = HImg;
+        MyAudioSource.clip = hAudio;
+        MyAudioSource.pitch = Random.Range(1f, 1.5f);
+        MyAudioSource.Play();
+        dialougeText.text = ("Shut up mutt");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.color = fox;
+        dialougeImage.sprite = FImg;
+        MyAudioSource.clip = fAudio;
+        MyAudioSource.pitch = Random.Range(1f, 1.5f);
+        MyAudioSource.Play();
+        dialougeText.text = ("Don’t call me that birdbrain");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.color = hawk;
+        dialougeImage.sprite = HImg;
+        MyAudioSource.clip = hAudio;
+        MyAudioSource.pitch = Random.Range(1f, 1.5f);
+        MyAudioSource.Play();
+        dialougeText.text = ("Scoundrel");
+        yield return new WaitForSeconds(2f);
+
+        dialougeText.color = fox;
+        dialougeImage.sprite = FImg;
+        MyAudioSource.clip = fAudio;
+        MyAudioSource.pitch = Random.Range(1f, 1.5f);
+        MyAudioSource.Play();
+        dialougeText.text = ("Rat with wings");
+        yield return new WaitForSeconds(2f);
+
+        dialougeText.color = hawk;
+        dialougeImage.sprite = HImg;
+        MyAudioSource.clip = hAudio;
+        MyAudioSource.pitch = Random.Range(1f, 1.5f);
+        MyAudioSource.Play();
+        dialougeText.text = ("YOU DIRTY CRETIN-`");
+        yield return new WaitForSeconds(2f);
+
+        //Chimera enters frame as they argue 
+
+        dialougeText.color = chimera;
+        dialougeImage.sprite = CImg;
+        dialougeText.text = ("Ah perfect display of immaturity.");
+        yield return new WaitForSeconds(5f);
+
+        dialougeText.text = ("Come with me");
+        yield return new WaitForSeconds(5f);
+        
+        dialougeText.text = ("As you see those two have a lot to learn on how to cooperate if they wish to leave here");
+        yield return new WaitForSeconds(7f);
+
+        dialougeText.text = ("but then again that’ll be your job…wouldn't it?");
+        yield return new WaitForSeconds(5f);
+
+        StartCoroutine(PlayCloseAnimation());
+
+        //isCoroutineRunning = false;
+        //hasLvl2AirRun = true;
     }
 
     //Passing Comments
