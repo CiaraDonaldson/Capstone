@@ -21,7 +21,7 @@ public class SceneSwitch : MonoBehaviour
             Debug.Log("it hit 5");
             if (SceneManager.GetActiveScene().name.ToString() == "LivingWorld")
             {
-                SceneManager.LoadScene("Lvl1 Cutscene");
+                SceneManager.LoadScene("TheFall");
             }
             if (SceneManager.GetActiveScene().name.ToString() == "Lvl1 Cutscene")
             {

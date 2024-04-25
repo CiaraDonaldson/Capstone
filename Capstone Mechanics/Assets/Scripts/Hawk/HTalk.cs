@@ -1155,7 +1155,7 @@ public class HTalk : MonoBehaviour
 
         MyAudioSource.pitch = Random.Range(1f, 1.5f);
         MyAudioSource.Play();
-        dialougeText.text = ("…it could be argued ..that this is my fault");
+        dialougeText.text = ("…it could be argued.. that dis is my fault");
         yield return new WaitForSeconds(5f);
 
         dialougeText.color = hawk;
@@ -1163,7 +1163,7 @@ public class HTalk : MonoBehaviour
         MyAudioSource.clip = hAudio;
         MyAudioSource.pitch = Random.Range(1f, 1.5f);
         MyAudioSource.Play();
-        dialougeText.text = ("It is your fault");
+        dialougeText.text = ("It is thy fault");
         //PopUp("I’m not sure, it’s not a colorless");
         yield return new WaitForSeconds(5f);
 
@@ -1172,7 +1172,7 @@ public class HTalk : MonoBehaviour
         MyAudioSource.clip = fAudio;
         MyAudioSource.pitch = Random.Range(1f, 1.5f);
         MyAudioSource.Play();
-        dialougeText.text = ("Can you really fault me for not seeing that orb?");
+        dialougeText.text = (" Can ya really fault me for not seein' dat orb?");
         //fPopUp("Let’s just avoid it for now..");
         yield return new WaitForSeconds(8f);
         //Pause...
@@ -1182,7 +1182,7 @@ public class HTalk : MonoBehaviour
         MyAudioSource.clip = hAudio;
         MyAudioSource.pitch = Random.Range(1f, 1.5f);
         MyAudioSource.Play();
-        dialougeText.text = ("YES");
+        dialougeText.text = ("AYE");
         yield return new WaitForSeconds(5f);
 
         dialougeText.color = fox;
@@ -1190,11 +1190,13 @@ public class HTalk : MonoBehaviour
         MyAudioSource.clip = fAudio;
         MyAudioSource.pitch = Random.Range(1f, 1.5f);
         MyAudioSource.Play();
-        dialougeText.text = ("Alright well maybe if you flown me up to avoid it, we wouldn’t be here");
-        yield return new WaitForSeconds(5f);
+        dialougeText.text = ("Well dat's a good point, here's my counter.");
+        yield return new WaitForSeconds(3f);
 
-        dialougeText.text = ("");
+        dialougeText.text = ("YOU DROPPED ME!");
+        yield return new WaitForSeconds(2f);
 
+        dialougeText.text = ("!");
         //*Quick flashback of the hawk refusing to carry the fox*
         yield return new WaitForSeconds(15f);      
 
@@ -1203,16 +1205,16 @@ public class HTalk : MonoBehaviour
         MyAudioSource.clip = hAudio;
         MyAudioSource.pitch = Random.Range(1f, 1.5f);
         MyAudioSource.Play();
-        dialougeText.text = ("Shut up mutt");
-        yield return new WaitForSeconds(5f);
+        dialougeText.text = ("Mayhaps shed a few pounds, thou mongrel.");
+        yield return new WaitForSeconds(4f);
 
         dialougeText.color = fox;
         dialougeImage.sprite = FImg;
         MyAudioSource.clip = fAudio;
         MyAudioSource.pitch = Random.Range(1f, 1.5f);
         MyAudioSource.Play();
-        dialougeText.text = ("Don’t call me that birdbrain");
-        yield return new WaitForSeconds(5f);
+        dialougeText.text = ("Don’t call me dat birdbrain");
+        yield return new WaitForSeconds(4f);
 
         dialougeText.color = hawk;
         dialougeImage.sprite = HImg;
@@ -1220,7 +1222,7 @@ public class HTalk : MonoBehaviour
         MyAudioSource.pitch = Random.Range(1f, 1.5f);
         MyAudioSource.Play();
         dialougeText.text = ("Scoundrel");
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
 
         dialougeText.color = fox;
         dialougeImage.sprite = FImg;

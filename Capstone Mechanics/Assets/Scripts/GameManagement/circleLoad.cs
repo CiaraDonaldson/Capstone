@@ -17,9 +17,6 @@ public class circleLoad : MonoBehaviour
     [Header("Key Code")]
     [SerializeField] private KeyCode selectKey = KeyCode.N;
 
-    [Header("Event")]
-    [SerializeField] private UnityEvent myEvent = null;
-
     private bool shouldUpdate = false;
 
     private void Start()
@@ -55,7 +52,6 @@ public class circleLoad : MonoBehaviour
                 indicatorTimer = maxIndicatorTimer;
                 radialIndicatorUI.fillAmount = maxIndicatorTimer;
                 radialIndicatorUI.enabled = false;
-                myEvent.Invoke();
             }
         }
         else

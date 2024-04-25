@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.Playables;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,6 +23,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject c1;
     [SerializeField] private GameObject c2;
+
+    public PlayableDirector timelineDirector;
+    public AudioClip lvl10end;
     // Start is called before the first frame update
     void Awake()
     {
@@ -34,7 +38,7 @@ public class GameManager : MonoBehaviour
         {
             this.GetComponent<circleLoad>().enabled = false;
         }
-        if (SceneManager.GetActiveScene().buildIndex >= 0 && SceneManager.GetActiveScene().buildIndex <= 13)
+        if (SceneManager.GetActiveScene().buildIndex >= 0 && SceneManager.GetActiveScene().buildIndex <= 13 && SceneManager.GetActiveScene().buildIndex <= 23)
         {
             this.GetComponent<PlayerHealth>().enabled = false;
             if (GameObject.Find("Fox"))
@@ -100,6 +104,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (SceneManager.GetActiveScene().name.ToString() == "Lvl10" && timelineDirector.state == PlayState.Playing)
+        {
+            this.GetComponent<AudioSource>().clip = lvl10end;
+            this.GetComponent<AudioSource>().Play();
+        }
 
         if (fText == null | hText == null | fText2 == null | hText2 == null)
         {

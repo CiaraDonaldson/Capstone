@@ -5245,98 +5245,25 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
-
-    Tails & Talons
-
-
-    By CampfireTales
-
-
-
-    Animator   Ciara Donaldson
-
-    Audio
-    Engineer   Chatod Henderson
-
-    Character Artist   Ciara Donaldson
-
-    Dialouge
-    Writer   Chatod Henderson
-
-    Enviorment Artist   Ciara Donaldson
-
-    Level
-    Designer   Chatod Henderson
-
-    Narrative Designer   Chatod Henderson
-
-    Programmer  
-    Ciara Donaldson
-
-
-
-    Ciara says a big thank you to:
-
-    Mom & Dad
-
-    Brian
-
-    Maddie
-
-    Sam
-
-    Jun
-    Jun
-
-    Dr.Freddie
-
-    The Storyteller
-
-
-
-    Chatod says a big thank you to:
-
-    ALotusonFire
-
-    Mom
-
-    Skyward
-    Games
-
-
-
-    And a very special thanks from us to:
-
-
-    BCFam
-
-
-
-    Works Cited
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    bye
-
-
-
-
-
-
-
-'
+  m_text: "\nTails & Talons\n\nBy CampfireTales\n\n\nAnimator   Ciara Donaldson\nAudio
+    Engineer   Chatod Henderson\nCharacter Artist   Ciara Donaldson\nDialouge Writer  
+    Chatod Henderson\nEnviorment Artist   Ciara Donaldson\nLevel Designer   Chatod
+    Henderson\nNarrative Designer   Chatod Henderson\nProgrammer   Ciara Donaldson\n\n\nCiara
+    says a big thank you to:\nMom & Dad\nBrian\nMaddie\nSam\nJun Jun\nDr.Freddie\nThe
+    Storyteller\n\n\nChatod says a big thank you to:\nALotusonFire\nMom\nMr.Terrell\r\nRaymond
+    Arriagada\r\nKyle A.Coll\r\nStephen \u201CProfessor\u201D Gonzalez\r\nRJ\r\nChris
+    Ferguson\r\nPaul Latorre\r\nProfessor Blender\r\nNaja Long\r\nLo\r\n\n\n\nAnd
+    a very special thanks from us to:\n\nBCFam\nGJ Lee\n\n\nWorks Cited\nRhinestone
+    path by Jonathan Elias & David Turtle Ramani\r\nFrom the album Strings of Energy,
+    May 22, 2019\r\n\r\nAll strings attached by Jon Bjork\r\nFrom the album Another
+    Princely Escapade , August 9th, 2010\r\n\r\nBy your side every step of the way
+    by Ben Beiny\r\nFrom the album Hopeful Piano, June 30, 2020\r\n\r\nRunaway by
+    Charles Drew\r\nFrom the album Motivational Drum \u2018N\u2019 Bass, July 18,
+    2019\r\n\r\nSplitting the fields by Jon Bjork\r\nFrom the Album The Foxglove,
+    October 16, 2015\r\n\r\nLittle Grethel by Sun Chime\r\nFrom the album Summaries,
+    December 27, 2013\r\n\r\nInside a Killer mind by Kikoru\r\nFrom the album Daydreamers,
+    October 17,2014\r\n\r\nSunshine Rain by Brendon Moeller\r\nFrom the album Departure
+    Lounge, july 26, 2019\r\n\r\nScratching noise: TheScarlettWitch89\r\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 991505cb5c5fb1e45a14a51ec826578a, type: 2}
   m_sharedMaterial: {fileID: 1869894409925117031, guid: 991505cb5c5fb1e45a14a51ec826578a, type: 2}
