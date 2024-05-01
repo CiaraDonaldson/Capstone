@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3331233567203360599
 RectTransform:
   m_ObjectHideFlags: 0
@@ -619,7 +619,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6813294932599987573, guid: b2de719bd064dac4085eb36cde625292, type: 3}
+      - m_Target: {fileID: 3089826482837696849, guid: 9fda6b3af8837f34a8df29e7e2163d97, type: 3}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: LoadMap
         m_Mode: 1

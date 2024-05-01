@@ -992,7 +992,7 @@ public class HTalk : MonoBehaviour
 
         dialougeText.color = chimera;
         dialougeImage.sprite = CImg;
-        dialougeText.text = ("Good, there will be no colorless here, instead you will be coming to me. I need, but only one soul of each. Do that and you shall be set free.");
+        dialougeText.text = ("Good, there will be no colorless here, instead you will be coming to me. I will need every single orb that's in this area. Do that and you shall be set free.");
         yield return new WaitForSeconds(8f);
 
         dialougeText.color = fox;
@@ -1144,6 +1144,8 @@ public class HTalk : MonoBehaviour
 
     private IEnumerator Trailer()
     {
+
+        yield return new WaitForSeconds(5f);
         //Seeing a ground soulless
         dialougeText.color = fox;
         dialougeImage.sprite = FImg;
@@ -1247,10 +1249,10 @@ public class HTalk : MonoBehaviour
         dialougeText.text = ("Ah perfect display of immaturity.");
         yield return new WaitForSeconds(5f);
 
-        dialougeText.text = ("Come with me");
+        dialougeText.text = ("Take a walk with me");
         yield return new WaitForSeconds(5f);
         
-        dialougeText.text = ("As you see those two have a lot to learn on how to cooperate if they wish to leave here");
+        dialougeText.text = ("As you can see those two have a lot to learn if they wish to leave this etherial plane...");
         yield return new WaitForSeconds(7f);
 
         dialougeText.text = ("but then again that’ll be your job…wouldn't it?");

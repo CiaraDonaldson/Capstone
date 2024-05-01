@@ -12697,6 +12697,8 @@ MonoBehaviour:
   canScan: 0
   Smoke: {fileID: 8781469635242267163}
   isElevating: 0
+  MyAudioSource: {fileID: 5873912495588460522}
+  scan: {fileID: 8300000, guid: 01ac9ae044b0e1c4aa5bdf4359fbd833, type: 3}
 --- !u!114 &8391183921164731609
 MonoBehaviour:
   m_ObjectHideFlags: 0

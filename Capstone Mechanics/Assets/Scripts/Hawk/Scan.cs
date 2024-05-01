@@ -26,6 +26,8 @@ public class Scan : MonoBehaviour
     private Animator anim;
     private bool orbsMoved = false;
 
+    public AudioSource MyAudioSource;
+    public AudioClip scan;
 
     private void Start()
     {
@@ -40,14 +42,23 @@ public class Scan : MonoBehaviour
             orbs.Add(orbObject.transform);
         }
         originalZPosition = orbs[0].position.z;
+
+        MyAudioSource = this.GetComponent<AudioSource>();
         
     }
 
     private void Update()
     {
+        if (wKeyPressStartTime >= keyHoldDuration)
+        {
+            MyAudioSource.clip = scan;
+            //MyAudioSource.loop = false;
+            MyAudioSource.Play();
+        }
         RemoveNullTransformsFromList();
         if (Input.GetKey(KeyCode.W))
-        {
+        {           
+
             if (!this.GetComponent<Carry>().isCarrying)
             {
                 wKeyPressStartTime += Time.deltaTime;
@@ -70,8 +81,10 @@ public class Scan : MonoBehaviour
 
                 if (wKeyPressStartTime >= keyHoldDuration && !isElevating && !isZoomedOut && canScan)
                 {
+                    
 
                     StartElevate();
+
                    
                     if (Fox != null)
                     {
@@ -106,7 +119,7 @@ public class Scan : MonoBehaviour
         if (isElevating)
         {
             
-           
+
             // Lerping the player position
             float lerpProgress = Mathf.Clamp01(Time.time * lerpSpeed);
             Vector3 targetPosition = originalPlayerPosition + Vector3.up * elevateHeight;

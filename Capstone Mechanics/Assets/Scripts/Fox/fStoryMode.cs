@@ -25,11 +25,11 @@ public class fStoryMode : MonoBehaviour
         {
             this.gameObject.GetComponent<Sneak>().enabled = true;
         }
-         if (Story != null && y < 18)
+         if (Story != null && y < 21)
         {
             this.gameObject.GetComponent<Taunt>().enabled = false;
         }
-        if (Story != null && y >= 18)
+        if (Story != null && y >= 21)
         {
             this.gameObject.GetComponent<Taunt>().enabled = true;
         }
