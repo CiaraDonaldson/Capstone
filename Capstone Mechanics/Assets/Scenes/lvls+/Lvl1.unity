@@ -25449,10 +25449,6 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.15132034
       objectReference: {fileID: 0}
-    - target: {fileID: 550391368929835394, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
-      propertyPath: sneakForce
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 4790116612721951696, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: Loop
       value: 1
@@ -25495,23 +25491,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8391183920174092129, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.56275177
+      value: 0.5627517
       objectReference: {fileID: 0}
     - target: {fileID: 8391183920174092129, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: -0.93980193
       objectReference: {fileID: 0}
-    - target: {fileID: 8391183920730606033, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
-      propertyPath: moveForce
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 8391183920851487688, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.3529997
+      value: 0.35299966
       objectReference: {fileID: 0}
     - target: {fileID: 8391183920851487688, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.45000005
+      value: -0.44999996
       objectReference: {fileID: 0}
     - target: {fileID: 8391183921164731608, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: virtualCamera
