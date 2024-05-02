@@ -22,12 +22,12 @@ public class hStoryMode : MonoBehaviour
             this.gameObject.GetComponent<Carry>().enabled = false;
 
         }
-        else if (Story != null && y == 16 || y == 17)
+        if (Story != null && y == 17 || y == 18)
         {
             this.gameObject.GetComponent<Scan>().enabled = true;
             this.gameObject.GetComponent<Carry>().enabled = false;
         }
-        else if (Story != null && y < 17)
+        if (Story != null && y < 18)
         {
             this.gameObject.GetComponent<Scan>().enabled = true;
             this.gameObject.GetComponent<Carry>().enabled = true;

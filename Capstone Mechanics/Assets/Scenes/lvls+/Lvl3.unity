@@ -1663,6 +1663,10 @@ PrefabInstance:
       propertyPath: virtualCamera
       value: 
       objectReference: {fileID: 1748595356}
+    - target: {fileID: 8391183921164731609, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8391183921385032736, guid: caab4b95088b3f4479b8392700da8cc7, type: 3}
       propertyPath: m_RootOrder
       value: 0

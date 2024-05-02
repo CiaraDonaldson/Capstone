@@ -630,7 +630,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!1 &3331233568572764087
 GameObject:
   m_ObjectHideFlags: 0
